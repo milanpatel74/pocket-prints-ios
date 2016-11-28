@@ -1,0 +1,1395 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobeColorViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKColor.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobeColorViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/appThemes">&nbsp;&nbsp;&nbsp;&nbsp;appThemes</option>
+	
+	<option value="//api/name/colorPickerTypes">&nbsp;&nbsp;&nbsp;&nbsp;colorPickerTypes</option>
+	
+	<option value="//api/name/colorPickerViewOptions">&nbsp;&nbsp;&nbsp;&nbsp;colorPickerViewOptions</option>
+	
+	<option value="//api/name/currentColor">&nbsp;&nbsp;&nbsp;&nbsp;currentColor</option>
+	
+	<option value="//api/name/currentColorPickerView">&nbsp;&nbsp;&nbsp;&nbsp;currentColorPickerView</option>
+	
+	<option value="//api/name/currentPickerType">&nbsp;&nbsp;&nbsp;&nbsp;currentPickerType</option>
+	
+	<option value="//api/name/defaultLibraryId">&nbsp;&nbsp;&nbsp;&nbsp;defaultLibraryId</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/harmonyRuleOptions">&nbsp;&nbsp;&nbsp;&nbsp;harmonyRuleOptions</option>
+	
+	<option value="//api/name/initialColor">&nbsp;&nbsp;&nbsp;&nbsp;initialColor</option>
+	
+	<option value="//api/name/initialColorPickerView">&nbsp;&nbsp;&nbsp;&nbsp;initialColorPickerView</option>
+	
+	<option value="//api/name/initialHarmonyRule">&nbsp;&nbsp;&nbsp;&nbsp;initialHarmonyRule</option>
+	
+	<option value="//api/name/initialPickerType">&nbsp;&nbsp;&nbsp;&nbsp;initialPickerType</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelChanges">&nbsp;&nbsp;&nbsp;&nbsp;- cancelChanges</option>
+	
+	<option value="//api/name/colorHistory">&nbsp;&nbsp;&nbsp;&nbsp;- colorHistory</option>
+	
+	<option value="//api/name/commitChanges">&nbsp;&nbsp;&nbsp;&nbsp;- commitChanges</option>
+	
+	<option value="//api/name/isColorPickerOptionAvailable:">&nbsp;&nbsp;&nbsp;&nbsp;- isColorPickerOptionAvailable:</option>
+	
+	<option value="//api/name/setColorHistory:">&nbsp;&nbsp;&nbsp;&nbsp;- setColorHistory:</option>
+	
+	<option value="//api/name/setShowTitleHeader:">&nbsp;&nbsp;&nbsp;&nbsp;- setShowTitleHeader:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appThemes">appThemes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/colorPickerTypes">colorPickerTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/colorPickerViewOptions">colorPickerViewOptions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentColor">currentColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentColorPickerView">currentColorPickerView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentPickerType">currentPickerType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultLibraryId">defaultLibraryId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/harmonyRuleOptions">harmonyRuleOptions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialColor">initialColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialColorPickerView">initialColorPickerView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialHarmonyRule">initialHarmonyRule</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialPickerType">initialPickerType</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelChanges">cancelChanges</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/colorHistory">colorHistory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/commitChanges">commitChanges</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isColorPickerOptionAvailable:">isColorPickerOptionAvailable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setColorHistory:">setColorHistory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShowTitleHeader:">setShowTitleHeader:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobeColorViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobeColorViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobeColorViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The main entry point for the color component. To use the color component, create an instance of
+AdobeColorViewController and either present in a UIPopoverController on iPad or present directly
+on iPhone. The color view controller will call back the <a href="#//api/name/delegate">delegate</a> with appropriate events.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appThemes">&nbsp;&nbsp;appThemes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialColor">&nbsp;&nbsp;initialColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentColor">&nbsp;&nbsp;currentColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultLibraryId">&nbsp;&nbsp;defaultLibraryId</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/colorPickerViewOptions">&nbsp;&nbsp;colorPickerViewOptions</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialColorPickerView">&nbsp;&nbsp;initialColorPickerView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentColorPickerView">&nbsp;&nbsp;currentColorPickerView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/harmonyRuleOptions">&nbsp;&nbsp;harmonyRuleOptions</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialHarmonyRule">&nbsp;&nbsp;initialHarmonyRule</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/colorPickerTypes">&nbsp;&nbsp;colorPickerTypes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialPickerType">&nbsp;&nbsp;initialPickerType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentPickerType">&nbsp;&nbsp;currentPickerType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isColorPickerOptionAvailable:">&ndash;&nbsp;isColorPickerOptionAvailable:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setColorHistory:">&ndash;&nbsp;setColorHistory:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/colorHistory">&ndash;&nbsp;colorHistory</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShowTitleHeader:">&ndash;&nbsp;setShowTitleHeader:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelChanges">&ndash;&nbsp;cancelChanges</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/commitChanges">&ndash;&nbsp;commitChanges</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/appThemes" title="appThemes"></a>
+	<h3 class="subsubtitle method-title">appThemes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The application specific color themes. These themes will display in the Themes tab above the community
+themes associated with the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *appThemes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The application specific color themes. These themes will display in the Themes tab above the community
+themes associated with the user.</p>
+
+<p>An NSMutableArray of AdobeColorTheme objects.</p>
+
+<p>Please refer to AdobeCreativeSDKAssetModel/AdobeColorTheme.h for more information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/colorPickerTypes" title="colorPickerTypes"></a>
+	<h3 class="subsubtitle method-title">colorPickerTypes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color picking types available.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AdobeColorPickerTypes colorPickerTypes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The color picking types available.</p>
+
+<p>The default value is (AdobeColorPickerWheelView | AdobeColorPickerRGBView | AdobeColorPickerCMYKView | AdobeColorPickerHistoryView).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorPickerTypes.html">AdobeColorPickerTypes</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/colorPickerViewOptions" title="colorPickerViewOptions"></a>
+	<h3 class="subsubtitle method-title">colorPickerViewOptions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color picking options available.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AdobeColorPickerViews colorPickerViewOptions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The color picking options available.</p>
+
+<p>The default value is (AdobeColorPickerViewPicker | AdobeColorPickerViewExplore | AdobeColorPickerViewColorServices).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorPickerViews.html">AdobeColorPickerViews</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentColor" title="currentColor"></a>
+	<h3 class="subsubtitle method-title">currentColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reflects the color currently selected by the color view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) UIColor *currentColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reflects the color currently selected by the color view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentColorPickerView" title="currentColorPickerView"></a>
+	<h3 class="subsubtitle method-title">currentColorPickerView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Which view is displayed on launch of the color picker.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) AdobeColorPickerInitialView currentColorPickerView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Which view is displayed on launch of the color picker.</p>
+
+<p>The default value is the value set in <a href="#//api/name/initialColorPickerView">initialColorPickerView</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorPickerInitialView.html">AdobeColorPickerInitialView</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentPickerType" title="currentPickerType"></a>
+	<h3 class="subsubtitle method-title">currentPickerType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Which picker type has been chosen by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) AdobeColorPickerInitialPicker currentPickerType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Which picker type has been chosen by the user.</p>
+
+<p>The default value is the value set by <a href="#//api/name/initialPickerType">initialPickerType</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorPickerInitialPicker.html">AdobeColorPickerInitialPicker</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultLibraryId" title="defaultLibraryId"></a>
+	<h3 class="subsubtitle method-title">defaultLibraryId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The design library ID to display by default in the libraries view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *defaultLibraryId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The design library ID to display by default in the libraries view.</p>
+
+<p>Defaults to nil and will display a user message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Protocols/AdobeColorPickerControllerDelegate.html">AdobeColorPickerControllerDelegate</a> delegate object for handling color change events.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;AdobeColorPickerControllerDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="../Protocols/AdobeColorPickerControllerDelegate.html">AdobeColorPickerControllerDelegate</a> delegate object for handling color change events.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/harmonyRuleOptions" title="harmonyRuleOptions"></a>
+	<h3 class="subsubtitle method-title">harmonyRuleOptions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the color picker view allows harmony selection, single color selection, or both.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AdobeColorHarmonyOptions harmonyRuleOptions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the color picker view allows harmony selection, single color selection, or both.</p>
+
+<p>The default value is (AdobeColorHarmonyRules | AdobeColorSingleColorRule).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorHarmonyOptions.html">AdobeColorHarmonyOptions</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initialColor" title="initialColor"></a>
+	<h3 class="subsubtitle method-title">initialColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initial color set in the color wheel picker on launch.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *initialColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initial color set in the color wheel picker on launch.</p>
+
+<p>Is [UIColor blackColor] by default.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initialColorPickerView" title="initialColorPickerView"></a>
+	<h3 class="subsubtitle method-title">initialColorPickerView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Which view is displayed on launch of the color picker.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AdobeColorPickerInitialView initialColorPickerView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Which view is displayed on launch of the color picker.</p>
+
+<p>The default value is AdobeColorPickerColorPicker.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorPickerInitialView.html">AdobeColorPickerInitialView</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initialHarmonyRule" title="initialHarmonyRule"></a>
+	<h3 class="subsubtitle method-title">initialHarmonyRule</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If allowing color harmony selection, which color harmony mode is set by default. This
+option will be ignored if harmonyOptions are set to AdobeColorSingleColorRule alone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AdobeColorHarmony initialHarmonyRule</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If allowing color harmony selection, which color harmony mode is set by default. This
+option will be ignored if harmonyOptions are set to AdobeColorSingleColorRule alone.</p>
+
+<p>The default value is AdobeColorSingleColor. If the <a href="#//api/name/harmonyRuleOptions">harmonyRuleOptions</a> are set to
+AdobeColorHarmonyRules only, the default is AdobeColorAnalogous.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorHarmony.html">AdobeColorHarmony</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initialPickerType" title="initialPickerType"></a>
+	<h3 class="subsubtitle method-title">initialPickerType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Which picker type is displayed on launch of the color picker. This can be the
+color wheel, RGB, CMYK, and History picker.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AdobeColorPickerInitialPicker initialPickerType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Which picker type is displayed on launch of the color picker. This can be the
+color wheel, RGB, CMYK, and History picker.</p>
+
+<p>The default value is AdobeColorPickerWheel.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/AdobeColorPickerInitialPicker.html">AdobeColorPickerInitialPicker</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelChanges" title="cancelChanges"></a>
+	<h3 class="subsubtitle method-title">cancelChanges</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs the same operations as selecting the cancel button
+will perform if the color controller manages the navigation bar.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelChanges</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Performs the same operations as selecting the cancel button
+will perform if the color controller manages the navigation bar.</p>
+
+<p>This routine is useful for clients who wish to implement their
+own navigation/title bar for the color component.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/colorHistory" title="colorHistory"></a>
+	<h3 class="subsubtitle method-title">colorHistory</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array of UIColor objects which represents the color history.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)colorHistory</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSArray containing one or more of the UIColor objects displayed in the color view&rsquo;s history.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an array of UIColor objects which represents the color history.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/commitChanges" title="commitChanges"></a>
+	<h3 class="subsubtitle method-title">commitChanges</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs the same operations as selecting the done button
+will perform if the color controller manages the navigation bar.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)commitChanges</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Performs the same operations as selecting the done button
+will perform if the color controller manages the navigation bar.</p>
+
+<p>This routine is useful for clients who wish to implement their
+own navigation/title bar for the color component.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isColorPickerOptionAvailable:" title="isColorPickerOptionAvailable:"></a>
+	<h3 class="subsubtitle method-title">isColorPickerOptionAvailable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility that indicates whether the color picker type is available based on the initial settings.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isColorPickerOptionAvailable:(AdobeColorPickerViews)<em>colorPickerType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>colorPickerType</em></dt>
+			<dd><p>The color picker type to test for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A utility that indicates whether the color picker type is available based on the initial settings.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setColorHistory:" title="setColorHistory:"></a>
+	<h3 class="subsubtitle method-title">setColorHistory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overwrites the color history collection with the array specified by colors.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setColorHistory:(NSArray *)<em>colors</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>colors</em></dt>
+			<dd><p>An NSArray of UIColor objects.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Overwrites the color history collection with the array specified by colors.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setShowTitleHeader:" title="setShowTitleHeader:"></a>
+	<h3 class="subsubtitle method-title">setShowTitleHeader:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets whether to show the title header on both iPad and iPhone. This
+is useful if the clients want to insert their own tile/navigation bar.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setShowTitleHeader:(BOOL)<em>showHeader</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>showHeader</em></dt>
+			<dd><p>whether or not to show the header.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets whether to show the title header on both iPad and iPhone. This
+is useful if the clients want to insert their own tile/navigation bar.</p>
+
+<p>YES by default.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeColorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

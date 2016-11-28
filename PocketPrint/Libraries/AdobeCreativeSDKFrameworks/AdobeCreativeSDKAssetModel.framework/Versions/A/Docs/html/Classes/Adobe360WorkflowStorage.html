@@ -1,0 +1,1372 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Adobe360WorkflowStorage Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Adobe360WorkflowStorage Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedStorage">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedStorage</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addMessage:user:cloud:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- addMessage:user:cloud:completionHandler:</option>
+	
+	<option value="//api/name/addMessage:user:cloud:handlerQueue:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- addMessage:user:cloud:handlerQueue:completionHandler:</option>
+	
+	<option value="//api/name/allMessages:">&nbsp;&nbsp;&nbsp;&nbsp;- allMessages:</option>
+	
+	<option value="//api/name/deleteAllMessages:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteAllMessages:</option>
+	
+	<option value="//api/name/deleteMessage:error:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteMessage:error:</option>
+	
+	<option value="//api/name/messagesOlderThan:error:">&nbsp;&nbsp;&nbsp;&nbsp;- messagesOlderThan:error:</option>
+	
+	<option value="//api/name/messagesWithStatus:error:">&nbsp;&nbsp;&nbsp;&nbsp;- messagesWithStatus:error:</option>
+	
+	<option value="//api/name/queryForMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- queryForMessage:</option>
+	
+	<option value="//api/name/readMessage:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- readMessage:completionHandler:</option>
+	
+	<option value="//api/name/readMessage:handlerQueue:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- readMessage:handlerQueue:completionHandler:</option>
+	
+	<option value="//api/name/unmanageMessage:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- unmanageMessage:completionHandler:</option>
+	
+	<option value="//api/name/unmanageMessage:handlerQueue:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- unmanageMessage:handlerQueue:completionHandler:</option>
+	
+	<option value="//api/name/updateMessage:message:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- updateMessage:message:completionHandler:</option>
+	
+	<option value="//api/name/updateMessage:message:handlerQueue:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- updateMessage:message:handlerQueue:completionHandler:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedStorage">sharedStorage</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addMessage:user:cloud:completionHandler:">addMessage:user:cloud:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addMessage:user:cloud:handlerQueue:completionHandler:">addMessage:user:cloud:handlerQueue:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allMessages:">allMessages:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAllMessages:">deleteAllMessages:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteMessage:error:">deleteMessage:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagesOlderThan:error:">messagesOlderThan:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagesWithStatus:error:">messagesWithStatus:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryForMessage:">queryForMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readMessage:completionHandler:">readMessage:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readMessage:handlerQueue:completionHandler:">readMessage:handlerQueue:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unmanageMessage:completionHandler:">unmanageMessage:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unmanageMessage:handlerQueue:completionHandler:">unmanageMessage:handlerQueue:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateMessage:message:completionHandler:">updateMessage:message:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateMessage:message:handlerQueue:completionHandler:">updateMessage:message:handlerQueue:completionHandler:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Adobe360WorkflowStorage Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Adobe360WorkflowStorage Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Adobe360WorkflowStorage.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedStorage">+&nbsp;sharedStorage</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addMessage:user:cloud:completionHandler:">&ndash;&nbsp;addMessage:user:cloud:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addMessage:user:cloud:handlerQueue:completionHandler:">&ndash;&nbsp;addMessage:user:cloud:handlerQueue:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryForMessage:">&ndash;&nbsp;queryForMessage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readMessage:completionHandler:">&ndash;&nbsp;readMessage:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readMessage:handlerQueue:completionHandler:">&ndash;&nbsp;readMessage:handlerQueue:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateMessage:message:completionHandler:">&ndash;&nbsp;updateMessage:message:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateMessage:message:handlerQueue:completionHandler:">&ndash;&nbsp;updateMessage:message:handlerQueue:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unmanageMessage:completionHandler:">&ndash;&nbsp;unmanageMessage:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unmanageMessage:handlerQueue:completionHandler:">&ndash;&nbsp;unmanageMessage:handlerQueue:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteMessage:error:">&ndash;&nbsp;deleteMessage:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allMessages:">&ndash;&nbsp;allMessages:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagesWithStatus:error:">&ndash;&nbsp;messagesWithStatus:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagesOlderThan:error:">&ndash;&nbsp;messagesOlderThan:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAllMessages:">&ndash;&nbsp;deleteAllMessages:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedStorage" title="sharedStorage"></a>
+	<h3 class="subsubtitle method-title">sharedStorage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The singleton object for the Adobe360WorkflowStorage.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Adobe360WorkflowStorage *)sharedStorage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The singleton object for the Adobe360WorkflowStorage.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addMessage:user:cloud:completionHandler:" title="addMessage:user:cloud:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">addMessage:user:cloud:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a new message to the storage and set its state to Adobe360WorkflowStorageStatusUnhandled.  Also save the
+current adobeID, the current cloudID, and a timestamp.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addMessage:(Adobe360Message *)<em>message</em> user:(NSString *)<em>userID</em> cloud:(NSString *)<em>cloudID</em> completionHandler:(void ( ^ ) ( NSString *messageID , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p><a href="../Classes/Adobe360Message.html">Adobe360Message</a> to save.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>the adobe profile ID of the user</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cloudID</em></dt>
+			<dd><p>the ID of the current cloud object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the messageID and an error, one of which is nil depending on the action status.
+The messageID can be used subsequently to manage the message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add a new message to the storage and set its state to Adobe360WorkflowStorageStatusUnhandled.  Also save the
+current adobeID, the current cloudID, and a timestamp.</p>
+
+<p>This will call the handler on the main thread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addMessage:user:cloud:handlerQueue:completionHandler:" title="addMessage:user:cloud:handlerQueue:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">addMessage:user:cloud:handlerQueue:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a new message to the storage and set its state to Adobe360WorkflowStorageStatusUnhandled.  Also save the
+current adobeID, the current cloudID, and a timestamp.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addMessage:(Adobe360Message *)<em>message</em> user:(NSString *)<em>userID</em> cloud:(NSString *)<em>cloudID</em> handlerQueue:(NSOperationQueue *)<em>queue</em> completionHandler:(void ( ^ ) ( NSString *messageID , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p><a href="../Classes/Adobe360Message.html">Adobe360Message</a> to save.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>the adobe profile ID of the user</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cloudID</em></dt>
+			<dd><p>the ID of the current cloud object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the messageID and an error, one of which is nil depending on the action status.
+The messageID can be used subsequently to manage the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handlerQueue</em></dt>
+			<dd><p>the NSOperationQueue used to call the completion handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add a new message to the storage and set its state to Adobe360WorkflowStorageStatusUnhandled.  Also save the
+current adobeID, the current cloudID, and a timestamp.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allMessages:" title="allMessages:"></a>
+	<h3 class="subsubtitle method-title">allMessages:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get all messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)allMessages:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Pointer with additional error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSDictionary of methodID / message status pairs for all saved messages.  The dictionary includes invalid
+messages (i.e., those whose adobeID or cloudID don&rsquo;t match the current values).  nil indicates the
+storage is empty or an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get all messages.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteAllMessages:" title="deleteAllMessages:"></a>
+	<h3 class="subsubtitle method-title">deleteAllMessages:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delete all entries in the storage.  Messages are deleted independent of the messages state.
+The method returns NO to indicate an error.  errorPtr contains additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteAllMessages:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Error pointer with additional information if return value is NO.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Indication whether operation succeeded.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Delete all entries in the storage.  Messages are deleted independent of the messages state.
+The method returns NO to indicate an error.  errorPtr contains additional information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteMessage:error:" title="deleteMessage:error:"></a>
+	<h3 class="subsubtitle method-title">deleteMessage:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delete message.  Remove message from the storage independent of the message state.
+The method returns NO to indicate an error.  errorPtr contains additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteMessage:(NSString *)<em>messageID</em> error:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to delete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Error pointer with additional information if return value is NO.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Indication whether operation succeeded.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Delete message.  Remove message from the storage independent of the message state.
+The method returns NO to indicate an error.  errorPtr contains additional information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagesOlderThan:error:" title="messagesOlderThan:error:"></a>
+	<h3 class="subsubtitle method-title">messagesOlderThan:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return an array of messageIDs older than the given date.  Invalid messages are also reported.  A non-nil errorPtr
+reports an error.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)messagesOlderThan:(NSDate *)<em>cutoffDate</em> error:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cutoffDate</em></dt>
+			<dd><p>Report messages older than this date.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Pointer with additional error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An arry of message IDs older than the given date.  nil indicates no messages with given status
+exist or an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return an array of messageIDs older than the given date.  Invalid messages are also reported.  A non-nil errorPtr
+reports an error.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagesWithStatus:error:" title="messagesWithStatus:error:"></a>
+	<h3 class="subsubtitle method-title">messagesWithStatus:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return an array of messageIDs that match the given status.  Invalid messages (i.e., messages whose adobeID and cloudID
+are different from the current values) are not reported unless the status argument is Adobe360WorkflowStorageInvalid.
+A non-nil errorPtr reports an error.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)messagesWithStatus:(Adobe360WorkflowStorageStatus)<em>status</em> error:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>status</em></dt>
+			<dd><p>Report messages with this status.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Pointer with additional error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An arry of message IDs that match the given status.  nil indicates no messages with given status
+exist or an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return an array of messageIDs that match the given status.  Invalid messages (i.e., messages whose adobeID and cloudID
+are different from the current values) are not reported unless the status argument is Adobe360WorkflowStorageInvalid.
+A non-nil errorPtr reports an error.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryForMessage:" title="queryForMessage:"></a>
+	<h3 class="subsubtitle method-title">queryForMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get message status.  The message state is not changed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (Adobe360WorkflowStorageStatus)queryForMessage:(NSString *)<em>messageID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to get a status from.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Constants/Adobe360WorkflowStorageStatus.html">Adobe360WorkflowStorageStatus</a> enum value.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get message status.  The message state is not changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readMessage:completionHandler:" title="readMessage:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">readMessage:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Read a message including its additional information.  The method returns in the completion handler the <a href="../Classes/Adobe360Message.html">Adobe360Message</a>
+and additional information corresponding to the messageID.
+The message state is not changed.  The error is not nil if an error is detected, in particular if the message is invalid
+(i.e, the userID or cloud are different from when the message was added).  The completion handler&rsquo;s error contains
+additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)readMessage:(NSString *)<em>messageID</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , Adobe360WorkflowStorageMessageInfo *messageInfo , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to read.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the message, additional message information, and an error.  An error condition is reported
+by a non-nil error argument.  The message will be nil if the message is invalid (i.e., if the message&rsquo;s adobeID and
+cloudID do not match the current values.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Read a message including its additional information.  The method returns in the completion handler the <a href="../Classes/Adobe360Message.html">Adobe360Message</a>
+and additional information corresponding to the messageID.
+The message state is not changed.  The error is not nil if an error is detected, in particular if the message is invalid
+(i.e, the userID or cloud are different from when the message was added).  The completion handler&rsquo;s error contains
+additional information.</p>
+
+<p>The completionHandler will be called on the main thread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readMessage:handlerQueue:completionHandler:" title="readMessage:handlerQueue:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">readMessage:handlerQueue:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Read a message including its additional information.  The method returns in the completion handler the <a href="../Classes/Adobe360Message.html">Adobe360Message</a>
+and additional information corresponding to the messageID.
+The message state is not changed.  The error is not nil if an error is detected, in particular if the message is invalid
+(i.e, the userID or cloud are different from when the message was added).  The completion handler&rsquo;s error contains
+additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)readMessage:(NSString *)<em>messageID</em> handlerQueue:(NSOperationQueue *)<em>queue</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , Adobe360WorkflowStorageMessageInfo *messageInfo , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to read.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the message, additional message information, and an error.  An error condition is reported
+by a non-nil error argument.  The message will be nil if the message is invalid (i.e., if the message&rsquo;s adobeID and
+cloudID do not match the current values.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handlerQueue</em></dt>
+			<dd><p>the NSOperationQueue used to call the completion handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Read a message including its additional information.  The method returns in the completion handler the <a href="../Classes/Adobe360Message.html">Adobe360Message</a>
+and additional information corresponding to the messageID.
+The message state is not changed.  The error is not nil if an error is detected, in particular if the message is invalid
+(i.e, the userID or cloud are different from when the message was added).  The completion handler&rsquo;s error contains
+additional information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unmanageMessage:completionHandler:" title="unmanageMessage:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">unmanageMessage:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop managing message.  Set the message state to Adobe360WorkflowStorageUnamanged.  The method returns in the
+completion handler the current <a href="../Classes/Adobe360Message.html">Adobe360Message</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unmanageMessage:(NSString *)<em>messageID</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to unmanage.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the current message and an error, one of which is nil depending on the action status.
+The message will be nil if the message is invalid (i.e., if the message&rsquo;s adobeID and cloudID do not match the
+current values.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stop managing message.  Set the message state to Adobe360WorkflowStorageUnamanged.  The method returns in the
+completion handler the current <a href="../Classes/Adobe360Message.html">Adobe360Message</a>.</p>
+
+<p>The completionHandler will be called on the main thread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unmanageMessage:handlerQueue:completionHandler:" title="unmanageMessage:handlerQueue:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">unmanageMessage:handlerQueue:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop managing message.  Set the message state to Adobe360WorkflowStorageUnamanged.  The method returns in the
+completion handler the current <a href="../Classes/Adobe360Message.html">Adobe360Message</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unmanageMessage:(NSString *)<em>messageID</em> handlerQueue:(NSOperationQueue *)<em>queue</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to unmanage.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the current message and an error, one of which is nil depending on the action status.
+The message will be nil if the message is invalid (i.e., if the message&rsquo;s adobeID and cloudID do not match the
+current values.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handlerQueue</em></dt>
+			<dd><p>the NSOperationQueue used to call the completion handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stop managing message.  Set the message state to Adobe360WorkflowStorageUnamanged.  The method returns in the
+completion handler the current <a href="../Classes/Adobe360Message.html">Adobe360Message</a>.</p>
+
+<p>The completionHandler will be called on the main thread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateMessage:message:completionHandler:" title="updateMessage:message:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">updateMessage:message:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Update message, typically with the request&rsquo;s response.  The method returns in the completion handler the previous
+<a href="../Classes/Adobe360Message.html">Adobe360Message</a> corresponding to the messageID.  The message state is updated to Adobe360WorkflowStorageStatusHandled.
+The message is nil if an error is detected, in particular if the message is invalid (i.e, the userID or cloud are
+different from when the message was added).  The completion handler&rsquo;s error contains additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateMessage:(NSString *)<em>messageID</em> message:(Adobe360Message *)<em>newMessage</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to update.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMessage</em></dt>
+			<dd><p>New message to insert in the storage.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the previous message and an error, one of which is nil depending on the action status.
+The message will be nil if the message is invalid (i.e., if the message&rsquo;s adobeID and cloudID do not match the
+current values.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Update message, typically with the request&rsquo;s response.  The method returns in the completion handler the previous
+<a href="../Classes/Adobe360Message.html">Adobe360Message</a> corresponding to the messageID.  The message state is updated to Adobe360WorkflowStorageStatusHandled.
+The message is nil if an error is detected, in particular if the message is invalid (i.e, the userID or cloud are
+different from when the message was added).  The completion handler&rsquo;s error contains additional information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateMessage:message:handlerQueue:completionHandler:" title="updateMessage:message:handlerQueue:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">updateMessage:message:handlerQueue:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Update message, typically with the request&rsquo;s response.  The method returns in the completion handler the previous
+<a href="../Classes/Adobe360Message.html">Adobe360Message</a> corresponding to the messageID.  The message state is updated to Adobe360WorkflowStorageStatusHandled.
+The message is nil if an error is detected, in particular if the message is invalid (i.e, the userID or cloud are
+different from when the message was added).  The completion handler&rsquo;s error contains additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateMessage:(NSString *)<em>messageID</em> message:(Adobe360Message *)<em>newMessage</em> handlerQueue:(NSOperationQueue *)<em>queue</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageID</em></dt>
+			<dd><p>The ID of the message to update.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMessage</em></dt>
+			<dd><p>New message to insert in the storage.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handlerQueue</em></dt>
+			<dd><p>the NSOperationQueue used to call the completion handler.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>Returns the previous message and an error, one of which is nil depending on the action status.
+The message will be nil if the message is invalid (i.e., if the message&rsquo;s adobeID and cloudID do not match the
+current values.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Update message, typically with the request&rsquo;s response.  The method returns in the completion handler the previous
+<a href="../Classes/Adobe360Message.html">Adobe360Message</a> corresponding to the messageID.  The message state is updated to Adobe360WorkflowStorageStatusHandled.
+The message is nil if an error is detected, in particular if the message is invalid (i.e, the userID or cloud are
+different from when the message was added).  The completion handler&rsquo;s error contains additional information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

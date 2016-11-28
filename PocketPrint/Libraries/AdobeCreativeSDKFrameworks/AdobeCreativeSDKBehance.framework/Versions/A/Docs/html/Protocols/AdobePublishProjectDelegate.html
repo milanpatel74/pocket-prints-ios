@@ -1,0 +1,954 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobePublishProjectDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKBehance.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobePublishProjectDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/projectEditDidFail:">&nbsp;&nbsp;&nbsp;&nbsp;- projectEditDidFail:</option>
+	
+	<option value="//api/name/projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:</option>
+	
+	<option value="//api/name/projectPublishDidClose">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishDidClose</option>
+	
+	<option value="//api/name/projectPublishDidComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishDidComplete:</option>
+	
+	<option value="//api/name/projectPublishDidFail:">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishDidFail:</option>
+	
+	<option value="//api/name/projectPublishDidStart">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishDidStart</option>
+	
+	<option value="//api/name/projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:</option>
+	
+	<option value="//api/name/projectPublishShouldPresentSuccessPopup">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishShouldPresentSuccessPopup</option>
+	
+	<option value="//api/name/projectPublishStringForExternalAccount:url:projectText:">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishStringForExternalAccount:url:projectText:</option>
+	
+	<option value="//api/name/projectPublishWillClose">&nbsp;&nbsp;&nbsp;&nbsp;- projectPublishWillClose</option>
+	
+	<option value="//api/name/viewProjectTapped:">&nbsp;&nbsp;&nbsp;&nbsp;- viewProjectTapped:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectEditDidFail:">projectEditDidFail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:">projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishDidClose">projectPublishDidClose</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishDidComplete:">projectPublishDidComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishDidFail:">projectPublishDidFail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishDidStart">projectPublishDidStart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:">projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishShouldPresentSuccessPopup">projectPublishShouldPresentSuccessPopup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishStringForExternalAccount:url:projectText:">projectPublishStringForExternalAccount:url:projectText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectPublishWillClose">projectPublishWillClose</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewProjectTapped:">viewProjectTapped:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobePublishProjectDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobePublishProjectDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/AdobePublishComponentDelegate.html">AdobePublishComponentDelegate</a><br /><a href="../Protocols/AdobePublishURLDelegate.html">AdobePublishURLDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobePublishProjectDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Allows clients to be notified of project publishing flow.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishWillClose">&ndash;&nbsp;projectPublishWillClose</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishDidClose">&ndash;&nbsp;projectPublishDidClose</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:">&ndash;&nbsp;projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:">&ndash;&nbsp;projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishDidStart">&ndash;&nbsp;projectPublishDidStart</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishDidComplete:">&ndash;&nbsp;projectPublishDidComplete:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishShouldPresentSuccessPopup">&ndash;&nbsp;projectPublishShouldPresentSuccessPopup</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewProjectTapped:">&ndash;&nbsp;viewProjectTapped:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishDidFail:">&ndash;&nbsp;projectPublishDidFail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectEditDidFail:">&ndash;&nbsp;projectEditDidFail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectPublishStringForExternalAccount:url:projectText:">&ndash;&nbsp;projectPublishStringForExternalAccount:url:projectText:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/projectEditDidFail:" title="projectEditDidFail:"></a>
+	<h3 class="subsubtitle method-title">projectEditDidFail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called if loading an existing project for editing fails.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectEditDidFail:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>the error that resulted in a failure</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called if loading an existing project for editing fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:" title="projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:"></a>
+	<h3 class="subsubtitle method-title">projectPublishCoverImageUploadBytesWritten:totalBytes:totalBytesExpected:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on project publishing upload progress for the project cover image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectPublishCoverImageUploadBytesWritten:(NSUInteger)<em>bytesWritten</em> totalBytes:(long long)<em>totalBytesWritten</em> totalBytesExpected:(long long)<em>totalBytesExpected</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bytesWritten</em></dt>
+			<dd><p>number of bytes that were just uploaded</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytesWritten</em></dt>
+			<dd><p>total number of bytes that have been written so far</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytesExpected</em></dt>
+			<dd><p>total number of bytes of the cover image to be uploaded</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on project publishing upload progress for the project cover image.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishDidClose" title="projectPublishDidClose"></a>
+	<h3 class="subsubtitle method-title">projectPublishDidClose</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the project publishing flow has closed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectPublishDidClose</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the project publishing flow has closed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishDidComplete:" title="projectPublishDidComplete:"></a>
+	<h3 class="subsubtitle method-title">projectPublishDidComplete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on project publishing success.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)projectPublishDidComplete:(NSNumber *)<em>projectId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>projectId</em></dt>
+			<dd><p>the id of the project that was created</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>delegates should return an UIViewController to present the success view controller with. Return nil if no success view is desired.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on project publishing success.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishDidFail:" title="projectPublishDidFail:"></a>
+	<h3 class="subsubtitle method-title">projectPublishDidFail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on project publishing failure.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectPublishDidFail:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>the error that resulted in a failure</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on project publishing failure.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishDidStart" title="projectPublishDidStart"></a>
+	<h3 class="subsubtitle method-title">projectPublishDidStart</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the project is saved by the user, and upload has begun.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectPublishDidStart</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the project is saved by the user, and upload has begun.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:" title="projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:"></a>
+	<h3 class="subsubtitle method-title">projectPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:imageNumber:totalImages:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on project publishing upload progress for individual project images.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectPublishImageUploadBytesWritten:(NSUInteger)<em>bytesWritten</em> totalBytes:(long long)<em>totalBytesWritten</em> totalBytesExpected:(long long)<em>totalBytesExpected</em> imageNumber:(NSUInteger)<em>imageNumber</em> totalImages:(NSUInteger)<em>totalImages</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bytesWritten</em></dt>
+			<dd><p>number of bytes that were just uploaded</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytesWritten</em></dt>
+			<dd><p>total number of bytes that have been written so far</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytesExpected</em></dt>
+			<dd><p>total number of bytes of the cover image to be uploaded</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>imageNumber</em></dt>
+			<dd><p>the image number written</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalImages</em></dt>
+			<dd><p>the total number of images</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on project publishing upload progress for individual project images.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishShouldPresentSuccessPopup" title="projectPublishShouldPresentSuccessPopup"></a>
+	<h3 class="subsubtitle method-title">projectPublishShouldPresentSuccessPopup</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called immediately after <a href="#//api/name/projectPublishDidComplete:">projectPublishDidComplete:</a>
+allows delegates to override the default behavior of presenting a popup window upon publishing success</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)projectPublishShouldPresentSuccessPopup</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>delegates should return NO if they wish to prevent the popup window from being shown, default is YES</p>
+
+<p>DEPRECATED: If a success pop up is required, you must use <a href="#//api/name/projectPublishDidComplete:">projectPublishDidComplete:</a>(NSNumber *)projectId instead.
+Otherwise, returning NO for this method is still supported.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called immediately after <a href="#//api/name/projectPublishDidComplete:">projectPublishDidComplete:</a>
+allows delegates to override the default behavior of presenting a popup window upon publishing success</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishStringForExternalAccount:url:projectText:" title="projectPublishStringForExternalAccount:url:projectText:"></a>
+	<h3 class="subsubtitle method-title">projectPublishStringForExternalAccount:url:projectText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Supply a custom string to use when sharing a project to external services (ex. Twitter).
+Please note that AdobePublishAccountTypeFacebook is not supported.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)projectPublishStringForExternalAccount:(AdobePublishAccountType)<em>accountType</em> url:(NSURL *)<em>projectURL</em> projectText:(NSString *)<em>projectText</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accountType</em></dt>
+			<dd><p><a href="../Constants/AdobePublishAccountType.html"><code>AdobePublishAccountType</code></a> account type string is being shared to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>projectURL</em></dt>
+			<dd><p>short url of the project on behance.net</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>projectText</em></dt>
+			<dd><p>the user supplied project title</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the string to post to Twitter</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Supply a custom string to use when sharing a project to external services (ex. Twitter).
+Please note that AdobePublishAccountTypeFacebook is not supported.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectPublishWillClose" title="projectPublishWillClose"></a>
+	<h3 class="subsubtitle method-title">projectPublishWillClose</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the project publishing flow is about to close.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectPublishWillClose</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the project publishing flow is about to close.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewProjectTapped:" title="viewProjectTapped:"></a>
+	<h3 class="subsubtitle method-title">viewProjectTapped:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called if the end user taps &ldquo;VIEW ON BEHANCE&rdquo; in the success popup, indicating that they would like to view the published project
+if this method is not handled in the delegate, the project will be opened in the Behance app, or, if it&rsquo;s not installed, on behance.net in Safari.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewProjectTapped:(NSNumber *)<em>projectId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>projectId</em></dt>
+			<dd><p>the id of the project that was created</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called if the end user taps &ldquo;VIEW ON BEHANCE&rdquo; in the success popup, indicating that they would like to view the published project
+if this method is not handled in the delegate, the project will be opened in the Behance app, or, if it&rsquo;s not installed, on behance.net in Safari.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

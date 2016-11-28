@@ -1,0 +1,527 @@
+{
+    "apps": [
+             {
+             "app_id": "855475913",
+             "developer_name": "Adobe",
+             "average_user_rating": 4,
+             "bundle_id": "com.adobe.line.ios",
+             "description": "A modern approach to drawing and drafting.",
+             "featured": true,
+             "name": "Illustrator Line",
+             "sub_categories": [
+                                "subcategory_id_7"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ],
+             "url_scheme": "adobe-line"
+             },
+             {
+             "app_id": "489667151",
+             "developer_name": "Behance",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.behance.Behance",
+             "description": "Explore millions of projects by the world’s top creative talent.",
+             "featured": true,
+             "name": "Behance",
+             "sub_categories": [
+                                "subcategory_id_2"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "behance"
+             },
+             {
+             "app_id": "852473028",
+             "developer_name": "Adobe",
+             "average_user_rating": 3,
+             "bundle_id": "com.adobe.ccsdk.loki",
+             "description": "Your work, inspiration & creativity with you wherever you go.",
+             "featured": true,
+             "name": "Creative Cloud",
+             "sub_categories": [
+                                "subcategory_id_17"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "adobe-cc-v1"
+             },
+             {
+             "app_id": "885271158",
+             "developer_name": "Adobe",
+             "average_user_rating": 4,
+             "bundle_id": "com.adobe.photoshop.mix.ipad",
+             "description": "Transforming and enhancing your images on the go.",
+             "featured": true,
+             "name": "Photoshop Mix",
+             "sub_categories": [
+                                "subcategory_id_11"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "ccsdk-orion-app"
+             },
+             {
+             "app_id": "839085644",
+             "developer_name": "Adobe",
+             "average_user_rating": 4,
+             "bundle_id": "com.adobe.sketch.ipad",
+             "description": "Create beautiful drawings with your finger or a stylus.",
+             "featured": true,
+             "name": "Photoshop Sketch",
+             "sub_categories": [
+                                "subcategory_id_7"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ],
+             "url_scheme": "adobesketch"
+             },
+             {
+             "app_id": "852555131",
+             "developer_name": "Adobe",
+             "average_user_rating": 4,
+             "bundle_id": "com.adobe.Voice",
+             "featured": true,
+             "name": "Adobe Voice",
+             "sub_categories": [
+                                "subcategory_id_20"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ],
+             "url_scheme": "adobevoice"
+             },
+             {
+             "app_id": "804177739",
+             "developer_name": "Adobe",
+             "average_user_rating": 3.5,
+             "bundle_id": "com.adobe.lrmobile",
+             "description": "Capture the moment and make it your own with Adobe Lightroom.",
+             "featured": true,
+             "name": "Adobe Lightroom",
+             "sub_categories": [
+                                "subcategory_id_12"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ]
+             },
+             {
+             "app_id": "408289884",
+             "developer_name": "Tireless Weaver",
+             "average_user_rating": 4,
+             "bundle_id": "net.annca",
+             "featured": true,
+             "name": "Fabrika App",
+             "sub_categories": [
+                                "subcategory_id_1",
+                                "subcategory_id_9"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ]
+             },
+             {
+             "app_id": "921705289",
+             "developer_name": "SkinnyCorp, LLC",
+             "average_user_rating": 0,
+             "bundle_id": "com.threadless.ThreadlessMake",
+             "featured": true,
+             "name": "Threadless Make",
+             "sub_categories": [
+                                "subcategory_id_5"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ]
+             },
+             {
+             "app_id": "630717527",
+             "developer_name": "Flowboard",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.treemolabs.flowboard",
+             "description": "Create quickly and easily beautiful, interactive presentations.",
+             "featured": true,
+             "name": "FlowVella",
+             "sub_categories": [
+                                "subcategory_id_14",
+                                "subcategory_id_15"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ]
+             },
+             {
+             "app_id": "560586497",
+             "developer_name": "TopHatch",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.tophatch.Concepts",
+             "featured": true,
+             "name": "Concepts",
+             "sub_categories": [
+                                "subcategory_id_5"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ]
+             },
+             {
+             "app_id": "594579744",
+             "developer_name": "Behance",
+             "average_user_rating": 4,
+             "bundle_id": "com.behance.portfolio",
+             "description": "Sync with Behance and take your work with you anywhere.",
+             "featured": true,
+             "name": "Behance Portfolio",
+             "sub_categories": [
+                                "subcategory_id_2"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "bnportfolio"
+             },
+             {
+             "app_id": "919399401",
+             "developer_name": "Adobe",
+             "average_user_rating": 3.5,
+             "bundle_id": "com.adobe.premiereclip",
+             "description": "Fast and fun to edit individual clips into quality videos.",
+             "featured": true,
+             "name": "Premiere Clip",
+             "sub_categories": [
+                                "subcategory_id_19"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "fb168112120029595"
+             },
+             {
+             "app_id": "632313714",
+             "developer_name": "Adobe",
+             "average_user_rating": 4,
+             "bundle_id": "com.adobe.kuler.ios",
+             "featured": true,
+             "name": "Adobe Color",
+             "sub_categories": [
+                                "subcategory_id_1"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "adobecolor"
+             },
+             {
+             "app_id": "911158339",
+             "developer_name": "Adobe",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.adobe.brush.ios",
+             "description": "High-quality brushes from photos of anything that inspires you.",
+             "featured": true,
+             "name": "Adobe Brush",
+             "sub_categories": [
+                                "subcategory_id_9"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "adobebrush"
+             },
+             {
+             "app_id": "919014644",
+             "developer_name": "Adobe",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.adobe.shape",
+             "description": "Quickly capture and convert images into vector graphics.",
+             "featured": true,
+             "name": "Adobe Shape",
+             "sub_categories": [
+                                "subcategory_id_1"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "adobeshape"
+             },
+             {
+             "app_id": "911156590",
+             "developer_name": "Adobe",
+             "average_user_rating": 4,
+             "bundle_id": "com.adobe.draw.ios",
+             "featured": true,
+             "name": "Illustrator Draw",
+             "sub_categories": [
+                                "subcategory_id_7"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "adobedraw"
+             },
+             {
+             "app_id": "527445936",
+             "developer_name": "Aviary",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.aviary.Photo-Editor",
+             "description": "A magical way to create and share beautiful photos.",
+             "featured": true,
+             "name": "Photo Editor by Aviary",
+             "sub_categories": [
+                                "subcategory_id_12"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "aviaryphotoeditor"
+             },
+             {
+             "app_id": "595447157",
+             "developer_name": "Iconocode",
+             "average_user_rating": 4,
+             "bundle_id": "com.glub.Thirty-Six",
+             "featured": true,
+             "name": "Thirty Six",
+             "sub_categories": [
+                                "subcategory_id_11"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ],
+             "url_scheme": "com.glub.Thirty-Six"
+             },
+             {
+             "app_id": "970725481",
+             "developer_name": "Adobe",
+             "average_user_rating": 4.5,
+             "bundle_id": "com.adobe.layup",
+             "description": "Quickly wireframe ideas for print, web and mobile.",
+             "featured": true,
+             "name": "Adobe Comp CC",
+             "sub_categories": [
+                                "subcategory_id_5",
+                                "subcategory_id_10"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ],
+             "url_scheme": "adobecomp"
+             },
+             {
+             "app_id": "940011729",
+             "developer_name": "Moleskine Srl",
+             "average_user_rating": 2,
+             "bundle_id": "com.moleskine.moleskineacreativecloudconnectedapp",
+             "featured": true,
+             "name": "Moleskine",
+             "sub_categories": [
+                                "subcategory_id_7"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ]
+             },
+             {
+             "app_id": "642139481",
+             "developer_name": "Flixel Photos Inc.",
+             "average_user_rating": 2,
+             "bundle_id": "com.flixel.cinemagraphpro",
+             "featured": true,
+             "name": "Flixel Cinemagraph Pro",
+             "sub_categories": [
+                                "subcategory_id_11",
+                                "subcategory_id_19"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ]
+             },
+             {
+             "app_id": "506003812",
+             "developer_name": "FiftyThree, Inc.",
+             "average_user_rating": 4,
+             "bundle_id": "com.fiftythree.paper",
+             "featured": true,
+             "name": "Paper by Fifty Three",
+             "sub_categories": [
+                                "subcategory_id_5",
+                                "subcategory_id_7"
+                                ],
+             "supported_devices": [
+                                   "ipad"
+                                   ]
+             },
+             {
+             "app_id": "765801658",
+             "developer_name": "Marvel Prototyping LTD",
+             "average_user_rating": 4,
+             "bundle_id": "com.marvelprototyping.MarvelApp",
+             "description": "Grab a pen and within minutes your idea will come to life.",
+             "featured": true,
+             "name": "Marvel",
+             "sub_categories": [
+                                "subcategory_id_5"
+                                ],
+             "supported_devices": [
+                                   "ipad",
+                                   "iphone"
+                                   ]
+             }
+             ],
+    "categories": [
+                   {
+                   "id": "category_id_2",
+                   "name": "IDS_CATEGORY_CAPTURE",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_1",
+                                      "name": "IDS_SUBCATEGORY_PATTERNS"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_3",
+                   "name": "IDS_CATEGORY_COMMUNITY",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_2",
+                                      "name": "IDS_SUBCATEGORY_PORTFOLIO"
+                                      },
+                                      {
+                                      "id": "subcategory_id_3",
+                                      "name": "IDS_SUBCATEGORY_FEEDBACK"
+                                      },
+                                      {
+                                      "id": "subcategory_id_4",
+                                      "name": "IDS_SUBCATEGORY_FORHIRE"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_4",
+                   "name": "IDS_CATEGORY_DESIGN",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_5",
+                                      "name": "IDS_SUBCATEGORY_PROTOTYPING"
+                                      },
+                                      {
+                                      "id": "subcategory_id_6",
+                                      "name": "IDS_SUBCATEGORY_FEEDBACK"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_5",
+                   "name": "IDS_CATEGORY_ILLUSTRATION",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_7",
+                                      "name": "IDS_SUBCATEGORY_DRAWING"
+                                      },
+                                      {
+                                      "id": "subcategory_id_8",
+                                      "name": "IDS_SUBCATEGORY_VECTORS"
+                                      },
+                                      {
+                                      "id": "subcategory_id_9",
+                                      "name": "IDS_SUBCATEGORY_PATTERNS"
+                                      },
+                                      {
+                                      "id": "subcategory_id_10",
+                                      "name": "IDS_SUBCATEGORY_FONTS"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_6",
+                   "name": "IDS_CATEGORY_PHOTOS",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_11",
+                                      "name": "IDS_SUBCATEGORY_PHOTOGRAPHY"
+                                      },
+                                      {
+                                      "id": "subcategory_id_12",
+                                      "name": "IDS_SUBCATEGORY_PHOTOEDITING"
+                                      },
+                                      {
+                                      "id": "subcategory_id_13",
+                                      "name": "IDS_SUBCATEGORY_COMPILATIONS"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_7",
+                   "name": "IDS_CATEGORY_PRESENTATION",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_14",
+                                      "name": "IDS_SUBCATEGORY_PORTFOLIO"
+                                      },
+                                      {
+                                      "id": "subcategory_id_15",
+                                      "name": "IDS_SUBCATEGORY_STORYTELLING"
+                                      },
+                                      {
+                                      "id": "subcategory_id_16",
+                                      "name": "IDS_SUBCATEGORY_PRINTING"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_10",
+                   "name": "IDS_CATEGORY_STORAGE",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_17",
+                                      "name": "IDS_SUBCATEGORY_FILESHARING"
+                                      },
+                                      {
+                                      "id": "subcategory_id_18",
+                                      "name": "IDS_SUBCATEGORY_PORTFOLIO"
+                                      }
+                                      ]
+                   },
+                   {
+                   "id": "category_id_11",
+                   "name": "IDS_CATEGORY_VIDEO",
+                   "show_subcategories": false,
+                   "sub_categories": [
+                                      {
+                                      "id": "subcategory_id_19",
+                                      "name": "IDS_SUBCATEGORY_EDITING"
+                                      },
+                                      {
+                                      "id": "subcategory_id_20",
+                                      "name": "IDS_SUBCATEGORY_GENERATION"
+                                      }
+                                      ]
+                   }
+                   ]
+}

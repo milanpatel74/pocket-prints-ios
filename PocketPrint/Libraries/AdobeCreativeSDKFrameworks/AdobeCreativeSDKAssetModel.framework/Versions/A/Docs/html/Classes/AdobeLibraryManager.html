@@ -1,0 +1,1689 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobeLibraryManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobeLibraryManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/syncAllowedByNetworkStatus">&nbsp;&nbsp;&nbsp;&nbsp;syncAllowedByNetworkStatus</option>
+	
+	<option value="//api/name/syncAllowedByNetworkStatusMask">&nbsp;&nbsp;&nbsp;&nbsp;syncAllowedByNetworkStatusMask</option>
+	
+	<option value="//api/name/syncEnabled">&nbsp;&nbsp;&nbsp;&nbsp;syncEnabled</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/removeLocalLibraryFilesInRootFolder:withError:">&nbsp;&nbsp;&nbsp;&nbsp;+ removeLocalLibraryFilesInRootFolder:withError:</option>
+	
+	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/canSync">&nbsp;&nbsp;&nbsp;&nbsp;- canSync</option>
+	
+	<option value="//api/name/deleteLibraryWithId:andError:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteLibraryWithId:andError:</option>
+	
+	<option value="//api/name/deregisterDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- deregisterDelegate:</option>
+	
+	<option value="//api/name/getDefaultLibrary">&nbsp;&nbsp;&nbsp;&nbsp;- getDefaultLibrary</option>
+	
+	<option value="//api/name/getSyncStatus">&nbsp;&nbsp;&nbsp;&nbsp;- getSyncStatus</option>
+	
+	<option value="//api/name/isStarted">&nbsp;&nbsp;&nbsp;&nbsp;- isStarted</option>
+	
+	<option value="//api/name/isSyncSuspendedDueToAuthenticationError">&nbsp;&nbsp;&nbsp;&nbsp;- isSyncSuspendedDueToAuthenticationError</option>
+	
+	<option value="//api/name/leaveSharedLibraryWithId:andError:">&nbsp;&nbsp;&nbsp;&nbsp;- leaveSharedLibraryWithId:andError:</option>
+	
+	<option value="//api/name/libraries">&nbsp;&nbsp;&nbsp;&nbsp;- libraries</option>
+	
+	<option value="//api/name/libraryWithId:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryWithId:</option>
+	
+	<option value="//api/name/newLibraryWithName:andError:">&nbsp;&nbsp;&nbsp;&nbsp;- newLibraryWithName:andError:</option>
+	
+	<option value="//api/name/registerDelegate:options:">&nbsp;&nbsp;&nbsp;&nbsp;- registerDelegate:options:</option>
+	
+	<option value="//api/name/reportElementUsed:element:representation:operationType:">&nbsp;&nbsp;&nbsp;&nbsp;- reportElementUsed:element:representation:operationType:</option>
+	
+	<option value="//api/name/shutdown">&nbsp;&nbsp;&nbsp;&nbsp;- shutdown</option>
+	
+	<option value="//api/name/shutdownWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- shutdownWithError:</option>
+	
+	<option value="//api/name/startWithFolder:andError:">&nbsp;&nbsp;&nbsp;&nbsp;- startWithFolder:andError:</option>
+	
+	<option value="//api/name/startWithFolder:andStorageSession:andError:">&nbsp;&nbsp;&nbsp;&nbsp;- startWithFolder:andStorageSession:andError:</option>
+	
+	<option value="//api/name/sync">&nbsp;&nbsp;&nbsp;&nbsp;- sync</option>
+	
+	<option value="//api/name/unsuspendSyncDueToNewAuthenticationStatus">&nbsp;&nbsp;&nbsp;&nbsp;- unsuspendSyncDueToNewAuthenticationStatus</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncAllowedByNetworkStatus">syncAllowedByNetworkStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncAllowedByNetworkStatusMask">syncAllowedByNetworkStatusMask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncEnabled">syncEnabled</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeLocalLibraryFilesInRootFolder:withError:">removeLocalLibraryFilesInRootFolder:withError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canSync">canSync</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteLibraryWithId:andError:">deleteLibraryWithId:andError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deregisterDelegate:">deregisterDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDefaultLibrary">getDefaultLibrary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSyncStatus">getSyncStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isStarted">isStarted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSyncSuspendedDueToAuthenticationError">isSyncSuspendedDueToAuthenticationError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leaveSharedLibraryWithId:andError:">leaveSharedLibraryWithId:andError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraries">libraries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWithId:">libraryWithId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/newLibraryWithName:andError:">newLibraryWithName:andError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerDelegate:options:">registerDelegate:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reportElementUsed:element:representation:operationType:">reportElementUsed:element:representation:operationType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shutdown">shutdown</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shutdownWithError:">shutdownWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startWithFolder:andError:">startWithFolder:andError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startWithFolder:andStorageSession:andError:">startWithFolder:andStorageSession:andError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sync">sync</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsuspendSyncDueToNewAuthenticationStatus">unsuspendSyncDueToNewAuthenticationStatus</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobeLibraryManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobeLibraryManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobeLibraryManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AdobeLibraryManager is a shared instance that manages <a href="#//api/name/libraries">libraries</a> and the syncing operations. It can be
+used to set filtering options for what gets synced in <a href="#//api/name/libraries">libraries</a>, for controlling <a href="#//api/name/sync">sync</a> operations, as
+well as for getting, creating, and deleting <a href="#//api/name/libraries">libraries</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncAllowedByNetworkStatus">&nbsp;&nbsp;syncAllowedByNetworkStatus</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncAllowedByNetworkStatusMask">&nbsp;&nbsp;syncAllowedByNetworkStatusMask</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncEnabled">&nbsp;&nbsp;syncEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeLocalLibraryFilesInRootFolder:withError:">+&nbsp;removeLocalLibraryFilesInRootFolder:withError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startWithFolder:andStorageSession:andError:">&ndash;&nbsp;startWithFolder:andStorageSession:andError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startWithFolder:andError:">&ndash;&nbsp;startWithFolder:andError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerDelegate:options:">&ndash;&nbsp;registerDelegate:options:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deregisterDelegate:">&ndash;&nbsp;deregisterDelegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shutdownWithError:">&ndash;&nbsp;shutdownWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shutdown">&ndash;&nbsp;shutdown</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isStarted">&ndash;&nbsp;isStarted</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraries">&ndash;&nbsp;libraries</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWithId:">&ndash;&nbsp;libraryWithId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDefaultLibrary">&ndash;&nbsp;getDefaultLibrary</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/newLibraryWithName:andError:">&ndash;&nbsp;newLibraryWithName:andError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leaveSharedLibraryWithId:andError:">&ndash;&nbsp;leaveSharedLibraryWithId:andError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteLibraryWithId:andError:">&ndash;&nbsp;deleteLibraryWithId:andError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canSync">&ndash;&nbsp;canSync</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sync">&ndash;&nbsp;sync</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getSyncStatus">&ndash;&nbsp;getSyncStatus</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isSyncSuspendedDueToAuthenticationError">&ndash;&nbsp;isSyncSuspendedDueToAuthenticationError</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsuspendSyncDueToNewAuthenticationStatus">&ndash;&nbsp;unsuspendSyncDueToNewAuthenticationStatus</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reportElementUsed:element:representation:operationType:">&ndash;&nbsp;reportElementUsed:element:representation:operationType:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/syncAllowedByNetworkStatus" title="syncAllowedByNetworkStatus"></a>
+	<h3 class="subsubtitle method-title">syncAllowedByNetworkStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether the manager is allowed to do a <a href="#//api/name/sync">sync</a> based on the known network status.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isSyncAllowedByNetworkStatus) BOOL syncAllowedByNetworkStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates whether the manager is allowed to do a <a href="#//api/name/sync">sync</a> based on the known network status.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncAllowedByNetworkStatusMask" title="syncAllowedByNetworkStatusMask"></a>
+	<h3 class="subsubtitle method-title">syncAllowedByNetworkStatusMask</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A bitmask of network statuses that will allow the manager to perform its <a href="#//api/name/sync">sync</a> operation. The default value is
+AdobeNetworkReachableViaWiFi which means that the manager would only do <a href="#//api/name/sync">sync</a> when the WiFi is available.
+See the declaration of AdobeNetworkStatus for other possible values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) NSUInteger syncAllowedByNetworkStatusMask</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A bitmask of network statuses that will allow the manager to perform its <a href="#//api/name/sync">sync</a> operation. The default value is
+AdobeNetworkReachableViaWiFi which means that the manager would only do <a href="#//api/name/sync">sync</a> when the WiFi is available.
+See the declaration of AdobeNetworkStatus for other possible values.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncEnabled" title="syncEnabled"></a>
+	<h3 class="subsubtitle method-title">syncEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies whether the <a href="#//api/name/sync">sync</a> should be enabled or not. Setting this to false will cause the manager not to <a href="#//api/name/sync">sync</a> at all (auto or manual).
+The default value is YES, and clients are responsible to setting this back to YES, if they set it to NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, getter=isSyncEnabled) BOOL syncEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies whether the <a href="#//api/name/sync">sync</a> should be enabled or not. Setting this to false will cause the manager not to <a href="#//api/name/sync">sync</a> at all (auto or manual).
+The default value is YES, and clients are responsible to setting this back to YES, if they set it to NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/removeLocalLibraryFilesInRootFolder:withError:" title="removeLocalLibraryFilesInRootFolder:withError:"></a>
+	<h3 class="subsubtitle method-title">removeLocalLibraryFilesInRootFolder:withError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility method to delete the local library files in the given root <a href="#//api/name/libraries">libraries</a> folder.
+You can use this method when the user logs out and logs in as a different user and you wish
+to clean up the local design library folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)removeLocalLibraryFilesInRootFolder:(NSString *)<em>rootFolderPath</em> withError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootFolderPath</em></dt>
+			<dd><p>The local root folder for where the <a href="#//api/name/libraries">libraries</a> and renditions are stored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>An optional pointer to an error to receive error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the global shared instance of this singleton.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeLibraryManager *)sharedInstance</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>shared AdobeLibraryManager instance</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/canSync" title="canSync"></a>
+	<h3 class="subsubtitle method-title">canSync</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether or not the manager can perform a <a href="#//api/name/sync">sync</a>. This considers all the factors
+(network status, authentication status, <a href="#//api/name/syncEnabled">syncEnabled</a> flag) while determining whether or not
+the manager can <a href="#//api/name/sync">sync</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)canSync</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the manager can <a href="#//api/name/sync">sync</a>, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteLibraryWithId:andError:" title="deleteLibraryWithId:andError:"></a>
+	<h3 class="subsubtitle method-title">deleteLibraryWithId:andError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delete the library composite with the given id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteLibraryWithId:(NSString *)<em>libraryId</em> andError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library composite to delete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Gets set if an error occurs while deleting the library.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the library is deleted successfully, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deregisterDelegate:" title="deregisterDelegate:"></a>
+	<h3 class="subsubtitle method-title">deregisterDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deregisters a delegate. The manager automatically shutdowns if there is no more delegate registered after deregistering a delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deregisterDelegate:(id&lt;AdobeLibraryDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>The delegate instance to deregister</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDefaultLibrary" title="getDefaultLibrary"></a>
+	<h3 class="subsubtitle method-title">getDefaultLibrary</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the default library composite. The default library is considered to be the oldest
+library based on the creation date of each library. A library that has been shared with the user
+cannot be the default library. If this method returns nil, clients may create a new default
+library. The new library should be named &ldquo;My Library&rdquo; for consistency with other applications.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeLibraryComposite *)getDefaultLibrary</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the default library composite or nil if no library can be found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getSyncStatus" title="getSyncStatus"></a>
+	<h3 class="subsubtitle method-title">getSyncStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the current <a href="#//api/name/sync">sync</a> status.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeLibrarySyncStatus *)getSyncStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the current <a href="#//api/name/sync">sync</a> status.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isStarted" title="isStarted"></a>
+	<h3 class="subsubtitle method-title">isStarted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether or not the manager has been started.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isStarted</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the manager has been successfully started up, otherwise NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isSyncSuspendedDueToAuthenticationError" title="isSyncSuspendedDueToAuthenticationError"></a>
+	<h3 class="subsubtitle method-title">isSyncSuspendedDueToAuthenticationError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether or not the <a href="#//api/name/sync">sync</a> is suspended due to an authentication failure.
+If the manager receives a AdobeNetworkErrorAuthenticationFailed error from any of its
+network requests, it suspends itself until AdobeLibraryManager#<a href="#//api/name/unsuspendSyncDueToNewAuthenticationStatus">unsuspendSyncDueToNewAuthenticationStatus</a>
+method is called by the client.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isSyncSuspendedDueToAuthenticationError</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the <a href="#//api/name/sync">sync</a> has been suspended due to an authentication error, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leaveSharedLibraryWithId:andError:" title="leaveSharedLibraryWithId:andError:"></a>
+	<h3 class="subsubtitle method-title">leaveSharedLibraryWithId:andError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Leave the shared library composite with the given id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)leaveSharedLibraryWithId:(NSString *)<em>libraryId</em> andError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library composite to leave.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Gets set if an error occurs while leaving the library.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the library is left successfully, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraries" title="libraries"></a>
+	<h3 class="subsubtitle method-title">libraries</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get all library composites.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)libraries</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an array of <a href="../Classes/AdobeLibraryComposite.html">AdobeLibraryComposite</a> objects.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWithId:" title="libraryWithId:"></a>
+	<h3 class="subsubtitle method-title">libraryWithId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the library composite with the given id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeLibraryComposite *)libraryWithId:(NSString *)<em>libraryId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library composite to get.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>that library with the given id or nil if it is not found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/newLibraryWithName:andError:" title="newLibraryWithName:andError:"></a>
+	<h3 class="subsubtitle method-title">newLibraryWithName:andError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new library composite with the given name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeLibraryComposite *)newLibraryWithName:(NSString *)<em>name</em> andError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name to use for the new library composite.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Gets set if an error occurs while creating the library composite.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the newly created library composite or nil if an error occurs during creation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerDelegate:options:" title="registerDelegate:options:"></a>
+	<h3 class="subsubtitle method-title">registerDelegate:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Registers a delegate with the given startup options.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerDelegate:(id&lt;AdobeLibraryDelegate&gt;)<em>delegate</em> options:(AdobeLibraryDelegateStartupOptions *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>The delegate instance to register</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>Startup options to use by the manager. The manager merges the options if there are more than one delegate registered.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reportElementUsed:element:representation:operationType:" title="reportElementUsed:element:representation:operationType:"></a>
+	<h3 class="subsubtitle method-title">reportElementUsed:element:representation:operationType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reports an event that indicates a library element was used in the client app.
+The purpose of this method is to collect usage data from clients on which elements
+are used. This should be called whenever a library element is used in the client app.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reportElementUsed:(AdobeLibraryComposite *)<em>library</em> element:(AdobeLibraryElement *)<em>element</em> representation:(AdobeLibraryRepresentation *)<em>representation</em> operationType:(NSString *)<em>operationType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>library that contains the used element</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>element</em></dt>
+			<dd><p>element that is used/applied in the client app</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>representation</em></dt>
+			<dd><p>representation of the element that is used (optional)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operationType</em></dt>
+			<dd><p>operation type of which the element used with (such as setStokeColor for color elements) (optional)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shutdown" title="shutdown"></a>
+	<h3 class="subsubtitle method-title">shutdown</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Force shut down the design library manager.Manager will be shutdown
+even if there is active delegates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)shutdown</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shutdownWithError:" title="shutdownWithError:"></a>
+	<h3 class="subsubtitle method-title">shutdownWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shut down the design library manager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shutdownWithError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>Gets set if an error occurs while shutting down the manager.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the manager is <a href="#//api/name/shutdown">shutdown</a> successfully, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startWithFolder:andError:" title="startWithFolder:andError:"></a>
+	<h3 class="subsubtitle method-title">startWithFolder:andError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Startup the Adobe Library service.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)startWithFolder:(NSString *)<em>rootFolder</em> andError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootFolder</em></dt>
+			<dd><p>The root folder to use for storing <a href="#//api/name/libraries">libraries</a> and their content.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>An optional pointer to an error to receive startup error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An error object with the status of the startup operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p>AdobeLibraryManager.h for the <a href="#//api/name/syncEnabled">@property syncEnabled</a> synthesized set method.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startWithFolder:andStorageSession:andError:" title="startWithFolder:andStorageSession:andError:"></a>
+	<h3 class="subsubtitle method-title">startWithFolder:andStorageSession:andError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Startup the Adobe Library service.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)startWithFolder:(NSURL *)<em>rootFolder</em> andStorageSession:(id&lt;AdobeDCXTransferSessionProtocol,AdobeDCXSyncSessionProtocol&gt;)<em>storageSession</em> andError:(NSError **)<em>errorPtr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootFolder</em></dt>
+			<dd><p>The root folder to use for storing <a href="#//api/name/libraries">libraries</a> and their content.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>storageSession</em></dt>
+			<dd><p>The session which provides the configuration necessary to speak to a specific CC storage environment (e.g., stage or production)
+This is required unless the <a href="#//api/name/sync">sync</a> is disabled for the manager. (See AdobeLibraryManager <a href="#//api/name/syncEnabled">syncEnabled</a> synthesized set method.)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorPtr</em></dt>
+			<dd><p>An optional pointer to an error to receive startup error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An error object with the status of the startup operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p>AdobeLibraryManager.h for the <a href="#//api/name/syncEnabled">@property syncEnabled</a> synthesized set method.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sync" title="sync"></a>
+	<h3 class="subsubtitle method-title">sync</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Kick of a sync operation with the cloud. This should be called by the client at
+appropriate UI events such as a refresh button, activate, etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sync</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if a sync was successfully kicked off, otherwise NO. If a sync is already
+in progress this returns YES. If there is an error and sync cannot be started
+it returns NO and an error will be sent in the onSyncError delegate call.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsuspendSyncDueToNewAuthenticationStatus" title="unsuspendSyncDueToNewAuthenticationStatus"></a>
+	<h3 class="subsubtitle method-title">unsuspendSyncDueToNewAuthenticationStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unsuspends the <a href="#//api/name/sync">sync</a> status of the manager so that the manager can <a href="#//api/name/sync">sync</a> again.
+This method should be called when the manager is suspended and the client is sure that
+the corresponding storageSession has now a valid authentication token to use with network requests.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unsuspendSyncDueToNewAuthenticationStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

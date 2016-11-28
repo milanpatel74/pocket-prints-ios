@@ -1,0 +1,1107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobePublishProjectViewDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKBehance.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobePublishProjectViewDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/followFailedForUser:error:">&nbsp;&nbsp;&nbsp;&nbsp;- followFailedForUser:error:</option>
+	
+	<option value="//api/name/followSucceededForUser:">&nbsp;&nbsp;&nbsp;&nbsp;- followSucceededForUser:</option>
+	
+	<option value="//api/name/followWillTriggerForUser:">&nbsp;&nbsp;&nbsp;&nbsp;- followWillTriggerForUser:</option>
+	
+	<option value="//api/name/projectAppreciateFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- projectAppreciateFailed:</option>
+	
+	<option value="//api/name/projectAppreciateSucceeded">&nbsp;&nbsp;&nbsp;&nbsp;- projectAppreciateSucceeded</option>
+	
+	<option value="//api/name/projectCommentDeleted:">&nbsp;&nbsp;&nbsp;&nbsp;- projectCommentDeleted:</option>
+	
+	<option value="//api/name/projectCommentPostFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- projectCommentPostFailed:</option>
+	
+	<option value="//api/name/projectCommentPostSucceeded:">&nbsp;&nbsp;&nbsp;&nbsp;- projectCommentPostSucceeded:</option>
+	
+	<option value="//api/name/projectLoadDidComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- projectLoadDidComplete:</option>
+	
+	<option value="//api/name/projectLoadDidFail:">&nbsp;&nbsp;&nbsp;&nbsp;- projectLoadDidFail:</option>
+	
+	<option value="//api/name/projectWillAppreciate">&nbsp;&nbsp;&nbsp;&nbsp;- projectWillAppreciate</option>
+	
+	<option value="//api/name/unfollowFailedForUser:error:">&nbsp;&nbsp;&nbsp;&nbsp;- unfollowFailedForUser:error:</option>
+	
+	<option value="//api/name/unfollowSucceededForUser:">&nbsp;&nbsp;&nbsp;&nbsp;- unfollowSucceededForUser:</option>
+	
+	<option value="//api/name/unfollowWillTriggerForUser:">&nbsp;&nbsp;&nbsp;&nbsp;- unfollowWillTriggerForUser:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/followFailedForUser:error:">followFailedForUser:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/followSucceededForUser:">followSucceededForUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/followWillTriggerForUser:">followWillTriggerForUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectAppreciateFailed:">projectAppreciateFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectAppreciateSucceeded">projectAppreciateSucceeded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectCommentDeleted:">projectCommentDeleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectCommentPostFailed:">projectCommentPostFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectCommentPostSucceeded:">projectCommentPostSucceeded:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectLoadDidComplete:">projectLoadDidComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectLoadDidFail:">projectLoadDidFail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/projectWillAppreciate">projectWillAppreciate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unfollowFailedForUser:error:">unfollowFailedForUser:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unfollowSucceededForUser:">unfollowSucceededForUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unfollowWillTriggerForUser:">unfollowWillTriggerForUser:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobePublishProjectViewDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobePublishProjectViewDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/AdobePublishComponentDelegate.html">AdobePublishComponentDelegate</a><br /><a href="../Protocols/AdobePublishURLDelegate.html">AdobePublishURLDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobePublishProjectViewDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Allows clients to be notified of project viewing events.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectLoadDidComplete:">&ndash;&nbsp;projectLoadDidComplete:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectLoadDidFail:">&ndash;&nbsp;projectLoadDidFail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectCommentPostSucceeded:">&ndash;&nbsp;projectCommentPostSucceeded:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectCommentPostFailed:">&ndash;&nbsp;projectCommentPostFailed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectCommentDeleted:">&ndash;&nbsp;projectCommentDeleted:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectWillAppreciate">&ndash;&nbsp;projectWillAppreciate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectAppreciateSucceeded">&ndash;&nbsp;projectAppreciateSucceeded</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/projectAppreciateFailed:">&ndash;&nbsp;projectAppreciateFailed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/followWillTriggerForUser:">&ndash;&nbsp;followWillTriggerForUser:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/followSucceededForUser:">&ndash;&nbsp;followSucceededForUser:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/followFailedForUser:error:">&ndash;&nbsp;followFailedForUser:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unfollowWillTriggerForUser:">&ndash;&nbsp;unfollowWillTriggerForUser:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unfollowSucceededForUser:">&ndash;&nbsp;unfollowSucceededForUser:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unfollowFailedForUser:error:">&ndash;&nbsp;unfollowFailedForUser:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/followFailedForUser:error:" title="followFailedForUser:error:"></a>
+	<h3 class="subsubtitle method-title">followFailedForUser:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when following another user fails.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)followFailedForUser:(AdobePublishUser *)<em>user</em> error:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>the user that was intended to be followed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>an error describing why the follow request failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when following another user fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/followSucceededForUser:" title="followSucceededForUser:"></a>
+	<h3 class="subsubtitle method-title">followSucceededForUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when following another user has completed successfully.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)followSucceededForUser:(AdobePublishUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>the user that was followed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when following another user has completed successfully.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/followWillTriggerForUser:" title="followWillTriggerForUser:"></a>
+	<h3 class="subsubtitle method-title">followWillTriggerForUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the user initiates following another user.
+The component handles making the follow network request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)followWillTriggerForUser:(AdobePublishUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>the user that is intended to be followed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the user initiates following another user.
+The component handles making the follow network request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectAppreciateFailed:" title="projectAppreciateFailed:"></a>
+	<h3 class="subsubtitle method-title">projectAppreciateFailed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when project appreciation initiated by the user fails.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectAppreciateFailed:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>an error describing why the appreciate request failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when project appreciation initiated by the user fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectAppreciateSucceeded" title="projectAppreciateSucceeded"></a>
+	<h3 class="subsubtitle method-title">projectAppreciateSucceeded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when project appreciation initiated by the user has completed successfully.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectAppreciateSucceeded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when project appreciation initiated by the user has completed successfully.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectCommentDeleted:" title="projectCommentDeleted:"></a>
+	<h3 class="subsubtitle method-title">projectCommentDeleted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a comment has been deleted by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectCommentDeleted:(AdobePublishComment *)<em>comment</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>the comment that is intended to be deleted</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a comment has been deleted by the user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectCommentPostFailed:" title="projectCommentPostFailed:"></a>
+	<h3 class="subsubtitle method-title">projectCommentPostFailed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a project comment posted by the user fails.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectCommentPostFailed:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>an error describing why the comment request failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a project comment posted by the user fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectCommentPostSucceeded:" title="projectCommentPostSucceeded:"></a>
+	<h3 class="subsubtitle method-title">projectCommentPostSucceeded:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a project comment has been posted successfully by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectCommentPostSucceeded:(NSString *)<em>comment</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>the comment that was posted</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a project comment has been posted successfully by the user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectLoadDidComplete:" title="projectLoadDidComplete:"></a>
+	<h3 class="subsubtitle method-title">projectLoadDidComplete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a project has finished loading.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectLoadDidComplete:(AdobePublishProject *)<em>project</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>project</em></dt>
+			<dd><p>the project that was loaded</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a project has finished loading.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectLoadDidFail:" title="projectLoadDidFail:"></a>
+	<h3 class="subsubtitle method-title">projectLoadDidFail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a project has failed to load.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectLoadDidFail:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>an error describing why the project load request failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a project has failed to load.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/projectWillAppreciate" title="projectWillAppreciate"></a>
+	<h3 class="subsubtitle method-title">projectWillAppreciate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the user initiates project appreciation.
+The component handles making the appreciation network request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)projectWillAppreciate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the user initiates project appreciation.
+The component handles making the appreciation network request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unfollowFailedForUser:error:" title="unfollowFailedForUser:error:"></a>
+	<h3 class="subsubtitle method-title">unfollowFailedForUser:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when unfollowing another user fails.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unfollowFailedForUser:(AdobePublishUser *)<em>user</em> error:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>the user that was intended to be unfollowed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>an error describing why the unfollow request failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when unfollowing another user fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unfollowSucceededForUser:" title="unfollowSucceededForUser:"></a>
+	<h3 class="subsubtitle method-title">unfollowSucceededForUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when unfollowing another user has completed successfully.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unfollowSucceededForUser:(AdobePublishUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>the user that was unfollowed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when unfollowing another user has completed successfully.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unfollowWillTriggerForUser:" title="unfollowWillTriggerForUser:"></a>
+	<h3 class="subsubtitle method-title">unfollowWillTriggerForUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the user initiates unfollowing another user. The component handles making the unfollow network request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unfollowWillTriggerForUser:(AdobePublishUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>the user that is intended to be unfollowed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the user initiates unfollowing another user. The component handles making the unfollow network request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProjectViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

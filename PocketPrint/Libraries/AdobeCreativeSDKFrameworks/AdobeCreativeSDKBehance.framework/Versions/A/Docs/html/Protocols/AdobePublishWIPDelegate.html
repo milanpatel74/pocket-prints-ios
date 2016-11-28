@@ -1,0 +1,883 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobePublishWIPDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKBehance.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobePublishWIPDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/viewWorkInProgressTapped:revisionId:">&nbsp;&nbsp;&nbsp;&nbsp;- viewWorkInProgressTapped:revisionId:</option>
+	
+	<option value="//api/name/wipEditDidFail:">&nbsp;&nbsp;&nbsp;&nbsp;- wipEditDidFail:</option>
+	
+	<option value="//api/name/wipPublishDidClose">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishDidClose</option>
+	
+	<option value="//api/name/wipPublishDidComplete:revisionId:">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishDidComplete:revisionId:</option>
+	
+	<option value="//api/name/wipPublishDidFail:">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishDidFail:</option>
+	
+	<option value="//api/name/wipPublishDidStart">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishDidStart</option>
+	
+	<option value="//api/name/wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:</option>
+	
+	<option value="//api/name/wipPublishShouldPresentSuccessPopup">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishShouldPresentSuccessPopup</option>
+	
+	<option value="//api/name/wipPublishStringForExternalAccount:url:wipText:">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishStringForExternalAccount:url:wipText:</option>
+	
+	<option value="//api/name/wipPublishWillClose">&nbsp;&nbsp;&nbsp;&nbsp;- wipPublishWillClose</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWorkInProgressTapped:revisionId:">viewWorkInProgressTapped:revisionId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipEditDidFail:">wipEditDidFail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishDidClose">wipPublishDidClose</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishDidComplete:revisionId:">wipPublishDidComplete:revisionId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishDidFail:">wipPublishDidFail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishDidStart">wipPublishDidStart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:">wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishShouldPresentSuccessPopup">wipPublishShouldPresentSuccessPopup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishStringForExternalAccount:url:wipText:">wipPublishStringForExternalAccount:url:wipText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wipPublishWillClose">wipPublishWillClose</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobePublishWIPDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobePublishWIPDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/AdobePublishDelegate.html">AdobePublishDelegate</a><br /><a href="../Protocols/AdobePublishURLDelegate.html">AdobePublishURLDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobePublishWIPDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Allows clients to be notified of WIP publishing flow.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishWillClose">&ndash;&nbsp;wipPublishWillClose</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishDidClose">&ndash;&nbsp;wipPublishDidClose</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:">&ndash;&nbsp;wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishDidStart">&ndash;&nbsp;wipPublishDidStart</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishDidComplete:revisionId:">&ndash;&nbsp;wipPublishDidComplete:revisionId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishShouldPresentSuccessPopup">&ndash;&nbsp;wipPublishShouldPresentSuccessPopup</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWorkInProgressTapped:revisionId:">&ndash;&nbsp;viewWorkInProgressTapped:revisionId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishDidFail:">&ndash;&nbsp;wipPublishDidFail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipEditDidFail:">&ndash;&nbsp;wipEditDidFail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wipPublishStringForExternalAccount:url:wipText:">&ndash;&nbsp;wipPublishStringForExternalAccount:url:wipText:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWorkInProgressTapped:revisionId:" title="viewWorkInProgressTapped:revisionId:"></a>
+	<h3 class="subsubtitle method-title">viewWorkInProgressTapped:revisionId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called if the end user taps &ldquo;VIEW ON BEHANCE&rdquo; in the success popup, indicating that they would like to view the published work in progress
+if this method is not handled in the delegate, the project will be opened in the Behance app, or, if it&rsquo;s not installed, on behance.net in Safari.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewWorkInProgressTapped:(NSNumber *)<em>wipId</em> revisionId:(NSNumber *)<em>revisionId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wipId</em></dt>
+			<dd><p>the id of the work in progress that was created</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>revisionId</em></dt>
+			<dd><p>the id of the work in progress revision that was created</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called if the end user taps &ldquo;VIEW ON BEHANCE&rdquo; in the success popup, indicating that they would like to view the published work in progress
+if this method is not handled in the delegate, the project will be opened in the Behance app, or, if it&rsquo;s not installed, on behance.net in Safari.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipEditDidFail:" title="wipEditDidFail:"></a>
+	<h3 class="subsubtitle method-title">wipEditDidFail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called if loading an existing work in progress revision for editing fails.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)wipEditDidFail:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>the error that resulted in a failure</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called if loading an existing work in progress revision for editing fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishDidClose" title="wipPublishDidClose"></a>
+	<h3 class="subsubtitle method-title">wipPublishDidClose</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the work in progress publishing flow has closed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)wipPublishDidClose</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the work in progress publishing flow has closed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishDidComplete:revisionId:" title="wipPublishDidComplete:revisionId:"></a>
+	<h3 class="subsubtitle method-title">wipPublishDidComplete:revisionId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on work in progress publishing success.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)wipPublishDidComplete:(NSNumber *)<em>wipId</em> revisionId:(nullable NSNumber *)<em>revisionId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wipId</em></dt>
+			<dd><p>the id of the work in progress that was created</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>revisionId</em></dt>
+			<dd><p>the id of the revision if this was added as a revision to an existing work in progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>delegates should return an UIViewController to present the success view controller with. Return nil if no success view is desired.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on work in progress publishing success.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishDidFail:" title="wipPublishDidFail:"></a>
+	<h3 class="subsubtitle method-title">wipPublishDidFail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on work in progress publishing failure.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)wipPublishDidFail:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>the error that resulted in a failure</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on work in progress publishing failure.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishDidStart" title="wipPublishDidStart"></a>
+	<h3 class="subsubtitle method-title">wipPublishDidStart</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the work in progress is saved by the user, and upload has begun.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)wipPublishDidStart</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the work in progress is saved by the user, and upload has begun.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:" title="wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:"></a>
+	<h3 class="subsubtitle method-title">wipPublishImageUploadBytesWritten:totalBytes:totalBytesExpected:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called on work in progress publishing upload progress for the work in progress image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)wipPublishImageUploadBytesWritten:(NSUInteger)<em>bytesWritten</em> totalBytes:(long long)<em>totalBytesWritten</em> totalBytesExpected:(long long)<em>totalBytesExpected</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bytesWritten</em></dt>
+			<dd><p>number of bytes that were just uploaded</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytesWritten</em></dt>
+			<dd><p>total number of bytes that have been written so far</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytesExpected</em></dt>
+			<dd><p>total number of bytes of the image to be uploaded</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called on work in progress publishing upload progress for the work in progress image.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishShouldPresentSuccessPopup" title="wipPublishShouldPresentSuccessPopup"></a>
+	<h3 class="subsubtitle method-title">wipPublishShouldPresentSuccessPopup</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called immediately after <a href="#//api/name/wipPublishDidComplete:revisionId:">wipPublishDidComplete:revisionId:</a>
+allows delegates to override the default behavior of presenting a popup window upon publishing success</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)wipPublishShouldPresentSuccessPopup</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>delegates should return NO if they wish to prevent the popup window from being shown, default is YES</p>
+
+<p>DEPRECATED: If a success pop up is required, you must use wipPublishDidComplete:(NSNumber <em>)wipId revisionID:(NSNumber </em>)revisionId instead.
+Otherwise, returning NO for this method is still supported.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called immediately after <a href="#//api/name/wipPublishDidComplete:revisionId:">wipPublishDidComplete:revisionId:</a>
+allows delegates to override the default behavior of presenting a popup window upon publishing success</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishStringForExternalAccount:url:wipText:" title="wipPublishStringForExternalAccount:url:wipText:"></a>
+	<h3 class="subsubtitle method-title">wipPublishStringForExternalAccount:url:wipText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Supply a custom string to use when sharing work in progress to external services (ex. Twitter).
+Please note that AdobePublishAccountTypeFacebook is not supported.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)wipPublishStringForExternalAccount:(AdobePublishAccountType)<em>accountType</em> url:(NSURL *)<em>wipURL</em> wipText:(NSString *)<em>wipText</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accountType</em></dt>
+			<dd><p><a href="../Constants/AdobePublishAccountType.html"><code>AdobePublishAccountType</code></a> account type string is being shared to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wipURL</em></dt>
+			<dd><p>short url of the work in progress on behance.net</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wipText</em></dt>
+			<dd><p>the user supplied work in progress title, or revision description</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the string to post to Twitter</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Supply a custom string to use when sharing work in progress to external services (ex. Twitter).
+Please note that AdobePublishAccountTypeFacebook is not supported.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wipPublishWillClose" title="wipPublishWillClose"></a>
+	<h3 class="subsubtitle method-title">wipPublishWillClose</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the work in progress publishing flow is about to close.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)wipPublishWillClose</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the work in progress publishing flow is about to close.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishWIPDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

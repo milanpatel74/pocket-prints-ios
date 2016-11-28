@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE asf SYSTEM "http://ns.adobe.com/asf/asf_1_0.dtd" >
+<asf xmlns="http://ns.adobe.com/asf" version="1.0" locale="es_ES">
+
+<!--
+	ASF Features:
+		If a string should not be localized, use the translate="no" attribute
+		and it will not be changed in the localized files. translate="yes" is
+		optional; it is the default for all strings.
+
+		To send a message to the translators, add a <desc> tag before a string
+		value, such as:
+ 
+			<str name="ID">
+				<desc>Comment to the translator.</desc>
+				<val>String</val>
+			</str>
+ 
+		This is useful to provide context, the meaning of a term or variable
+		substition, translation length restrictions due to UI space, etc.
+-->
+
+<str name="IDS_APPLIBRARY_OK" translate="yes">
+    <val>Aceptar</val>
+</str>
+
+<str name="IDS_APPLIBRARY_STORECARD_ERROR" translate="yes">
+    <val>Error al cargar tarjeta de tienda. Vuelva a intentarlo.</val>
+</str>
+
+<str name="IDS_CATEGORY_PRODUCTIVITY" translate="yes">
+	<val>Productividad</val>
+</str>
+
+<str name="IDS_CATEGORY_IMAGE_EDITING" translate="yes">
+	<val>Edición de imágenes</val>
+</str>
+
+<str name="IDS_CATEGORY_COMMUNITY" translate="yes">
+	<val>Comunidad</val>
+</str>
+
+<str name="IDS_CATEGORY_UTILITY" translate="yes">
+	<val>Utilidad</val>
+</str>
+
+<str name="IDS_CATEGORY_DRAWING" translate="yes">
+	<val>Dibujo</val>
+</str>
+
+<str name="IDS_CATEGORY_PHOTO_AND_VIDEO" translate="yes">
+	<val>Foto y vídeo</val>
+</str>
+
+<str name="IDS_CATEGORY_UI_UX_DESIGN" translate="yes">
+	<val>Diseño UI/UX</val>
+</str>
+
+<str name="IDS_CATEGORY_STORY" translate="yes">
+    <val>Narración</val>
+</str>
+
+<str name="IDS_CATEGORY_CAPTURE" translate="yes">
+    <val>Captura</val>
+</str>
+
+<str name="IDS_CATEGORY_PHOTOS" translate="yes">
+    <val>Fotos</val>
+</str>
+
+<str name="IDS_CATEGORY_VIDEO" translate="yes">
+    <val>Vídeo</val>
+</str>
+
+<str name="IDS_CATEGORY_DESIGN" translate="yes">
+    <val>Diseño</val>
+</str>
+
+<str name="IDS_APPLIBRARY_TITLE" translate="yes">
+	<val>Biblioteca de aplic.</val>
+</str>
+
+<str name="IDS_APPLIBRARY_BTN_LAUNCH" translate="yes">
+    <val>INICIAR</val>
+</str>
+
+<str name="IDS_APPLIBRARY_BTN_GET" translate="yes">
+	<val>OBTENER</val>
+</str>
+
+<str name="IDS_CATEGORY_PRESENTATION" translate="yes">
+    <val>Presentación</val>
+</str>
+
+<str name="IDS_CATEGORY_PROTOTYPING" translate="yes">
+    <val>Prototipos</val>
+</str>
+
+<str name="IDS_CATEGORY_STORAGE" translate="yes">
+    <val>Almacenamiento</val>
+</str>
+
+<str name="IDS_CATEGORY_SOCIAL" translate="yes">
+    <val>Social</val>
+</str>
+
+<str name="IDS_CATEGORY_ILLUSTRATION" translate="yes">
+    <val>Ilustración</val>
+</str>
+
+<str name="IDS_CATEGORY_AUDIO" translate="yes">
+    <val>Audio</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_PATTERNS" translate="yes">
+    <val>Motivos</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_EMAIL" translate="yes">
+    <val>Correo electrónico</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_WEBSITES" translate="yes">
+    <val>Sitios web</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_FILESHARING" translate="yes">
+    <val>Uso compartido de archivos</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_PORTFOLIO" translate="yes">
+    <val>Portafolios</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_COMMUNICATION" translate="yes">
+    <val>Comunicación</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_SOCIALNETWORK" translate="yes">
+    <val>Red social</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_CONTESTS" translate="yes">
+    <val>Concursos</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_DRAWING" translate="yes">
+    <val>Dibujo</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_VECTORS" translate="yes">
+    <val>Vectores</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_FONTS" translate="yes">
+    <val>Fuentes</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_PHOTOGRAPHY" translate="yes">
+    <val>Fotografía</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_PHOTOEDITING" translate="yes">
+    <val>Edición de fotos</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_COMPILATIONS" translate="yes">
+    <val>Compilaciones</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_GENERATION" translate="yes">
+    <val>Generación</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_EDITING" translate="yes">
+    <val>Edición</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_FEEDBACK" translate="yes">
+    <val>Comentarios</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_FORHIRE" translate="yes">
+    <val>Para alquilar</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_STORYTELLING" translate="yes">
+    <val>Narración de historias</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_PRINTING" translate="yes">
+    <val>Impresión</val>
+</str>
+
+<str name="IDS_SUBCATEGORY_PROTOTYPING" translate="yes">
+    <val>Prototipos</val>
+</str>
+
+<str name="IDS_APPLIBRARY_FEATURED" translate="yes">
+    <val>Destacado</val>
+</str>
+
+<str name="IDS_APPLIBRARY_HIGHEST_RATED" translate="yes">
+    <val>Evaluación más alta</val>
+</str>
+
+<str name="IDS_APPLIBRARY_MOST_RECENT" translate="yes">
+    <val>Más recientes</val>
+</str>
+
+<str name="IDS_APPLIBRARY_ALL_APPS" translate="yes">
+    <val>Todas aplic.</val>
+</str>
+
+<str name="IDS_APPLIBRARY_CATEGORY_HEADER_SORT" translate="yes">
+    <val>ORDENAR</val>
+</str>
+
+<str name="IDS_APPLIBRARY_CATEGORY_HEADER_CATEGORIES" translate="yes">
+    <val>CATEGORÍA</val>
+</str>
+
+<str name="IDS_APPLIBRARY_BY_ARTIST" translate="yes">
+    <desc>The placeholder will be replaced with the person or company that created this app.</desc>
+	<val>de %@</val>
+</str>
+
+<str name="IDS_APPLIBRARY_NOAPPS" translate="yes">
+    <val>No se encontraron aplicaciones en esta categoría.</val>
+</str>
+
+<str name="IDS_APPLIBRARY_ERROR" translate="yes">
+	<val>La Biblioteca de aplicaciones no está disponible en estos momentos. Regrese más tarde para explorar la creciente biblioteca de aplicaciones creativas.</val>
+</str>
+
+<str name="IDS_APPLIBRARY_ALL_CATEGORIES_EXCLUDED" translate="yes">
+    <val>Se han excluido todas las categorías</val>
+</str>
+
+<str name="IDS_APPLIBRARY_DESCRIPTION" translate="yes">
+    <val>Explore la creciente biblioteca de aplicaciones creativas, compatible y conectada con Creative Cloud.</val>
+</str>
+
+<str name="IDS_CAPTION_NAVIGATION_BAR_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <val>Botón Cuenta</val>
+</str>
+
+<str name="IDS_CAPTION_OPEN" translate="yes">
+    <val>ABRIR</val>
+</str>
+
+<str name="IDS_CAPTION_CLOSE" translate="yes">
+	<val>Cerrar</val>
+</str>
+
+<str name="IDS_SIGNIN_TOUCH_ID_MESSAGE" translate="yes">
+    <val>Último inicio de sesión de usuario</val>
+</str>
+
+<str name="IDS_APPLIBRARY_CLOSE_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <val>Botón Cerrar de biblioteca de aplicaciones</val>
+</str>
+
+<str name="IDS_APPLIBRARY_CATEGORY_ACCESSIBILITY_LABEL" translate="yes">
+    <val>CATEGORÍA</val>
+</str>
+
+<str name="IDS_APPLIBRARY_SUBCATEGORY_ACCESSIBILITY_LABEL" translate="yes">
+    <val>SUBCATEGORÍA</val>
+</str>
+
+<str name="WORKFLOW360_ACTION_LIST_TITLE" translate="yes">
+    <desc>The title of the action list which lists actions in other apps that can be called. Title case.</desc>
+    <val>Editar en...</val>
+</str>
+
+<str name="WORKFLOW360_PREMIUM_OVERLAY_TITLE_LABEL" translate="yes">
+    <desc>Description of the Adobe CreativeSync app sync feature.Title Case.</desc>
+    <val>Crear en varias aplicaciones</val>
+</str>
+
+<str name="WORKFLOW360_PREMIUM_OVERLAY_SUBTITLE_LABEL" translate="yes">
+    <desc>Description of the feature Adobe CreativeSync feature.</desc>
+    <val>Edite contenido en varias aplicaciones en un flujo de trabajo perfecto, con Adobe CreativeSync.</val>
+</str>
+
+
+<str name="WORKFLOW360_PREMIUM_OVERLAY_DESCRIPTION_LABEL" translate="yes">
+    <desc>A short description about the limited nature of the premium overlay. Title Case.</desc>
+    <val>Gratis por un tiempo limitado.</val>
+</str>
+
+<str name="WORKFLOW360_PREMIUM_OVERLAY_CONTINUE_BUTTON_TITLE" translate="yes">
+    <desc>Button that appears in the Premium overlay and dismisses that overlay.</desc>
+    <val>Continuar</val>
+</str>
+
+<str name="IDS_360_WORKFLOW_ROUNDTRIP_NOT_ENABLED_ALERT_TITLE" translate="yes">
+    <desc>The title for the alert view that is displayed while the 360 workflow is still pending
+        changes. This could happen when the user is in the middle of applying an effect but the
+        effect hasn't been applied yet.</desc>
+    <val>Cambios pendientes</val>
+</str>
+
+<str name="IDS_360_WORKFLOW_ROUNDTRIP_NOT_ENABLED_ALERT_TEXT" translate="yes">
+    <desc>The alert text that informs the user they cannot continue due to pending change. Note not
+        to place any new-line characters in-between the tags, otherwise the new-line character will
+        be used verbatum.</desc>
+    <val>Hay cambios pendientes por aplicar. Aplique o cancele esos cambios antes de continuar.</val>
+</str>
+
+</asf>

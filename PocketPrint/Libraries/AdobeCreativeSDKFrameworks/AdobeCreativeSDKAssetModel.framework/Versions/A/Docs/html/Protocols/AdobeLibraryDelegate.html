@@ -1,0 +1,1393 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobeLibraryDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobeLibraryDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/assetDownloadLibraryFilter">&nbsp;&nbsp;&nbsp;&nbsp;assetDownloadLibraryFilter</option>
+	
+	<option value="//api/name/autoSyncDownloadedAssets">&nbsp;&nbsp;&nbsp;&nbsp;autoSyncDownloadedAssets</option>
+	
+	<option value="//api/name/libraryQueue">&nbsp;&nbsp;&nbsp;&nbsp;libraryQueue</option>
+	
+	<option value="//api/name/syncOnCommit">&nbsp;&nbsp;&nbsp;&nbsp;syncOnCommit</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/library:elementWasAdded:">&nbsp;&nbsp;&nbsp;&nbsp;- library:elementWasAdded:</option>
+	
+	<option value="//api/name/library:elementWasRemoved:">&nbsp;&nbsp;&nbsp;&nbsp;- library:elementWasRemoved:</option>
+	
+	<option value="//api/name/library:elementWasUpdated:">&nbsp;&nbsp;&nbsp;&nbsp;- library:elementWasUpdated:</option>
+	
+	<option value="//api/name/library:onSyncError:">&nbsp;&nbsp;&nbsp;&nbsp;- library:onSyncError:</option>
+	
+	<option value="//api/name/library:onSyncProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- library:onSyncProgress:</option>
+	
+	<option value="//api/name/libraryPreDelete:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryPreDelete:</option>
+	
+	<option value="//api/name/libraryPreReadabilityChange:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryPreReadabilityChange:</option>
+	
+	<option value="//api/name/libraryWasAdded:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryWasAdded:</option>
+	
+	<option value="//api/name/libraryWasDeleted:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryWasDeleted:</option>
+	
+	<option value="//api/name/libraryWasUnshared:andLibraryName:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryWasUnshared:andLibraryName:</option>
+	
+	<option value="//api/name/libraryWasUpdated:">&nbsp;&nbsp;&nbsp;&nbsp;- libraryWasUpdated:</option>
+	
+	<option value="//api/name/syncAvailable:">&nbsp;&nbsp;&nbsp;&nbsp;- syncAvailable:</option>
+	
+	<option value="//api/name/syncFinished">&nbsp;&nbsp;&nbsp;&nbsp;- syncFinished</option>
+	
+	<option value="//api/name/syncStarted">&nbsp;&nbsp;&nbsp;&nbsp;- syncStarted</option>
+	
+	<option value="//api/name/syncUnavailable:">&nbsp;&nbsp;&nbsp;&nbsp;- syncUnavailable:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/assetDownloadLibraryFilter">assetDownloadLibraryFilter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoSyncDownloadedAssets">autoSyncDownloadedAssets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryQueue">libraryQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncOnCommit">syncOnCommit</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/library:elementWasAdded:">library:elementWasAdded:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/library:elementWasRemoved:">library:elementWasRemoved:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/library:elementWasUpdated:">library:elementWasUpdated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/library:onSyncError:">library:onSyncError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/library:onSyncProgress:">library:onSyncProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryPreDelete:">libraryPreDelete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryPreReadabilityChange:">libraryPreReadabilityChange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWasAdded:">libraryWasAdded:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWasDeleted:">libraryWasDeleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWasUnshared:andLibraryName:">libraryWasUnshared:andLibraryName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWasUpdated:">libraryWasUpdated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncAvailable:">syncAvailable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncFinished">syncFinished</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncStarted">syncStarted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncUnavailable:">syncUnavailable:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobeLibraryDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobeLibraryDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobeLibraryDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Defines the interface for a delegate that can be passed to AdobeLibraryManager#startupWithOptions</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/assetDownloadLibraryFilter">&nbsp;&nbsp;assetDownloadLibraryFilter</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoSyncDownloadedAssets">&nbsp;&nbsp;autoSyncDownloadedAssets</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryQueue">&nbsp;&nbsp;libraryQueue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncOnCommit">&nbsp;&nbsp;syncOnCommit</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/library:elementWasUpdated:">&ndash;&nbsp;library:elementWasUpdated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/library:elementWasAdded:">&ndash;&nbsp;library:elementWasAdded:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/library:elementWasRemoved:">&ndash;&nbsp;library:elementWasRemoved:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWasUpdated:">&ndash;&nbsp;libraryWasUpdated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWasAdded:">&ndash;&nbsp;libraryWasAdded:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWasDeleted:">&ndash;&nbsp;libraryWasDeleted:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWasUnshared:andLibraryName:">&ndash;&nbsp;libraryWasUnshared:andLibraryName:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryPreDelete:">&ndash;&nbsp;libraryPreDelete:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryPreReadabilityChange:">&ndash;&nbsp;libraryPreReadabilityChange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncStarted">&ndash;&nbsp;syncStarted</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncFinished">&ndash;&nbsp;syncFinished</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncAvailable:">&ndash;&nbsp;syncAvailable:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncUnavailable:">&ndash;&nbsp;syncUnavailable:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/library:onSyncProgress:">&ndash;&nbsp;library:onSyncProgress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/library:onSyncError:">&ndash;&nbsp;library:onSyncError:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/assetDownloadLibraryFilter" title="assetDownloadLibraryFilter"></a>
+	<h3 class="subsubtitle method-title">assetDownloadLibraryFilter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An optional list of library composite Id&rsquo;s for which you want assets to be downloaded during sync.
+If this option is not specified all libraries assets will be synced during sync operations based on the other
+asset syncing options. If this is specified, assets files and renditions will be downloaded (based on other
+asset/rendition filters) only for these libraries.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSArray *assetDownloadLibraryFilter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An optional list of library composite Id&rsquo;s for which you want assets to be downloaded during sync.
+If this option is not specified all libraries assets will be synced during sync operations based on the other
+asset syncing options. If this is specified, assets files and renditions will be downloaded (based on other
+asset/rendition filters) only for these libraries.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/autoSyncDownloadedAssets" title="autoSyncDownloadedAssets"></a>
+	<h3 class="subsubtitle method-title">autoSyncDownloadedAssets</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies whether or not assets that have been downloaded locally should be auto-synced or not.
+Has no effect when the autoDownloadPolicy is AdobeLibraryDownloadPolicyTypeManifestRenditionsAndAssets
+since everything is always synced in that case. If this property is set to NO, when an asset is updated
+on the server, it will be downloaded when the asset path is requested via filePathForRepresentation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL autoSyncDownloadedAssets</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies whether or not assets that have been downloaded locally should be auto-synced or not.
+Has no effect when the autoDownloadPolicy is AdobeLibraryDownloadPolicyTypeManifestRenditionsAndAssets
+since everything is always synced in that case. If this property is set to NO, when an asset is updated
+on the server, it will be downloaded when the asset path is requested via filePathForRepresentation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryQueue" title="libraryQueue"></a>
+	<h3 class="subsubtitle method-title">libraryQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The NSOperation queue identifying the thread on which the delegate methods are called.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, strong, nonatomic) NSOperationQueue *libraryQueue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The NSOperation queue identifying the thread on which the delegate methods are called.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncOnCommit" title="syncOnCommit"></a>
+	<h3 class="subsubtitle method-title">syncOnCommit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies whether the service should automatically sync with the cloud storage service whenever changes are
+commited. More specifically, on any call to [AdobeCompositeLibrary endChangesWithError] - which is also implicitly
+called when there is no call to [AdobeCompositeLibrary beginChanges]. Also sync when true on any call to create a
+new library or delete one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL syncOnCommit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies whether the service should automatically sync with the cloud storage service whenever changes are
+commited. More specifically, on any call to [AdobeCompositeLibrary endChangesWithError] - which is also implicitly
+called when there is no call to [AdobeCompositeLibrary beginChanges]. Also sync when true on any call to create a
+new library or delete one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/library:elementWasAdded:" title="library:elementWasAdded:"></a>
+	<h3 class="subsubtitle method-title">library:elementWasAdded:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an element of a library is added during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)library:(AdobeLibraryComposite *)<em>library</em> elementWasAdded:(NSString *)<em>elementId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library composite that contains the element.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementId</em></dt>
+			<dd><p>The id of the element that was added.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/library:elementWasRemoved:" title="library:elementWasRemoved:"></a>
+	<h3 class="subsubtitle method-title">library:elementWasRemoved:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an element of a library is removed during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)library:(AdobeLibraryComposite *)<em>library</em> elementWasRemoved:(NSString *)<em>elementId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library composite that contains the element</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementId</em></dt>
+			<dd><p>The id of the element that was removed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/library:elementWasUpdated:" title="library:elementWasUpdated:"></a>
+	<h3 class="subsubtitle method-title">library:elementWasUpdated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an element of a library is updated during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)library:(AdobeLibraryComposite *)<em>library</em> elementWasUpdated:(NSString *)<em>elementId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library composite that contains the element.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementId</em></dt>
+			<dd><p>The id of the element that was updated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/library:onSyncError:" title="library:onSyncError:"></a>
+	<h3 class="subsubtitle method-title">library:onSyncError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called to notify clients when there is an error during syncing a library.</p>
+
+<p>The possible errors are:</p>
+
+<p>The following errors are sent to clients as soon as they occur. (No retry)
+AdobeLibraryError#AdobeLibraryErrorSyncNotEnabled
+AdobeLibraryError#AdobeLibraryErrorSyncNotAvailableDueToNetwork
+AdobeLibraryError#AdobeLibraryErrorSyncNotAvailableDueToUserSession</p>
+
+<p>The following errors are sent to clients after the sync manager reaches the maximum allowed retry count
+per sync for the corresponding library or component. The sync manager puts the corresponding library or component
+back to the sync queue without sending an error if that number has not been reached. Clients should build their
+retry logic accordingly. @see ADOBE_LIBRARY_MAXIMUM_RETRY_COUNT</p>
+
+<p>AdobeLibraryError#AdobeLibraryErrorSyncWriteFailure
+AdobeLibraryError#AdobeLibraryErrorSyncUnexpectedError
+AdobeNetworkError#AdobeNetworkErrorCancelled
+AdobeNetworkError#AdobeNetworkErrorServiceDisconnected
+AdobeNetworkError#AdobeNetworkErrorOffline
+AdobeNetworkError#AdobeNetworkErrorNetworkFailure
+AdobeAssetError#AdobeAssetErrorFileReadFailure</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)library:(AdobeLibraryComposite *)<em>library</em> onSyncError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library for which the error has been occurred during sync.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/library:onSyncProgress:" title="library:onSyncProgress:"></a>
+	<h3 class="subsubtitle method-title">library:onSyncProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called to notify clients when there is a progress during syncing a library.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)library:(AdobeLibraryComposite *)<em>library</em> onSyncProgress:(NSNumber *)<em>percentComplete</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library for which the progress has been made during sync.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>percentComplete</em></dt>
+			<dd><p>The percentage that is completed for the given library during the active sync.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryPreDelete:" title="libraryPreDelete:"></a>
+	<h3 class="subsubtitle method-title">libraryPreDelete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a library is about to be deleted during sync. The library with the specified id
+was deleted on the server. Clients can decide whether this library should be deleted locally also
+or not by returning YES or NO from this method. If this method is not implemented by the delegate,
+the default behavior is to delete the local library as well.</p>
+
+<p>Note that if a client returns NO, meaning they wish to keep the library and re-upload it to the
+server, they must ensure that any elements they wish to recover do not have missing representation
+files. Any elements that have missing representation files will be removed from the library. By just
+returning NO without re-generating any representations with missing files, only edited items should
+remain in the recovered library, as well as any elements that have no files associated with them.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)libraryPreDelete:(NSString *)<em>libraryId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library that is about to be deleted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES to delete the library locally as well, NO to keep it and re-upload it during a sync.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryPreReadabilityChange:" title="libraryPreReadabilityChange:"></a>
+	<h3 class="subsubtitle method-title">libraryPreReadabilityChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a library that has unsynched changes has been turned into a readonly library.
+The library changes are about to be lost from the local copy during sync. Clients can decide whether
+the changes in the local copy are to be preserved or deleted. By default
+all unsynched changes are lost when the library is synched.</p>
+
+<p>Note that if returns a valid library, it is a reponsibility of the client to make sure that the content in the library
+is complete and is not missing any representations.
+If the returned library is read only, the changes are not added and get deleted.
+Any elements that have missing representation files will be removed from the library. By just
+returning NO without re-generating any representations with missing files, only edited items should
+remain in the recovered library, as well as any elements that have no files associated with them.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)libraryPreReadabilityChange:(NSString *)<em>libraryId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library that is about to be made read only.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the libraryId of the library to add the modified items to.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWasAdded:" title="libraryWasAdded:"></a>
+	<h3 class="subsubtitle method-title">libraryWasAdded:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a library is added during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)libraryWasAdded:(AdobeLibraryComposite *)<em>library</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library that was added.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWasDeleted:" title="libraryWasDeleted:"></a>
+	<h3 class="subsubtitle method-title">libraryWasDeleted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a library is deleted during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)libraryWasDeleted:(NSString *)<em>libraryId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library that was deleted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWasUnshared:andLibraryName:" title="libraryWasUnshared:andLibraryName:"></a>
+	<h3 class="subsubtitle method-title">libraryWasUnshared:andLibraryName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the current user has been removed from a shared library during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)libraryWasUnshared:(NSString *)<em>libraryId</em> andLibraryName:(NSString *)<em>libraryName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryId</em></dt>
+			<dd><p>The id of the library that was unshared.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>libraryName</em></dt>
+			<dd><p>The name of the library that was unshared.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWasUpdated:" title="libraryWasUpdated:"></a>
+	<h3 class="subsubtitle method-title">libraryWasUpdated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a library is updated during sync.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)libraryWasUpdated:(AdobeLibraryComposite *)<em>library</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>library</em></dt>
+			<dd><p>The library that was updated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncAvailable:" title="syncAvailable:"></a>
+	<h3 class="subsubtitle method-title">syncAvailable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when sync is now available due to network status change.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)syncAvailable:(AdobeNetworkStatus)<em>networkStatus</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>networkStatus</em></dt>
+			<dd><p>new network status that caused the sync to be available.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncFinished" title="syncFinished"></a>
+	<h3 class="subsubtitle method-title">syncFinished</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a sync is completed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)syncFinished</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncStarted" title="syncStarted"></a>
+	<h3 class="subsubtitle method-title">syncStarted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/AdobeLibraryManager.html">AdobeLibraryManager</a> starts syncing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)syncStarted</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syncUnavailable:" title="syncUnavailable:"></a>
+	<h3 class="subsubtitle method-title">syncUnavailable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when sync is unavailable/disabled due to network status change.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)syncUnavailable:(AdobeNetworkStatus)<em>networkStatus</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>networkStatus</em></dt>
+			<dd><p>new network status that caused the sync to be unavailable.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeLibraryDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

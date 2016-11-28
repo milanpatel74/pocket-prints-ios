@@ -1,0 +1,35 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import "AppViewController.h"
+#import "Define.h"
+#import "SynthesizeSingleton.h"
+#import "FacebookServices.h"
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
+#import "ASIHTTPRequest.h"
+#import "Downloader.h"
+//#import "PayPalMobile.h"
+#import "SqlManager.h"
+#import "APIServices.h"
+#import "Uploader.h"
+#import "UIView+Frame.h"
+//#import <AdobeCreativeSDKCore/AdobeCreativeSDKCore.h>
+#import <AdobeCreativeSDKImage/AdobeCreativeSDKImage.h>
+#import <AdobeCreativeSDKImage/AdobeUXImageEditorViewController.h>
+
+#define IS_NOT_NULL(obj) ( (obj != (id)[NSNull null]) && (obj != nil) )
+
+#endif

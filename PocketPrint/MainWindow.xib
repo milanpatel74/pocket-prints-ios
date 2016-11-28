@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
+            <connections>
+                <outlet property="delegate" destination="bVD-aN-KIS" id="bgV-xY-UIH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <window opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="rootViewController" destination="8LI-ht-OAa" id="mPk-vm-LRt"/>
+            </connections>
+        </window>
+        <tabBarController definesPresentationContext="YES" id="8LI-ht-OAa">
+            <tabBar key="tabBar" contentMode="scaleToFill" selectedItem="wau-wM-Nuu" id="hEe-UR-BTt">
+                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="VN6-ui-yS3">
+                    <tabBarItem key="tabBarItem" title="" image="prints_btn.png" id="wau-wM-Nuu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k3K-kJ-Se9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="uMD-fH-7eg" customClass="HomeViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="cXr-Sk-Zmt"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController autoresizesArchivedViewToFullSize="NO" definesPresentationContext="YES" id="3zt-0L-LUT">
+                    <tabBarItem key="tabBarItem" title="" image="check_out_btn.png" id="rhe-74-TEs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zqe-Oj-ARa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="CheckoutViewController" id="Sxk-E1-kg5" customClass="CheckoutViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="HYx-68-23p"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController autoresizesArchivedViewToFullSize="NO" definesPresentationContext="YES" id="eyz-47-d9r">
+                    <tabBarItem key="tabBarItem" title="" image="more_btn.png" id="qEa-D1-26m"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B2l-ja-q1x">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="MoreViewController" id="5ZO-dZ-dxI" customClass="MoreViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="pf8-d9-Gqn"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+            </viewControllers>
+            <connections>
+                <outlet property="delegate" destination="bVD-aN-KIS" id="SDj-Rl-Kw1"/>
+            </connections>
+        </tabBarController>
+        <customObject id="bVD-aN-KIS" customClass="AppDelegate">
+            <connections>
+                <outlet property="tabBarController" destination="8LI-ht-OAa" id="tsW-RW-t5D"/>
+                <outlet property="window" destination="2" id="1gc-Vt-iqV"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="check_out_btn.png" width="107" height="50"/>
+        <image name="more_btn.png" width="106" height="50"/>
+        <image name="prints_btn.png" width="106" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,1240 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Adobe360WorkflowDispatch Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Adobe360WorkflowDispatch Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/asynchronousOperationQueue">&nbsp;&nbsp;&nbsp;&nbsp;asynchronousOperationQueue</option>
+	
+	<option value="//api/name/currentAppProperties">&nbsp;&nbsp;&nbsp;&nbsp;currentAppProperties</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/canceledMessageBuilderFromInitialMessage:">&nbsp;&nbsp;&nbsp;&nbsp;+ canceledMessageBuilderFromInitialMessage:</option>
+	
+	<option value="//api/name/completedMessageBuilderFromInitialMessage:">&nbsp;&nbsp;&nbsp;&nbsp;+ completedMessageBuilderFromInitialMessage:</option>
+	
+	<option value="//api/name/messageBuilderFromWorkflowAction:">&nbsp;&nbsp;&nbsp;&nbsp;+ messageBuilderFromWorkflowAction:</option>
+	
+	<option value="//api/name/sharedDispatch">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedDispatch</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/canProcessURL:">&nbsp;&nbsp;&nbsp;&nbsp;- canProcessURL:</option>
+	
+	<option value="//api/name/diagnosticReportStringForMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- diagnosticReportStringForMessage:</option>
+	
+	<option value="//api/name/dispatchMessage:urlScheme:appGroup:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- dispatchMessage:urlScheme:appGroup:completionHandler:</option>
+	
+	<option value="//api/name/dispatchMessage:urlScheme:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- dispatchMessage:urlScheme:completionHandler:</option>
+	
+	<option value="//api/name/preloadActionRegistriesAndAppIcons">&nbsp;&nbsp;&nbsp;&nbsp;- preloadActionRegistriesAndAppIcons</option>
+	
+	<option value="//api/name/processURL:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- processURL:completionHandler:</option>
+	
+	<option value="//api/name/respondWithMessage:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- respondWithMessage:completionHandler:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asynchronousOperationQueue">asynchronousOperationQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentAppProperties">currentAppProperties</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canceledMessageBuilderFromInitialMessage:">canceledMessageBuilderFromInitialMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedMessageBuilderFromInitialMessage:">completedMessageBuilderFromInitialMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageBuilderFromWorkflowAction:">messageBuilderFromWorkflowAction:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedDispatch">sharedDispatch</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canProcessURL:">canProcessURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/diagnosticReportStringForMessage:">diagnosticReportStringForMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dispatchMessage:urlScheme:appGroup:completionHandler:">dispatchMessage:urlScheme:appGroup:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dispatchMessage:urlScheme:completionHandler:">dispatchMessage:urlScheme:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadActionRegistriesAndAppIcons">preloadActionRegistriesAndAppIcons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/processURL:completionHandler:">processURL:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/respondWithMessage:completionHandler:">respondWithMessage:completionHandler:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Adobe360WorkflowDispatch Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Adobe360WorkflowDispatch Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Adobe360WorkflowDispatch.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This will be the lowest level integration point of the workflow.
+It&rsquo;s responsible for setting up and implementing the transport across the
+application boundary.</p>
+
+<p>The integrating application will be utilizing this from the application delegate level to process the URLs
+and send the appropriate notifications.</p>
+
+<p>This can also be utilized directly in addition to the <a href="../Classes/Adobe360WorkflowStorage.html">Adobe360WorkflowStorage</a> and <a href="../Classes/Adobe360WorkflowActionDataSource.html">Adobe360WorkflowActionDataSource</a>
+to support explicit actions and/or custom UI without the use
+the use of the view controllers for workflows.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedDispatch">+&nbsp;sharedDispatch</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentAppProperties">&nbsp;&nbsp;currentAppProperties</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asynchronousOperationQueue">&nbsp;&nbsp;asynchronousOperationQueue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageBuilderFromWorkflowAction:">+&nbsp;messageBuilderFromWorkflowAction:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completedMessageBuilderFromInitialMessage:">+&nbsp;completedMessageBuilderFromInitialMessage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canceledMessageBuilderFromInitialMessage:">+&nbsp;canceledMessageBuilderFromInitialMessage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canProcessURL:">&ndash;&nbsp;canProcessURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/processURL:completionHandler:">&ndash;&nbsp;processURL:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dispatchMessage:urlScheme:completionHandler:">&ndash;&nbsp;dispatchMessage:urlScheme:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dispatchMessage:urlScheme:appGroup:completionHandler:">&ndash;&nbsp;dispatchMessage:urlScheme:appGroup:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/respondWithMessage:completionHandler:">&ndash;&nbsp;respondWithMessage:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/diagnosticReportStringForMessage:">&ndash;&nbsp;diagnosticReportStringForMessage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadActionRegistriesAndAppIcons">&ndash;&nbsp;preloadActionRegistriesAndAppIcons</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/asynchronousOperationQueue" title="asynchronousOperationQueue"></a>
+	<h3 class="subsubtitle method-title">asynchronousOperationQueue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The NSOperationQueue that the dispatch object will use for asynchronous calls.
+All handlers will be called using the dispatch_queue_t&rsquo;s thread.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSOperationQueue *asynchronousOperationQueue</code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operationQueue</em></dt>
+			<dd><p>The NSOperationQueue for all asynchronous processing</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The NSOperationQueue that the dispatch object will use for asynchronous calls.
+All handlers will be called using the dispatch_queue_t&rsquo;s thread.</p>
+
+<p>The default value of this will be [NSOperationQueue mainQueue].</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentAppProperties" title="currentAppProperties"></a>
+	<h3 class="subsubtitle method-title">currentAppProperties</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The application properties for the current application. For the
+dispatch to work correctly, this must be populated by the integrating application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) Adobe360ApplicationProperties *currentAppProperties</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The application properties for the current application. For the
+dispatch to work correctly, this must be populated by the integrating application.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/Adobe360ApplicationProperties.html">Adobe360ApplicationProperties</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/canceledMessageBuilderFromInitialMessage:" title="canceledMessageBuilderFromInitialMessage:"></a>
+	<h3 class="subsubtitle method-title">canceledMessageBuilderFromInitialMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility routine for creating and populating a canceled message builder response
+from the initial message. This will set up the state needed to send this reply
+across the application boundary. This message builder can be edited
+to add the outputs and other response state before dispatching.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Adobe360MessageBuilder *)canceledMessageBuilderFromInitialMessage:(Adobe360Message *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The initial message to create the response for. This will be
+supplied in the Adobe360WorkflowActionInitiatedNotification notification sent by
+this dispatch object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The canceled response message builder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A utility routine for creating and populating a canceled message builder response
+from the initial message. This will set up the state needed to send this reply
+across the application boundary. This message builder can be edited
+to add the outputs and other response state before dispatching.</p>
+
+<p>This utility can be used by a secondary application that would like to
+avoid using the Adobe360StatusBarViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/Adobe360MessageBuilder.html">Adobe360MessageBuilder</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/Adobe360Message.html">Adobe360Message</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completedMessageBuilderFromInitialMessage:" title="completedMessageBuilderFromInitialMessage:"></a>
+	<h3 class="subsubtitle method-title">completedMessageBuilderFromInitialMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility routine for creating and populating a complete message builder response
+from the initial message. This will set up the state needed to send this reply
+across the application boundary. This message builder can be edited
+to add the outputs and other response state before dispatching.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Adobe360MessageBuilder *)completedMessageBuilderFromInitialMessage:(Adobe360Message *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The initial message to create the response for. This will be
+supplied in the Adobe360WorkflowActionInitiatedNotification notification sent by
+this dispatch object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The completed response message builder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A utility routine for creating and populating a complete message builder response
+from the initial message. This will set up the state needed to send this reply
+across the application boundary. This message builder can be edited
+to add the outputs and other response state before dispatching.</p>
+
+<p>This utility can be used by a secondary application that would like to
+avoid using the Adobe360StatusBarViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/Adobe360MessageBuilder.html">Adobe360MessageBuilder</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/Adobe360Message.html">Adobe360Message</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageBuilderFromWorkflowAction:" title="messageBuilderFromWorkflowAction:"></a>
+	<h3 class="subsubtitle method-title">messageBuilderFromWorkflowAction:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility routine for creating and populating a message builder object
+based on an action. This will set up the state needed to perform the
+transport across the application boundary and roundtrip the message back.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Adobe360MessageBuilder *)messageBuilderFromWorkflowAction:(Adobe360WorkflowAction *)<em>action</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>action</em></dt>
+			<dd><p>The action to convert into the message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The message builder ready to initiate that action.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A utility routine for creating and populating a message builder object
+based on an action. This will set up the state needed to perform the
+transport across the application boundary and roundtrip the message back.</p>
+
+<p>This utility can be used by a primary application that would like to
+avoid using the Adobe360ActionViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/Adobe360MessageBuilder.html">Adobe360MessageBuilder</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/Adobe360WorkflowAction.html">Adobe360WorkflowAction</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedDispatch" title="sharedDispatch"></a>
+	<h3 class="subsubtitle method-title">sharedDispatch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the singleton Adobe360WorkflowDispatch.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)sharedDispatch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the singleton Adobe360WorkflowDispatch.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/canProcessURL:" title="canProcessURL:"></a>
+	<h3 class="subsubtitle method-title">canProcessURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used in the integrating application&rsquo;s UIApplicationDelegate object. This is used to determine whether
+the URL supplied is a well formed 360 workflow URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)canProcessURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The url to verify.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the url is a well-formed 360 Workflow inter-application message.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used in the integrating application&rsquo;s UIApplicationDelegate object. This is used to determine whether
+the URL supplied is a well formed 360 workflow URL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/diagnosticReportStringForMessage:" title="diagnosticReportStringForMessage:"></a>
+	<h3 class="subsubtitle method-title">diagnosticReportStringForMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A routine to return a diagnostic string useful for debugging issues while developing
+against the 360 Workflow API.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)diagnosticReportStringForMessage:(Adobe360MessageBuilder *)<em>messageBuilder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageBuilder</em></dt>
+			<dd><p>The message builder object to test.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A detailed log of warnings about the current state of the dispatch and message</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A routine to return a diagnostic string useful for debugging issues while developing
+against the 360 Workflow API.</p>
+
+<p>It uses the current state of the dispatch object and the details in the message to
+diagnose whether the message is safe to send.</p>
+
+<p>This is meant to be a purely debug routine and should not be used for any dynamic decisions.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dispatchMessage:urlScheme:appGroup:completionHandler:" title="dispatchMessage:urlScheme:appGroup:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">dispatchMessage:urlScheme:appGroup:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Primarily used by the workflow 360 UX elements; however, this routine can be called explicitly by the integrating application
+when initiating the workflow UX.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSProgress *)dispatchMessage:(Adobe360MessageBuilder *)<em>messageBuilder</em> urlScheme:(NSString *)<em>urlScheme</em> appGroup:(NSString *)<em>appGroup</em> completionHandler:(void ( ^ ) ( BOOL success , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageBuilder</em></dt>
+			<dd><p>A message builder object constructed using one of the above routines. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlScheme</em></dt>
+			<dd><p>The url scheme of the receiving application. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>appGroup</em></dt>
+			<dd><p>The app group supported by the receiving application. Can be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The completion handler to be called upon sending of the message or error. May be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSProgress object tracking the progress of the url processing and message sending.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Primarily used by the workflow 360 UX elements; however, this routine can be called explicitly by the integrating application
+when initiating the workflow UX.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dispatchMessage:urlScheme:completionHandler:" title="dispatchMessage:urlScheme:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">dispatchMessage:urlScheme:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Primarily used by the workflow 360 UX elements; however, this routine can be called explicitly by the integrating application
+when initiating the workflow UX.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSProgress *)dispatchMessage:(Adobe360MessageBuilder *)<em>messageBuilder</em> urlScheme:(NSString *)<em>urlScheme</em> completionHandler:(void ( ^ ) ( BOOL success , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageBuilder</em></dt>
+			<dd><p>A message builder object constructed using one of the above routines.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlScheme</em></dt>
+			<dd><p>The url scheme of the receiving application.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The completion handler to be called upon sending of the message or error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSProgress object tracking the progress of the url processing and message sending.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Primarily used by the workflow 360 UX elements; however, this routine can be called explicitly by the integrating application
+when initiating the workflow UX.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadActionRegistriesAndAppIcons" title="preloadActionRegistriesAndAppIcons"></a>
+	<h3 class="subsubtitle method-title">preloadActionRegistriesAndAppIcons</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A routine to pre-download all the action registries and app icons then put them in cache
+This should be called as soon as the app is launched,
+that way when 360 is launched there is no delay in displaying the app icons</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)preloadActionRegistriesAndAppIcons</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A routine to pre-download all the action registries and app icons then put them in cache
+This should be called as soon as the app is launched,
+that way when 360 is launched there is no delay in displaying the app icons</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/processURL:completionHandler:" title="processURL:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">processURL:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used in the integrating application&rsquo;s UIApplicationDelegate object. This used to convert the 360 Workflow
+URL into an <a href="../Classes/Adobe360Message.html">Adobe360Message</a> object. This will utilize NSNotificationCenter and send a notification containing
+the message object back to your application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSProgress *)processURL:(NSURL *)<em>url</em> completionHandler:(void ( ^ ) ( Adobe360Message *message , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The url to verify.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completetionHandler</em></dt>
+			<dd><p>A completion handler for determining when the message preparation is complete. May be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSProgress object tracking the progress of the url processing and message creation.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used in the integrating application&rsquo;s UIApplicationDelegate object. This used to convert the 360 Workflow
+URL into an <a href="../Classes/Adobe360Message.html">Adobe360Message</a> object. This will utilize NSNotificationCenter and send a notification containing
+the message object back to your application.</p>
+
+<p>Additionally, the message will be passed back to your completion handler in case you are not in a position to
+handle the notifications. The message will be nil if the message could not be processed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/respondWithMessage:completionHandler:" title="respondWithMessage:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">respondWithMessage:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Primarily used by the workflow 360 UX elements; however, this routine can be called explicitly by the integrating application
+when responding to an existing message without using the workflow UX.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSProgress *)respondWithMessage:(Adobe360MessageBuilder *)<em>messageBuilder</em> completionHandler:(void ( ^ ) ( BOOL success , NSError *error ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageBuilder</em></dt>
+			<dd><p>A message builder object constructed using one of the above routines. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The completion handler to be called upon sending of the message or error. May be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSProgress object tracking the progress of the url processing and message sending.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Primarily used by the workflow 360 UX elements; however, this routine can be called explicitly by the integrating application
+when responding to an existing message without using the workflow UX.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowDispatch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

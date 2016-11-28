@@ -1,0 +1,1565 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobeAssetFolder Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobeAssetFolder Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/create:inFolder:onCompletion:onError:">&nbsp;&nbsp;&nbsp;&nbsp;+ create:inFolder:onCompletion:onError:</option>
+	
+	<option value="//api/name/create:parentFolder:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ create:parentFolder:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/folderFromHref:">&nbsp;&nbsp;&nbsp;&nbsp;+ folderFromHref:</option>
+	
+	<option value="//api/name/folderFromHref:orderByField:orderDirection:">&nbsp;&nbsp;&nbsp;&nbsp;+ folderFromHref:orderByField:orderDirection:</option>
+	
+	<option value="//api/name/getFolderFromHref:">&nbsp;&nbsp;&nbsp;&nbsp;+ getFolderFromHref:</option>
+	
+	<option value="//api/name/getFolderFromHref:orderByField:orderDirection:">&nbsp;&nbsp;&nbsp;&nbsp;+ getFolderFromHref:orderByField:orderDirection:</option>
+	
+	<option value="//api/name/getRoot">&nbsp;&nbsp;&nbsp;&nbsp;+ getRoot</option>
+	
+	<option value="//api/name/getRootOrderedByField:orderDirection:">&nbsp;&nbsp;&nbsp;&nbsp;+ getRootOrderedByField:orderDirection:</option>
+	
+	<option value="//api/name/root">&nbsp;&nbsp;&nbsp;&nbsp;+ root</option>
+	
+	<option value="//api/name/rootOrderedByField:orderDirection:">&nbsp;&nbsp;&nbsp;&nbsp;+ rootOrderedByField:orderDirection:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/archive:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- archive:errorBlock:</option>
+	
+	<option value="//api/name/archive:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- archive:onError:</option>
+	
+	<option value="//api/name/getNextPage:onCompletion:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- getNextPage:onCompletion:onError:</option>
+	
+	<option value="//api/name/hasNextPage">&nbsp;&nbsp;&nbsp;&nbsp;- hasNextPage</option>
+	
+	<option value="//api/name/isEqualToFolder:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToFolder:</option>
+	
+	<option value="//api/name/isShared">&nbsp;&nbsp;&nbsp;&nbsp;- isShared</option>
+	
+	<option value="//api/name/nextPage:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- nextPage:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/resetPaging">&nbsp;&nbsp;&nbsp;&nbsp;- resetPaging</option>
+	
+	<option value="//api/name/resetPagingOrderedByField:orderDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- resetPagingOrderedByField:orderDirection:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/create:inFolder:onCompletion:onError:">create:inFolder:onCompletion:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/create:parentFolder:successBlock:errorBlock:">create:parentFolder:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/folderFromHref:">folderFromHref:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/folderFromHref:orderByField:orderDirection:">folderFromHref:orderByField:orderDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFolderFromHref:">getFolderFromHref:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFolderFromHref:orderByField:orderDirection:">getFolderFromHref:orderByField:orderDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRoot">getRoot</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRootOrderedByField:orderDirection:">getRootOrderedByField:orderDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/root">root</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootOrderedByField:orderDirection:">rootOrderedByField:orderDirection:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/archive:errorBlock:">archive:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/archive:onError:">archive:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNextPage:onCompletion:onError:">getNextPage:onCompletion:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasNextPage">hasNextPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToFolder:">isEqualToFolder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isShared">isShared</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nextPage:successBlock:errorBlock:">nextPage:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetPaging">resetPaging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetPagingOrderedByField:orderDirection:">resetPagingOrderedByField:orderDirection:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobeAssetFolder Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobeAssetFolder Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/AdobeAsset.html">AdobeAsset</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCoding<br />NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobeAssetFolder.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AdobeAssetFolder represents a folder in the Creative Cloud and provides access to folder contents
+in pages of data as well as provisions for creating and deleting folders.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRoot">+&nbsp;getRoot</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/root">+&nbsp;root</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRootOrderedByField:orderDirection:">+&nbsp;getRootOrderedByField:orderDirection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rootOrderedByField:orderDirection:">+&nbsp;rootOrderedByField:orderDirection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getFolderFromHref:">+&nbsp;getFolderFromHref:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/folderFromHref:">+&nbsp;folderFromHref:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getFolderFromHref:orderByField:orderDirection:">+&nbsp;getFolderFromHref:orderByField:orderDirection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/folderFromHref:orderByField:orderDirection:">+&nbsp;folderFromHref:orderByField:orderDirection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/create:inFolder:onCompletion:onError:">+&nbsp;create:inFolder:onCompletion:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/create:parentFolder:successBlock:errorBlock:">+&nbsp;create:parentFolder:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/archive:onError:">&ndash;&nbsp;archive:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/archive:errorBlock:">&ndash;&nbsp;archive:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasNextPage">&ndash;&nbsp;hasNextPage</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getNextPage:onCompletion:onError:">&ndash;&nbsp;getNextPage:onCompletion:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nextPage:successBlock:errorBlock:">&ndash;&nbsp;nextPage:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetPaging">&ndash;&nbsp;resetPaging</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetPagingOrderedByField:orderDirection:">&ndash;&nbsp;resetPagingOrderedByField:orderDirection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToFolder:">&ndash;&nbsp;isEqualToFolder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isShared">&ndash;&nbsp;isShared</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/create:inFolder:onCompletion:onError:" title="create:inFolder:onCompletion:onError:"></a>
+	<h3 class="subsubtitle method-title">create:inFolder:onCompletion:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Create a new folder on the Adobe Creative Cloud asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)create:(NSString *)<em>name</em> inFolder:(AdobeAssetFolder *)<em>folder</em> onCompletion:(void ( ^ ) ( AdobeAssetFolder *folder ))<em>completionBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the folder.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>folder</em></dt>
+			<dd><p>The enclosing folder.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the created folder when complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Create a new folder on the Adobe Creative Cloud asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/create:parentFolder:successBlock:errorBlock:" title="create:parentFolder:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">create:parentFolder:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new folder on the Adobe Creative Cloud asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)create:(NSString *)<em>name</em> parentFolder:(AdobeAssetFolder *)<em>folder</em> successBlock:(void ( ^ ) ( AdobeAssetFolder *folder ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the folder.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>folder</em></dt>
+			<dd><p>The enclosing folder.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the created folder when complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a new folder on the Adobe Creative Cloud asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/folderFromHref:" title="folderFromHref:"></a>
+	<h3 class="subsubtitle method-title">folderFromHref:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an AdobeAssetFolder based on the href using the default sorting (name, ascending).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)folderFromHref:(NSString *)<em>href</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>href</em></dt>
+			<dd><p>The absolute HREF of the folder</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an AdobeAssetFolder based on the href using the default sorting (name, ascending).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/folderFromHref:orderByField:orderDirection:" title="folderFromHref:orderByField:orderDirection:"></a>
+	<h3 class="subsubtitle method-title">folderFromHref:orderByField:orderDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an AdobeAssetFolder based on the href for the logged in user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)folderFromHref:(NSString *)<em>href</em> orderByField:(AdobeAssetFolderOrderBy)<em>field</em> orderDirection:(AdobeAssetFolderOrderDirection)<em>direction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>href</em></dt>
+			<dd><p>The absolute HREF of the folder</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>The field on which the items in the folder will be sorted (e.g., name, modification date). See <a href="../Constants/AdobeAssetFolderOrderBy.html">AdobeAssetFolderOrderBy</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>The direction (ascending or descending) in the the items will be sorted. See <a href="../Constants/AdobeAssetFolderOrderDirection.html">AdobeAssetFolderOrderDirection</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an AdobeAssetFolder based on the href for the logged in user.</p>
+
+<p>Folder items are fetched from the cloud in pages, so the field on which the items
+should be sorted as well as the sort direction must be specified when setting up
+this instance. If you need to change the sorting, you will need to create a new
+instance with the specified sort options.</p>
+
+<p>Once you have an AdobeAssetFolder instance set up, you can call <a href="#//api/name/hasNextPage">hasNextPage</a> and
+loadNextPage to start loading folder items from the cloud as needed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getFolderFromHref:" title="getFolderFromHref:"></a>
+	<h3 class="subsubtitle method-title">getFolderFromHref:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Get an AdobeAssetFolder based on the href using the default sorting (name, ascending).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)getFolderFromHref:(NSString *)<em>href</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>href</em></dt>
+			<dd><p>The absolute HREF of the folder</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Get an AdobeAssetFolder based on the href using the default sorting (name, ascending).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getFolderFromHref:orderByField:orderDirection:" title="getFolderFromHref:orderByField:orderDirection:"></a>
+	<h3 class="subsubtitle method-title">getFolderFromHref:orderByField:orderDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Get an AdobeAssetFolder based on the href for the logged in user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)getFolderFromHref:(NSString *)<em>href</em> orderByField:(AdobeAssetFolderOrderBy)<em>field</em> orderDirection:(AdobeAssetFolderOrderDirection)<em>direction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>href</em></dt>
+			<dd><p>The absolute HREF of the folder</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>The field on which the items in the folder will be sorted (e.g., name, modification date). See <a href="../Constants/AdobeAssetFolderOrderBy.html">AdobeAssetFolderOrderBy</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>The direction (ascending or descending) in the the items will be sorted. See <a href="../Constants/AdobeAssetFolderOrderDirection.html">AdobeAssetFolderOrderDirection</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Get an AdobeAssetFolder based on the href for the logged in user.</p>
+
+<p>Folder items are fetched from the cloud in pages, so the field on which the items
+should be sorted as well as the sort direction must be specified when setting up
+this instance. If you need to change the sorting, you will need to create a new
+instance with the specified sort options.</p>
+
+<p>Once you have an AdobeAssetFolder instance set up, you can call <a href="#//api/name/hasNextPage">hasNextPage</a> and
+loadNextPage to start loading folder items from the cloud as needed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRoot" title="getRoot"></a>
+	<h3 class="subsubtitle method-title">getRoot</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Get the <a href="#//api/name/root">root</a> folder of the logged in user sorted by default (name, ascending).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)getRoot</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Get the <a href="#//api/name/root">root</a> folder of the logged in user sorted by default (name, ascending).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRootOrderedByField:orderDirection:" title="getRootOrderedByField:orderDirection:"></a>
+	<h3 class="subsubtitle method-title">getRootOrderedByField:orderDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Get the <a href="#//api/name/root">root</a> folder of the logged in user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)getRootOrderedByField:(AdobeAssetFolderOrderBy)<em>field</em> orderDirection:(AdobeAssetFolderOrderDirection)<em>direction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>The field on which the items in the folder will be sorted (e.g., name, modification date). See <a href="../Constants/AdobeAssetFolderOrderBy.html">AdobeAssetFolderOrderBy</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>The direction (ascending or descending) of the sort. See <a href="../Constants/AdobeAssetFolderOrderDirection.html">AdobeAssetFolderOrderDirection</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Get the <a href="#//api/name/root">root</a> folder of the logged in user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/root" title="root"></a>
+	<h3 class="subsubtitle method-title">root</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the root folder of the logged in user sorted by default (name, ascending).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)root</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the root folder of the logged in user sorted by default (name, ascending).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rootOrderedByField:orderDirection:" title="rootOrderedByField:orderDirection:"></a>
+	<h3 class="subsubtitle method-title">rootOrderedByField:orderDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the <a href="#//api/name/root">root</a> folder of the logged in user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetFolder *)rootOrderedByField:(AdobeAssetFolderOrderBy)<em>field</em> orderDirection:(AdobeAssetFolderOrderDirection)<em>direction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>The field on which the items in the folder will be sorted (e.g., name, modification date). See <a href="../Constants/AdobeAssetFolderOrderBy.html">AdobeAssetFolderOrderBy</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>The direction (ascending or descending) of the sort. See <a href="../Constants/AdobeAssetFolderOrderDirection.html">AdobeAssetFolderOrderDirection</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the <a href="#//api/name/root">root</a> folder of the logged in user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/archive:errorBlock:" title="archive:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">archive:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Archive the specified folder asynchronously. It does not permanently delete the folder from the cloud.
+There is no API to expunge nor restore the folder from the archive as of this time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)archive:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally be notified when complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Archive the specified folder asynchronously. It does not permanently delete the folder from the cloud.
+There is no API to expunge nor restore the folder from the archive as of this time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/archive:onError:" title="archive:onError:"></a>
+	<h3 class="subsubtitle method-title">archive:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Archive the specified folder asynchronously. It does not permanently delete the folder from the cloud.
+There is no API to expunge nor restore the folder from the archive as of this time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)archive:(void ( ^ ) ( void ))<em>completionBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Optionally be notified when complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Archive the specified folder asynchronously. It does not permanently delete the folder from the cloud.
+There is no API to expunge nor restore the folder from the archive as of this time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getNextPage:onCompletion:onError:" title="getNextPage:onCompletion:onError:"></a>
+	<h3 class="subsubtitle method-title">getNextPage:onCompletion:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Asynchronously gets the next page of items from the cloud folder. This should
+only be called if <a href="#//api/name/hasNextPage">hasNextPage</a> returns true. Behavior is undefined if <a href="#//api/name/hasNextPage">hasNextPage</a>
+returned false;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getNextPage:(NSUInteger)<em>pageSize</em> onCompletion:(void ( ^ ) ( AdobeAssetArray *items , NSUInteger totalItemsInFolder ))<em>completionBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageSize</em></dt>
+			<dd><p>The number of items to be fetched. This is just a hint. The actual number fetched may be more or less than this amount.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>An NSArray of AdobeAssets, and total number of items retrieved.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Asynchronously gets the next page of items from the cloud folder. This should
+only be called if <a href="#//api/name/hasNextPage">hasNextPage</a> returns true. Behavior is undefined if <a href="#//api/name/hasNextPage">hasNextPage</a>
+returned false;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasNextPage" title="hasNextPage"></a>
+	<h3 class="subsubtitle method-title">hasNextPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether the cloud folder has another page of items that can be loaded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasNextPage</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>true if the another page of items can be loaded; false otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates whether the cloud folder has another page of items that can be loaded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToFolder:" title="isEqualToFolder:"></a>
+	<h3 class="subsubtitle method-title">isEqualToFolder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility to test the equlity of two AdobeAssetFolders.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToFolder:(AdobeAssetFolder *)<em>folder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>folder</em></dt>
+			<dd><p>the AdobeAssetFolder to test against.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A utility to test the equlity of two AdobeAssetFolders.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isShared" title="isShared"></a>
+	<h3 class="subsubtitle method-title">isShared</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether this folder is a shared folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isShared</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether this folder is a shared folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nextPage:successBlock:errorBlock:" title="nextPage:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">nextPage:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously gets the next page of items from the cloud folder. This should
+only be called if <a href="#//api/name/hasNextPage">hasNextPage</a> returns true. Behavior is undefined if <a href="#//api/name/hasNextPage">hasNextPage</a>
+returned false;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)nextPage:(NSUInteger)<em>pageSize</em> successBlock:(void ( ^ ) ( AdobeAssetArray *items , NSUInteger totalItemsInFolder ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageSize</em></dt>
+			<dd><p>The number of items to be fetched. This is just a hint. The actual number fetched may be more or less than this amount.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An NSArray of AdobeAssets, and total number of items retrieved.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asynchronously gets the next page of items from the cloud folder. This should
+only be called if <a href="#//api/name/hasNextPage">hasNextPage</a> returns true. Behavior is undefined if <a href="#//api/name/hasNextPage">hasNextPage</a>
+returned false;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetPaging" title="resetPaging"></a>
+	<h3 class="subsubtitle method-title">resetPaging</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets the page iterator so that any subsequent call to <a href="#//api/name/hasNextPage">hasNextPage</a> will return
+true, and getNextPage will return the first page of cloud items. Keeps the current
+sorting options in effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resetPaging</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets the page iterator so that any subsequent call to <a href="#//api/name/hasNextPage">hasNextPage</a> will return
+true, and getNextPage will return the first page of cloud items. Keeps the current
+sorting options in effect.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetPagingOrderedByField:orderDirection:" title="resetPagingOrderedByField:orderDirection:"></a>
+	<h3 class="subsubtitle method-title">resetPagingOrderedByField:orderDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets the page iterator so that any subsequent call to <a href="#//api/name/hasNextPage">hasNextPage</a> will return
+true, and getNextPage will return the first page of cloud items. Sets new sorting
+options for the cloud folder.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resetPagingOrderedByField:(AdobeAssetFolderOrderBy)<em>field</em> orderDirection:(AdobeAssetFolderOrderDirection)<em>direction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>The field on which the items in the folder will be sorted (e.g., name, modification date).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>The direction (ascending or descending) in the the items will be sorted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets the page iterator so that any subsequent call to <a href="#//api/name/hasNextPage">hasNextPage</a> will return
+true, and getNextPage will return the first page of cloud items. Sets new sorting
+options for the cloud folder.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetFolder.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Adobe360WorkflowActionsViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAppLibraryUX.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Adobe360WorkflowActionsViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/actionDelegate">&nbsp;&nbsp;&nbsp;&nbsp;actionDelegate</option>
+	
+	<option value="//api/name/dataSource">&nbsp;&nbsp;&nbsp;&nbsp;dataSource</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/instantiateWorkflowActionsViewController">&nbsp;&nbsp;&nbsp;&nbsp;+ instantiateWorkflowActionsViewController</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addActionToRegistry:">&nbsp;&nbsp;&nbsp;&nbsp;- addActionToRegistry:</option>
+	
+	<option value="//api/name/setExplicitActionList:">&nbsp;&nbsp;&nbsp;&nbsp;- setExplicitActionList:</option>
+	
+	<option value="//api/name/setShowOnlyWhitelistedActions:">&nbsp;&nbsp;&nbsp;&nbsp;- setShowOnlyWhitelistedActions:</option>
+	
+	<option value="//api/name/setSupportedActionTypes:">&nbsp;&nbsp;&nbsp;&nbsp;- setSupportedActionTypes:</option>
+	
+	<option value="//api/name/setWhitelistedActionIds:">&nbsp;&nbsp;&nbsp;&nbsp;- setWhitelistedActionIds:</option>
+	
+	<option value="//api/name/setWhitelistedSubTypes:">&nbsp;&nbsp;&nbsp;&nbsp;- setWhitelistedSubTypes:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actionDelegate">actionDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataSource">dataSource</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/instantiateWorkflowActionsViewController">instantiateWorkflowActionsViewController</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addActionToRegistry:">addActionToRegistry:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setExplicitActionList:">setExplicitActionList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShowOnlyWhitelistedActions:">setShowOnlyWhitelistedActions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSupportedActionTypes:">setSupportedActionTypes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWhitelistedActionIds:">setWhitelistedActionIds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWhitelistedSubTypes:">setWhitelistedSubTypes:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Adobe360WorkflowActionsViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Adobe360WorkflowActionsViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Adobe360WorkflowActionsViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>In the primary app (initiator) of the workflow, you can show this UIViewController
+to provide the user with a set of actions to present to the user for selection.</p>
+
+<p>This view controller is designed to be displayed as a popover on iPad or
+modally on iPhone. It is recommended to use UIPresentationPopoverController for
+presenting this view controller.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/actionDelegate">&nbsp;&nbsp;actionDelegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataSource">&nbsp;&nbsp;dataSource</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/instantiateWorkflowActionsViewController">+&nbsp;instantiateWorkflowActionsViewController</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWhitelistedSubTypes:">&ndash;&nbsp;setWhitelistedSubTypes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWhitelistedActionIds:">&ndash;&nbsp;setWhitelistedActionIds:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShowOnlyWhitelistedActions:">&ndash;&nbsp;setShowOnlyWhitelistedActions:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSupportedActionTypes:">&ndash;&nbsp;setSupportedActionTypes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addActionToRegistry:">&ndash;&nbsp;addActionToRegistry:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setExplicitActionList:">&ndash;&nbsp;setExplicitActionList:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/actionDelegate" title="actionDelegate"></a>
+	<h3 class="subsubtitle method-title">actionDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate object for callbacks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;Adobe360WorkflowSenderDelegate&gt; actionDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The delegate object for callbacks.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataSource" title="dataSource"></a>
+	<h3 class="subsubtitle method-title">dataSource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The underlying action data source used to populate the view controller. This data
+source is read only, and updates to the object will not be reflected until the next
+view load.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) Adobe360WorkflowActionDataSource *dataSource</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The underlying action data source used to populate the view controller. This data
+source is read only, and updates to the object will not be reflected until the next
+view load.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/instantiateWorkflowActionsViewController" title="instantiateWorkflowActionsViewController"></a>
+	<h3 class="subsubtitle method-title">instantiateWorkflowActionsViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an instance of the Adobe360WorkflowAppLibraryController object. This should be presented in
+a popover on iPad and modally on iPhone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)instantiateWorkflowActionsViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates an instance of the Adobe360WorkflowAppLibraryController object. This should be presented in
+a popover on iPad and modally on iPhone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addActionToRegistry:" title="addActionToRegistry:"></a>
+	<h3 class="subsubtitle method-title">addActionToRegistry:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The method allows to add actions dynamically to ActionsViewController.
+Clients can use this method to add necessary actions not present in action registry.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addActionToRegistry:(Adobe360WorkflowAction *)<em>action</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>action</em></dt>
+			<dd><p>An Adobe360WorkflowAction instance that needs to be added.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The method allows to add actions dynamically to ActionsViewController.
+Clients can use this method to add necessary actions not present in action registry.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setExplicitActionList:" title="setExplicitActionList:"></a>
+	<h3 class="subsubtitle method-title">setExplicitActionList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override the displayed list of actions. If you need to change the list of actions
+displayed, set this variable to the list to diplay. If set to nil, the action view
+controller will consult the Adobe360WorkflowActionDataSource.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setExplicitActionList:(NSArray *)<em>actionList</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Override the displayed list of actions. If you need to change the list of actions
+displayed, set this variable to the list to diplay. If set to nil, the action view
+controller will consult the Adobe360WorkflowActionDataSource.</p>
+
+<p>By default, this is nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setShowOnlyWhitelistedActions:" title="setShowOnlyWhitelistedActions:"></a>
+	<h3 class="subsubtitle method-title">setShowOnlyWhitelistedActions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set to YES to only show actions whitelisted by the arrays.
+If NO, general actions, actions without a subtype, and other default actions, will always be
+shown below the list of specified actions.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setShowOnlyWhitelistedActions:(BOOL)<em>showOnlyWhitelistedActions</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set to YES to only show actions whitelisted by the arrays.
+If NO, general actions, actions without a subtype, and other default actions, will always be
+shown below the list of specified actions.</p>
+
+<p>NO by default.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSupportedActionTypes:" title="setSupportedActionTypes:"></a>
+	<h3 class="subsubtitle method-title">setSupportedActionTypes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A array of Adobe360SupportedAction objects. This array is used to filter the
+action types &amp; corresponding media types explicitly supported.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSupportedActionTypes:(NSArray *)<em>suppportedTypes</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A array of Adobe360SupportedAction objects. This array is used to filter the
+action types &amp; corresponding media types explicitly supported.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWhitelistedActionIds:" title="setWhitelistedActionIds:"></a>
+	<h3 class="subsubtitle method-title">setWhitelistedActionIds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A array of NSString objects. This array is used to whitelist actions that include
+a specific action id. All apps that match the actionIds will be shown.
+If this is not specified or is empty, the action view controller
+will display only the actions that do not have a specified type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setWhitelistedActionIds:(NSArray *)<em>whitelistedActionIds</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A array of NSString objects. This array is used to whitelist actions that include
+a specific action id. All apps that match the actionIds will be shown.
+If this is not specified or is empty, the action view controller
+will display only the actions that do not have a specified type.</p>
+
+<p>If this is specified, the whitelistedSubTypes property will be ignored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWhitelistedSubTypes:" title="setWhitelistedSubTypes:"></a>
+	<h3 class="subsubtitle method-title">setWhitelistedSubTypes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A array of NSString objects. This array is used to whitelist actions that include
+a specific subtype. All actions by all apps that match this subtype will be shown.
+If this is not specified or is empty, the action view controller
+will display only the actions that do not have a specified type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setWhitelistedSubTypes:(NSArray *)<em>whitelistedSubTypes</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A array of NSString objects. This array is used to whitelist actions that include
+a specific subtype. All actions by all apps that match this subtype will be shown.
+If this is not specified or is empty, the action view controller
+will display only the actions that do not have a specified type.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Adobe360WorkflowActionsViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

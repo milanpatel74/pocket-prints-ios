@@ -1,0 +1,1412 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobePublish Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKBehance.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobePublish Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accentColor">&nbsp;&nbsp;&nbsp;&nbsp;accentColor</option>
+	
+	<option value="//api/name/facebookAppId">&nbsp;&nbsp;&nbsp;&nbsp;facebookAppId</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelCurrentProjectEditorTask">&nbsp;&nbsp;&nbsp;&nbsp;- cancelCurrentProjectEditorTask</option>
+	
+	<option value="//api/name/cancelCurrentWorkInProgressEditorTask">&nbsp;&nbsp;&nbsp;&nbsp;- cancelCurrentWorkInProgressEditorTask</option>
+	
+	<option value="//api/name/dismissProjectViewerAnimated:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- dismissProjectViewerAnimated:completion:</option>
+	
+	<option value="//api/name/dismissWorkInProgressViewerAnimated:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- dismissWorkInProgressViewerAnimated:completion:</option>
+	
+	<option value="//api/name/removePreferredAccountWithType:">&nbsp;&nbsp;&nbsp;&nbsp;- removePreferredAccountWithType:</option>
+	
+	<option value="//api/name/showLastProfileEditorWithPresentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showLastProfileEditorWithPresentingViewController:delegate:</option>
+	
+	<option value="//api/name/showLastProjectEditorWithPresentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showLastProjectEditorWithPresentingViewController:delegate:</option>
+	
+	<option value="//api/name/showLastWorkInProgressEditorWithPresentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showLastWorkInProgressEditorWithPresentingViewController:delegate:</option>
+	
+	<option value="//api/name/showProfileEditorWithSpecs:presentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showProfileEditorWithSpecs:presentingViewController:delegate:</option>
+	
+	<option value="//api/name/showProjectEditorWithSpecs:presentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showProjectEditorWithSpecs:presentingViewController:delegate:</option>
+	
+	<option value="//api/name/showProjectWithId:presentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showProjectWithId:presentingViewController:delegate:</option>
+	
+	<option value="//api/name/showWorkInProgressEditorWithSpecs:presentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showWorkInProgressEditorWithSpecs:presentingViewController:delegate:</option>
+	
+	<option value="//api/name/showWorkInProgressWithId:presentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showWorkInProgressWithId:presentingViewController:delegate:</option>
+	
+	<option value="//api/name/showWorkInProgressWithId:revisionId:presentingViewController:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- showWorkInProgressWithId:revisionId:presentingViewController:delegate:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accentColor">accentColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/facebookAppId">facebookAppId</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelCurrentProjectEditorTask">cancelCurrentProjectEditorTask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelCurrentWorkInProgressEditorTask">cancelCurrentWorkInProgressEditorTask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dismissProjectViewerAnimated:completion:">dismissProjectViewerAnimated:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dismissWorkInProgressViewerAnimated:completion:">dismissWorkInProgressViewerAnimated:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removePreferredAccountWithType:">removePreferredAccountWithType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showLastProfileEditorWithPresentingViewController:delegate:">showLastProfileEditorWithPresentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showLastProjectEditorWithPresentingViewController:delegate:">showLastProjectEditorWithPresentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showLastWorkInProgressEditorWithPresentingViewController:delegate:">showLastWorkInProgressEditorWithPresentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showProfileEditorWithSpecs:presentingViewController:delegate:">showProfileEditorWithSpecs:presentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showProjectEditorWithSpecs:presentingViewController:delegate:">showProjectEditorWithSpecs:presentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showProjectWithId:presentingViewController:delegate:">showProjectWithId:presentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showWorkInProgressEditorWithSpecs:presentingViewController:delegate:">showWorkInProgressEditorWithSpecs:presentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showWorkInProgressWithId:presentingViewController:delegate:">showWorkInProgressWithId:presentingViewController:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showWorkInProgressWithId:revisionId:presentingViewController:delegate:">showWorkInProgressWithId:revisionId:presentingViewController:delegate:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobePublish Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobePublish Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobePublish.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>AdobePublish</code> is the base class for publishing projects and works in progress to the Behance network,
+as well as editing Behance profiles.</p>
+
+<p>Content can be published in one of two formats:
+    Work in Progress: a single image, commonly used to represent an unfinished work (deprecated)
+    Project: a composed piece, including one or more images/video embeds, and a cover image</p>
+
+<p>Project images can be added from a user’s Photo Library as well as from their Creative Cloud assets.</p>
+
+<p>Users can edit their profiles.</p>
+
+<p>Users can share their work to Facebook/Twitter upon publishing.</p>
+
+<p><code>AdobePublish</code> is the base class for publishing projects and works in progress to the Behance network,
+as well as editing Behance profiles.</p>
+
+<p>Content can be published in one of two formats:
+Work in Progress: a single image, commonly used to represent an unfinished work
+Project: a composed piece, including one or more images/video embeds, and a cover image</p>
+
+<p>Project images can be added from a user’s Photo Library as well as from their Creative Cloud assets.</p>
+
+<p>Users can edit their profiles.</p>
+
+<p>Users can share their work to Facebook/Twitter upon publishing.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showProfileEditorWithSpecs:presentingViewController:delegate:">&ndash;&nbsp;showProfileEditorWithSpecs:presentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showLastProfileEditorWithPresentingViewController:delegate:">&ndash;&nbsp;showLastProfileEditorWithPresentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/facebookAppId">&nbsp;&nbsp;facebookAppId</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showProjectEditorWithSpecs:presentingViewController:delegate:">&ndash;&nbsp;showProjectEditorWithSpecs:presentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showLastProjectEditorWithPresentingViewController:delegate:">&ndash;&nbsp;showLastProjectEditorWithPresentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelCurrentProjectEditorTask">&ndash;&nbsp;cancelCurrentProjectEditorTask</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showWorkInProgressEditorWithSpecs:presentingViewController:delegate:">&ndash;&nbsp;showWorkInProgressEditorWithSpecs:presentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showLastWorkInProgressEditorWithPresentingViewController:delegate:">&ndash;&nbsp;showLastWorkInProgressEditorWithPresentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelCurrentWorkInProgressEditorTask">&ndash;&nbsp;cancelCurrentWorkInProgressEditorTask</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removePreferredAccountWithType:">&ndash;&nbsp;removePreferredAccountWithType:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accentColor">&nbsp;&nbsp;accentColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showProjectWithId:presentingViewController:delegate:">&ndash;&nbsp;showProjectWithId:presentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dismissProjectViewerAnimated:completion:">&ndash;&nbsp;dismissProjectViewerAnimated:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showWorkInProgressWithId:presentingViewController:delegate:">&ndash;&nbsp;showWorkInProgressWithId:presentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showWorkInProgressWithId:revisionId:presentingViewController:delegate:">&ndash;&nbsp;showWorkInProgressWithId:revisionId:presentingViewController:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dismissWorkInProgressViewerAnimated:completion:">&ndash;&nbsp;dismissWorkInProgressViewerAnimated:completion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accentColor" title="accentColor"></a>
+	<h3 class="subsubtitle method-title">accentColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Accent color used to color UI elements in the Project and WIP viewer components.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nullable) UIColor *accentColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Accent color used to color UI elements in the Project and WIP viewer components.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishViewing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/facebookAppId" title="facebookAppId"></a>
+	<h3 class="subsubtitle method-title">facebookAppId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Facebook app id, for sharing published projects and works in progress to Facebook.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nullable) NSString *facebookAppId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Facebook app id, for sharing published projects and works in progress to Facebook.</p>
+
+<p>If a Facebook app id is not supplied, sharing to Facebook will be hidden.
+In order to publish to Facebook, your Facebook app must be approved for the &ldquo;publish_actions&rdquo; login permission.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <code>AdobePublish</code> singleton object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobePublish *)sharedInstance</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly-initialized <code>AdobePublish</code> singleton object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates and returns a <code>AdobePublish</code> singleton object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublish.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelCurrentProjectEditorTask" title="cancelCurrentProjectEditorTask"></a>
+	<h3 class="subsubtitle method-title">cancelCurrentProjectEditorTask</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the current proejct editor task, such as publishing or editing a project.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelCurrentProjectEditorTask</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the current proejct editor task, such as publishing or editing a project.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelCurrentWorkInProgressEditorTask" title="cancelCurrentWorkInProgressEditorTask"></a>
+	<h3 class="subsubtitle method-title">cancelCurrentWorkInProgressEditorTask</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the current work in progress editor task, such as publishing or editing a work in progress.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelCurrentWorkInProgressEditorTask</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the current work in progress editor task, such as publishing or editing a work in progress.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dismissProjectViewerAnimated:completion:" title="dismissProjectViewerAnimated:completion:"></a>
+	<h3 class="subsubtitle method-title">dismissProjectViewerAnimated:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dismiss a project viewer programmatically that was presented with <a href="#//api/name/showProjectWithId:presentingViewController:delegate:">showProjectWithId:presentingViewController:delegate:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dismissProjectViewerAnimated:(BOOL)<em>animated</em> completion:(nullable void ( ^ ) ( void ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>indicates whether the component dismissal should be animated</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>completion handler to be executed once dismissal is finished</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dismiss a project viewer programmatically that was presented with <a href="#//api/name/showProjectWithId:presentingViewController:delegate:">showProjectWithId:presentingViewController:delegate:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishViewing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dismissWorkInProgressViewerAnimated:completion:" title="dismissWorkInProgressViewerAnimated:completion:"></a>
+	<h3 class="subsubtitle method-title">dismissWorkInProgressViewerAnimated:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dismiss a work in progress viewer programmatically that was presented with one of the below methods
+- <a href="#//api/name/showWorkInProgressWithId:presentingViewController:delegate:">showWorkInProgressWithId:presentingViewController:delegate:</a>
+- <a href="#//api/name/showWorkInProgressWithId:revisionId:presentingViewController:delegate:">showWorkInProgressWithId:revisionId:presentingViewController:delegate:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dismissWorkInProgressViewerAnimated:(BOOL)<em>animated</em> completion:(nullable void ( ^ ) ( void ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>indicates whether the component dismissal should be animated</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>completion handler to be executed once dismissal is finished</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dismiss a work in progress viewer programmatically that was presented with one of the below methods
+- <a href="#//api/name/showWorkInProgressWithId:presentingViewController:delegate:">showWorkInProgressWithId:presentingViewController:delegate:</a>
+- <a href="#//api/name/showWorkInProgressWithId:revisionId:presentingViewController:delegate:">showWorkInProgressWithId:revisionId:presentingViewController:delegate:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishViewing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removePreferredAccountWithType:" title="removePreferredAccountWithType:"></a>
+	<h3 class="subsubtitle method-title">removePreferredAccountWithType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove an account previously stored by the user as their preferred account for an outside network (Facebook, Twitter)
+When a user first chooses to share their work to an outside network, they choose their preferred account on that network from all accounts they are signed into on the device settings.
+If only one account exists, that account is automatically stored as the preferred account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removePreferredAccountWithType:(AdobePublishAccountType)<em>accountType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accountType</em></dt>
+			<dd><p>The account type to remove the preferred account for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove an account previously stored by the user as their preferred account for an outside network (Facebook, Twitter)
+When a user first chooses to share their work to an outside network, they choose their preferred account on that network from all accounts they are signed into on the device settings.
+If only one account exists, that account is automatically stored as the preferred account.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showLastProfileEditorWithPresentingViewController:delegate:" title="showLastProfileEditorWithPresentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showLastProfileEditorWithPresentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Presents the last profile editor controller again (ex. to display again in the case of an error)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showLastProfileEditorWithPresentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishProfileDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the profile editor to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>receive <code>id</code>AdobePublishProfileDelegate<code></code> callbacks for project profile editing events, such as completion, failure, and upload progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Presents the last profile editor controller again (ex. to display again in the case of an error)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProfileEditor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showLastProjectEditorWithPresentingViewController:delegate:" title="showLastProjectEditorWithPresentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showLastProjectEditorWithPresentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Presents the last project view controller again (ex. to display again in the case of a publishing error)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showLastProjectEditorWithPresentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishProjectDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the project editor to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>receive <code>id</code>AdobePublishProjectDelegate<code></code> callbacks for project publishing events, such as completion, failure, and upload progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Presents the last project view controller again (ex. to display again in the case of a publishing error)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showLastWorkInProgressEditorWithPresentingViewController:delegate:" title="showLastWorkInProgressEditorWithPresentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showLastWorkInProgressEditorWithPresentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Presents the last work in progress view controller again (ex. to display again in the case of a publishing error)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showLastWorkInProgressEditorWithPresentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishWIPDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the WIP editor to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>receive <code>id</code>AdobePublishWIPDelegate<code></code> callbacks for work in progress publishing events, such as completion, failure, and upload progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Presents the last work in progress view controller again (ex. to display again in the case of a publishing error)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showProfileEditorWithSpecs:presentingViewController:delegate:" title="showProfileEditorWithSpecs:presentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showProfileEditorWithSpecs:presentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Edit the current logged-in user&rsquo;s Behance profile. Presents in a modal view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showProfileEditorWithSpecs:(AdobePublishProfileSpecs *)<em>specs</em> presentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishProfileDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>specs</em></dt>
+			<dd><p><a href="../Classes/AdobePublishProfileSpecs.html"><code>AdobePublishProfileSpecs</code></a> definition of the user who&rsquo;s profile should be edited, along with any default values</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the profile editor to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>receives <code>id</code>AdobePublishProfileDelegate<code></code> callbacks for profile editing events, such as completion, failure, and upload progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Edit the current logged-in user&rsquo;s Behance profile. Presents in a modal view controller.</p><div class="warning"><p><strong>Warning:</strong> must first authenticate with the <code>AdobeUXAuthManager</code></p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishProfileEditor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showProjectEditorWithSpecs:presentingViewController:delegate:" title="showProjectEditorWithSpecs:presentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showProjectEditorWithSpecs:presentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Publish a project to Behance.  Presents in a modal view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showProjectEditorWithSpecs:(AdobePublishProjectSpecs *)<em>specs</em> presentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishProjectDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>specs</em></dt>
+			<dd><p><a href="../Classes/AdobePublishProjectSpecs.html"><code>AdobePublishProjectSpecs</code></a> definition of the project to be published to Behance</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the project editor to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>receive <code>id</code>AdobePublishProjectDelegate<code></code> callbacks for project publishing events, such as completion, failure, and upload progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Publish a project to Behance.  Presents in a modal view controller.</p><div class="warning"><p><strong>Warning:</strong> if specs.resourceOptions includes AdobePublishProjectSpecsResourceOptionCreativeCloud, you must first authenticate with the <code>AdobeUXAuthManager</code></p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showProjectWithId:presentingViewController:delegate:" title="showProjectWithId:presentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showProjectWithId:presentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Display a project by project id. Presents from the parentViewController</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showProjectWithId:(NSNumber *)<em>projectId</em> presentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishProjectViewDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>projectId</em></dt>
+			<dd><p>id of the project to display</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for project to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>Delegate to receive events</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Display a project by project id. Presents from the parentViewController</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishViewing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showWorkInProgressEditorWithSpecs:presentingViewController:delegate:" title="showWorkInProgressEditorWithSpecs:presentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showWorkInProgressEditorWithSpecs:presentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Publish a work in progress to Behance. Presents in a modal view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showWorkInProgressEditorWithSpecs:(AdobePublishWIPSpecs *)<em>specs</em> presentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishWIPDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>specs</em></dt>
+			<dd><p><a href="../Classes/AdobePublishWIPSpecs.html"><code>AdobePublishWIPSpecs</code></a> definition of the work in progress to be published to Behance</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the WIP editor to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>receive <code>id</code>AdobePublishWIPDelegate<code></code> callbacks for work in progress publishing events, such as completion, failure, and upload progress</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Publish a work in progress to Behance. Presents in a modal view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishPublishing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showWorkInProgressWithId:presentingViewController:delegate:" title="showWorkInProgressWithId:presentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showWorkInProgressWithId:presentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Display a work in progress by id. Presents in a modal component.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showWorkInProgressWithId:(NSNumber *)<em>wipId</em> presentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishWIPViewDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wipId</em></dt>
+			<dd><p>id of the work in progress to display</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the WIP to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>Delegate to receive events</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Display a work in progress by id. Presents in a modal component.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishViewing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showWorkInProgressWithId:revisionId:presentingViewController:delegate:" title="showWorkInProgressWithId:revisionId:presentingViewController:delegate:"></a>
+	<h3 class="subsubtitle method-title">showWorkInProgressWithId:revisionId:presentingViewController:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Display a work in progress revision by wip and revision id. Presents in a modal component.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showWorkInProgressWithId:(NSNumber *)<em>wipId</em> revisionId:(NSNumber *)<em>revisionId</em> presentingViewController:(UIViewController *)<em>viewController</em> delegate:(nullable id&lt;AdobePublishWIPViewDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wipId</em></dt>
+			<dd><p>id of the work in progress to display</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>revisionId</em></dt>
+			<dd><p>id of the revision of the work in progress to display</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>a presenting viewController for the WIP to be presented with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>Delegate to receive events</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Display a work in progress revision by wip and revision id. Presents in a modal component.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePublishViewing.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

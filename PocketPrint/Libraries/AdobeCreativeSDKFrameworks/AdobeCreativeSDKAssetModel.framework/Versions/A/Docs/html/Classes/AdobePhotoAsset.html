@@ -1,0 +1,3263 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobePhotoAsset Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobePhotoAsset Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/catalog">&nbsp;&nbsp;&nbsp;&nbsp;catalog</option>
+	
+	<option value="//api/name/contentType">&nbsp;&nbsp;&nbsp;&nbsp;contentType</option>
+	
+	<option value="//api/name/createPhotoAsyncRequest">&nbsp;&nbsp;&nbsp;&nbsp;createPhotoAsyncRequest</option>
+	
+	<option value="//api/name/master">&nbsp;&nbsp;&nbsp;&nbsp;master</option>
+	
+	<option value="//api/name/masterDataExists">&nbsp;&nbsp;&nbsp;&nbsp;masterDataExists</option>
+	
+	<option value="//api/name/metadata">&nbsp;&nbsp;&nbsp;&nbsp;metadata</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/order">&nbsp;&nbsp;&nbsp;&nbsp;order</option>
+	
+	<option value="//api/name/proxy">&nbsp;&nbsp;&nbsp;&nbsp;proxy</option>
+	
+	<option value="//api/name/proxyDataExists">&nbsp;&nbsp;&nbsp;&nbsp;proxyDataExists</option>
+	
+	<option value="//api/name/renditions">&nbsp;&nbsp;&nbsp;&nbsp;renditions</option>
+	
+	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;+ create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelCreationRequest">&nbsp;&nbsp;&nbsp;&nbsp;- cancelCreationRequest</option>
+	
+	<option value="//api/name/cancelDownloadRequest">&nbsp;&nbsp;&nbsp;&nbsp;- cancelDownloadRequest</option>
+	
+	<option value="//api/name/cancelUploadRequest">&nbsp;&nbsp;&nbsp;&nbsp;- cancelUploadRequest</option>
+	
+	<option value="//api/name/changeCreationRequestPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changeCreationRequestPriority:</option>
+	
+	<option value="//api/name/changeDownloadRequestPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changeDownloadRequestPriority:</option>
+	
+	<option value="//api/name/changeUploadRequestPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changeUploadRequestPriority:</option>
+	
+	<option value="//api/name/delete:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:errorBlock:</option>
+	
+	<option value="//api/name/delete:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:onError:</option>
+	
+	<option value="//api/name/downloadMasterData:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadMasterData:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/downloadProxyData:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadProxyData:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/generateRenditions:requestPriority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- generateRenditions:requestPriority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/generateRenditions:withPriority:onCompletion:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- generateRenditions:withPriority:onCompletion:onError:</option>
+	
+	<option value="//api/name/isEqualToAsset:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToAsset:</option>
+	
+	<option value="//api/name/refresh:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- refresh:errorBlock:</option>
+	
+	<option value="//api/name/refresh:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- refresh:onError:</option>
+	
+	<option value="//api/name/uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/catalog">catalog</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentType">contentType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhotoAsyncRequest">createPhotoAsyncRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/master">master</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/masterDataExists">masterDataExists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/metadata">metadata</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/order">order</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proxy">proxy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proxyDataExists">proxyDataExists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renditions">renditions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:">create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:">create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelCreationRequest">cancelCreationRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelDownloadRequest">cancelDownloadRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelUploadRequest">cancelUploadRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeCreationRequestPriority:">changeCreationRequestPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeDownloadRequestPriority:">changeDownloadRequestPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeUploadRequestPriority:">changeUploadRequestPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:errorBlock:">delete:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:onError:">delete:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadMasterData:onProgress:onCompletion:onCancellation:onError:">downloadMasterData:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:">downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadProxyData:onProgress:onCompletion:onCancellation:onError:">downloadProxyData:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:">downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:">downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateRenditions:requestPriority:successBlock:errorBlock:">generateRenditions:requestPriority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateRenditions:withPriority:onCompletion:onError:">generateRenditions:withPriority:onCompletion:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToAsset:">isEqualToAsset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refresh:errorBlock:">refresh:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refresh:onError:">refresh:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:">uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:">uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:">uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobePhotoAsset Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobePhotoAsset Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/AdobePhoto.html">AdobePhoto</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCoding<br />NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobePhotoAsset.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An asset is a single photo or video (when supported). Each asset has one or more revisions; a revision can contain multiple files or <a href="#//api/name/renditions">renditions</a> of the asset.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/catalog">&nbsp;&nbsp;catalog</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentType">&nbsp;&nbsp;contentType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/master">&nbsp;&nbsp;master</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/masterDataExists">&nbsp;&nbsp;masterDataExists</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/metadata">&nbsp;&nbsp;metadata</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/order">&nbsp;&nbsp;order</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/proxy">&nbsp;&nbsp;proxy</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/proxyDataExists">&nbsp;&nbsp;proxyDataExists</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renditions">&nbsp;&nbsp;renditions</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createPhotoAsyncRequest">&nbsp;&nbsp;createPhotoAsyncRequest</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:">+&nbsp;create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:">+&nbsp;create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelCreationRequest">&ndash;&nbsp;cancelCreationRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeCreationRequestPriority:">&ndash;&nbsp;changeCreationRequestPriority:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refresh:onError:">&ndash;&nbsp;refresh:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refresh:errorBlock:">&ndash;&nbsp;refresh:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:onError:">&ndash;&nbsp;delete:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:errorBlock:">&ndash;&nbsp;delete:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelUploadRequest">&ndash;&nbsp;cancelUploadRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeUploadRequestPriority:">&ndash;&nbsp;changeUploadRequestPriority:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadMasterData:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;downloadMasterData:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelDownloadRequest">&ndash;&nbsp;cancelDownloadRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeDownloadRequestPriority:">&ndash;&nbsp;changeDownloadRequestPriority:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadProxyData:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;downloadProxyData:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateRenditions:withPriority:onCompletion:onError:">&ndash;&nbsp;generateRenditions:withPriority:onCompletion:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateRenditions:requestPriority:successBlock:errorBlock:">&ndash;&nbsp;generateRenditions:requestPriority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToAsset:">&ndash;&nbsp;isEqualToAsset:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/catalog" title="catalog"></a>
+	<h3 class="subsubtitle method-title">catalog</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The catalog the asset is in.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) AdobePhotoCatalog *catalog</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The catalog the asset is in.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentType" title="contentType"></a>
+	<h3 class="subsubtitle method-title">contentType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset&rsquo;s content<a href="#//api/name/type">type</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSString *contentType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset&rsquo;s content<a href="#//api/name/type">type</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createPhotoAsyncRequest" title="createPhotoAsyncRequest"></a>
+	<h3 class="subsubtitle method-title">createPhotoAsyncRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asset creation async request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) AdobePhotoAsyncRequest *createPhotoAsyncRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asset creation async request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/master" title="master"></a>
+	<h3 class="subsubtitle method-title">master</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This asset&rsquo;s master.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSURL *master</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This asset&rsquo;s master.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/masterDataExists" title="masterDataExists"></a>
+	<h3 class="subsubtitle method-title">masterDataExists</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the <a href="#//api/name/master">master</a> data exists in the cloud. If the asset was uploaded by Lightroom Desktop, this will be set to NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) BOOL masterDataExists</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the <a href="#//api/name/master">master</a> data exists in the cloud. If the asset was uploaded by Lightroom Desktop, this will be set to NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/metadata" title="metadata"></a>
+	<h3 class="subsubtitle method-title">metadata</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset metadata.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDictionary *metadata</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset metadata.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The name of the item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/order" title="order"></a>
+	<h3 class="subsubtitle method-title">order</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset&rsquo;s order (only valid in a collection).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *order</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset&rsquo;s order (only valid in a collection).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/proxy" title="proxy"></a>
+	<h3 class="subsubtitle method-title">proxy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This asset&rsquo;s proxy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSURL *proxy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This asset&rsquo;s proxy.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/proxyDataExists" title="proxyDataExists"></a>
+	<h3 class="subsubtitle method-title">proxyDataExists</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the <a href="#//api/name/proxy">proxy</a> data exists in the cloud. If the asset was uploaded by Lightroom Desktop, this will be set to YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) BOOL proxyDataExists</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether the <a href="#//api/name/proxy">proxy</a> data exists in the cloud. If the asset was uploaded by Lightroom Desktop, this will be set to YES.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renditions" title="renditions"></a>
+	<h3 class="subsubtitle method-title">renditions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset&rsquo;s renditions.
+The renditions are keyed using the AdobePhotoAssetRenditionImage and AdobePhotoAssetRenditionVideo constants defined above.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) AdobePhotoAssetRenditionDictionary *renditions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset&rsquo;s renditions.
+The renditions are keyed using the AdobePhotoAssetRenditionImage and AdobePhotoAssetRenditionVideo constants defined above.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="subsubtitle method-title">size</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset&rsquo;s size.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) long long size</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset&rsquo;s size.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset&rsquo;s type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) AdobePhotoAssetType type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset&rsquo;s type.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:" title="create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">create:collection:dataPath:contentType:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create (upload) a new asset and add into a collection on the Adobe Photo service asynchronously.
+For an image file: Preview, standard, and 2x thumbnail <a href="#//api/name/renditions">renditions</a> are generated automatically.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobePhotoAsset *)create:(NSString *)<em>name</em> collection:(AdobePhotoCollection *)<em>collection</em> dataPath:(NSURL *)<em>path</em> contentType:(NSString *)<em>type</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collection</em></dt>
+			<dd><p>The collection to add the asset into.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The local path to the data. The path must be locally valid and cannot be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The content<a href="#//api/name/type">type</a> of the asset. The content<a href="#//api/name/type">type</a> is required and cannot be nil.
+Currently only kAdobeMimeTypeJPEG is supported.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the created AdobePhotoAsset if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create (upload) a new asset and add into a collection on the Adobe Photo service asynchronously.
+For an image file: Preview, standard, and 2x thumbnail <a href="#//api/name/renditions">renditions</a> are generated automatically.</p>
+
+<p>Upload can be cancelled via the <a href="#//api/name/createPhotoAsyncRequest">createPhotoAsyncRequest</a> property.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:" title="create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">create:inCollection:withDataPath:withContentType:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create (upload) a new asset and add into a collection on the Adobe Photo service asynchronously.
+For an image file: Preview, standard, and 2x thumbnail <a href="#//api/name/renditions">renditions</a> are generated automatically.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobePhotoAsset *)create:(NSString *)<em>name</em> inCollection:(AdobePhotoCollection *)<em>collection</em> withDataPath:(NSURL *)<em>path</em> withContentType:(NSString *)<em>type</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collection</em></dt>
+			<dd><p>The collection to add the asset into.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The local path to the data. The path must be locally valid and cannot be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The content<a href="#//api/name/type">type</a> of the asset. The content<a href="#//api/name/type">type</a> is required and cannot be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the created AdobePhotoAsset if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create (upload) a new asset and add into a collection on the Adobe Photo service asynchronously.
+For an image file: Preview, standard, and 2x thumbnail <a href="#//api/name/renditions">renditions</a> are generated automatically.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelCreationRequest" title="cancelCreationRequest"></a>
+	<h3 class="subsubtitle method-title">cancelCreationRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the creation request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelCreationRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the creation request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelDownloadRequest" title="cancelDownloadRequest"></a>
+	<h3 class="subsubtitle method-title">cancelDownloadRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the download request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelDownloadRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the download request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelUploadRequest" title="cancelUploadRequest"></a>
+	<h3 class="subsubtitle method-title">cancelUploadRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the upload request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelUploadRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the upload request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeCreationRequestPriority:" title="changeCreationRequestPriority:"></a>
+	<h3 class="subsubtitle method-title">changeCreationRequestPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the upload. By default: NSOperationQueuePriorityNormal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeCreationRequestPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the upload. By default: NSOperationQueuePriorityNormal.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeDownloadRequestPriority:" title="changeDownloadRequestPriority:"></a>
+	<h3 class="subsubtitle method-title">changeDownloadRequestPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the download. By default: NSOperationQueuePriorityNormal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeDownloadRequestPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the download. By default: NSOperationQueuePriorityNormal.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeUploadRequestPriority:" title="changeUploadRequestPriority:"></a>
+	<h3 class="subsubtitle method-title">changeUploadRequestPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the upload. By default: NSOperationQueuePriorityNormal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeUploadRequestPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the upload. By default: NSOperationQueuePriorityNormal.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:errorBlock:" title="delete:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">delete:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delete this asset from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)delete:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally be notified if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Delete this asset from the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:onError:" title="delete:onError:"></a>
+	<h3 class="subsubtitle method-title">delete:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delete this asset from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)delete:(void ( ^ ) ( void ))<em>successBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally be notified if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Delete this asset from the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadMasterData:onProgress:onCompletion:onCancellation:onError:" title="downloadMasterData:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">downloadMasterData:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)downloadMasterData:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( NSData *data , BOOL wasCached ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+
+<p>Be careful with this API as the data <a href="#//api/name/size">size</a> may be quite large (i.e. check <a href="#//api/name/size">size</a> before pulling). To
+downloads files of any <a href="#//api/name/size">size</a> consider using
+@c <a href="#//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a> which stores
+the downloaded bits in a temporary file on disk.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">- downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)downloadMasterData:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( NSData *data , BOOL wasCached ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+
+<p>Be careful with this API as the data <a href="#//api/name/size">size</a> may be quite large (i.e. check <a href="#//api/name/size">size</a> before pulling). To
+downloads files of any <a href="#//api/name/size">size</a> consider using
+@c <a href="#//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a> which stores
+the downloaded bits in a temporary file on disk.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">- downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadMasterDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Download the <a href="#//api/name/master">master</a> data for the receiver from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)downloadMasterDataToFile:(NSString *)<em>filePath</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobePhotoAsset *photoAsset ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>File system path where the final downloaded file should be stored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the request task.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when the download task has completed successfully.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of cancellation of the task. Specify @c NULL
+to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of any errors. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Download the <a href="#//api/name/master">master</a> data for the receiver from the Adobe Photo service asynchronously.</p>
+
+<p>The downloaded bits are stored in a temporary file on disk as they arrive. This prevents
+excessive memory usage when downloading large files. Generally this method should be used and
+preferred to @c <a href="#//api/name/downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:" title="downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">downloadMasterDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Download the <a href="#//api/name/master">master</a> data for the receiver from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)downloadMasterDataToFile:(NSString *)<em>filePath</em> withPriority:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePhotoAsset *photoAsset ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>File system path where the final downloaded file should be stored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the request task.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when the download task has completed successfully.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of cancellation of the task. Specify @c NULL
+to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of any errors. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Download the <a href="#//api/name/master">master</a> data for the receiver from the Adobe Photo service asynchronously.</p>
+
+<p>The downloaded bits are stored in a temporary file on disk as they arrive. This prevents
+excessive memory usage when downloading large files. Generally this method should be used and
+preferred to @c <a href="#//api/name/downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadMasterData:progressBlock:successBlock:cancellationBlock:errorBlock:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadProxyData:onProgress:onCompletion:onCancellation:onError:" title="downloadProxyData:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">downloadProxyData:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)downloadProxyData:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( NSData *data , BOOL wasCached ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)downloadProxyData:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( NSData *data , BOOL wasCached ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadProxyDataToFile:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Download the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)downloadProxyDataToFile:(NSString *)<em>filePath</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobePhotoAsset *photoAsset ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>File system path where the final downloaded file should be stored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the request task.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when the download task has completed successfully.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of cancellation of the task. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of any errors. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Download the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset from the Adobe Photo service asynchronously.</p>
+
+<p>The downloaded bits are stored in a temporary file on disk as they arrive. This prevents
+excessive memory usage when downloading large files. Generally this method should be used and
+preferred to @c <a href="#//api/name/downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:" title="downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">downloadProxyDataToFile:withPriority:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Download the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)downloadProxyDataToFile:(NSString *)<em>filePath</em> withPriority:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePhotoAsset *photoAsset ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>File system path where the final downloaded file should be stored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the request task.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when the download task has completed successfully.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of cancellation of the task. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of any errors. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Download the <a href="#//api/name/proxy">proxy</a> data (DNG) for this asset from the Adobe Photo service asynchronously.</p>
+
+<p>The downloaded bits are stored in a temporary file on disk as they arrive. This prevents
+excessive memory usage when downloading large files. Generally this method should be used and
+preferred to @c <a href="#//api/name/downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadProxyData:progressBlock:successBlock:cancellationBlock:errorBlock:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the rendition data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)downloadRendition:(AdobePhotoAssetRendition *)<em>rendition</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( NSData *data , BOOL wasCached ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rendition</em></dt>
+			<dd><p>The rendition to download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the rendition data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:" title="downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">downloadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the rendition data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)downloadRendition:(AdobePhotoAssetRendition *)<em>rendition</em> withPriority:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( NSData *data , BOOL wasCached ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rendition</em></dt>
+			<dd><p>The rendition to download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the rendition data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateRenditions:requestPriority:successBlock:errorBlock:" title="generateRenditions:requestPriority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">generateRenditions:requestPriority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Generate a series of <a href="#//api/name/renditions">renditions</a> for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)generateRenditions:(AdobePhotoAssetRenditions *)<em>renditions</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( AdobePhotoAsset *photoAsset ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>renditions</em></dt>
+			<dd><p>The <a href="#//api/name/renditions">renditions</a> to generate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Generate a series of <a href="#//api/name/renditions">renditions</a> for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateRenditions:withPriority:onCompletion:onError:" title="generateRenditions:withPriority:onCompletion:onError:"></a>
+	<h3 class="subsubtitle method-title">generateRenditions:withPriority:onCompletion:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Generate a series of <a href="#//api/name/renditions">renditions</a> for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)generateRenditions:(AdobePhotoAssetRenditions *)<em>renditions</em> withPriority:(NSOperationQueuePriority)<em>priority</em> onCompletion:(void ( ^ ) ( AdobePhotoAsset *photoAsset ))<em>successBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>renditions</em></dt>
+			<dd><p>The <a href="#//api/name/renditions">renditions</a> to generate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Returns the <a href="#//api/name/master">master</a> data if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Generate a series of <a href="#//api/name/renditions">renditions</a> for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToAsset:" title="isEqualToAsset:"></a>
+	<h3 class="subsubtitle method-title">isEqualToAsset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A utility to test the equlity of two AdobePhotoAssets.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToAsset:(AdobePhotoAsset *)<em>asset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>asset</em></dt>
+			<dd><p>The AdobePhotoAsset to test against.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>True if the assets are the same.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A utility to test the equlity of two AdobePhotoAssets.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refresh:errorBlock:" title="refresh:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">refresh:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Refresh this asset from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)refresh:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally be notified if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Refresh this asset from the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refresh:onError:" title="refresh:onError:"></a>
+	<h3 class="subsubtitle method-title">refresh:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Refresh this asset from the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)refresh:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally be notified if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Refresh this asset from the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:" title="uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">uploadMasterDataFromPath:requestPriority:autoGenerateRenditions:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upload the <a href="#//api/name/master">master</a> data (limited to 200MB) for this asset on the Adobe Photo service asynchronously.
+Since the connection may be unstable, we recommend that the data is no more that 20MB.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)uploadMasterDataFromPath:(NSURL *)<em>path</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> autoGenerateRenditions:(BOOL)<em>generate</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path to the <a href="#//api/name/master">master</a> data. The path must be locally valid and cannot be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>generate</em></dt>
+			<dd><p>If <a href="#//api/name/renditions">renditions</a> should be automatically generated.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the asset if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upload the <a href="#//api/name/master">master</a> data (limited to 200MB) for this asset on the Adobe Photo service asynchronously.
+Since the connection may be unstable, we recommend that the data is no more that 20MB.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:" title="uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">uploadMasterDataFromPath:withPriority:autoGenerateRenditions:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upload the <a href="#//api/name/master">master</a> data (limited to 200MB) for this asset on the Adobe Photo service asynchronously.
+Since the connection may be unstable, we recommend that the data is no more that 20MB.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)uploadMasterDataFromPath:(NSURL *)<em>path</em> withPriority:(NSOperationQueuePriority)<em>priority</em> autoGenerateRenditions:(BOOL)<em>generate</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path to the <a href="#//api/name/master">master</a> data. The path must be locally valid and cannot be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>generate</em></dt>
+			<dd><p>If <a href="#//api/name/renditions">renditions</a> should be automatically generated.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the asset if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upload the <a href="#//api/name/master">master</a> data (limited to 200MB) for this asset on the Adobe Photo service asynchronously.
+Since the connection may be unstable, we recommend that the data is no more that 20MB.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">uploadRendition:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upload the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobePhotoAsyncRequest *)uploadRendition:(AdobePhotoAssetRendition *)<em>rendition</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rendition</em></dt>
+			<dd><p>The rendition.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the asset if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobePhotoAsyncRequest.html">AdobePhotoAsyncRequest</a> which can be used to control the transfer priority and cancellation of the transfer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upload the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:" title="uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">uploadRendition:withPriority:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upload the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)uploadRendition:(AdobePhotoAssetRendition *)<em>rendition</em> withPriority:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePhotoAsset *asset ))<em>successBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rendition</em></dt>
+			<dd><p>The rendition.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally get an updated reference to the asset if successful.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upload the <a href="#//api/name/master">master</a> data for this asset on the Adobe Photo service asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobePhotoAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

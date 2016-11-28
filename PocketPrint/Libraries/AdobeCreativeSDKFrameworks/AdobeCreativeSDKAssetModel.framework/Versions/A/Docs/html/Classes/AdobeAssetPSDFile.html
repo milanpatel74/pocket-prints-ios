@@ -1,0 +1,1415 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobeAssetPSDFile Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobeAssetPSDFile Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;+ createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelCreatePSDViaAGCRequest">&nbsp;&nbsp;&nbsp;&nbsp;- cancelCreatePSDViaAGCRequest</option>
+	
+	<option value="//api/name/cancelLayerRenditionRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- cancelLayerRenditionRequest:</option>
+	
+	<option value="//api/name/cancelPullPSDCompositeRequest">&nbsp;&nbsp;&nbsp;&nbsp;- cancelPullPSDCompositeRequest</option>
+	
+	<option value="//api/name/cancelPushPSDCompositeRequest">&nbsp;&nbsp;&nbsp;&nbsp;- cancelPushPSDCompositeRequest</option>
+	
+	<option value="//api/name/changeCreatePSDViaAGCRequestPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changeCreatePSDViaAGCRequestPriority:</option>
+	
+	<option value="//api/name/changeLayerRenditionRequestPriority:withNewPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changeLayerRenditionRequestPriority:withNewPriority:</option>
+	
+	<option value="//api/name/changePSDCompositePullRequestPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changePSDCompositePullRequestPriority:</option>
+	
+	<option value="//api/name/changePushPSDCompositeRequestPriority:">&nbsp;&nbsp;&nbsp;&nbsp;- changePushPSDCompositeRequestPriority:</option>
+	
+	<option value="//api/name/downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	<option value="//api/name/pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:">&nbsp;&nbsp;&nbsp;&nbsp;- pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:">create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:">createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelCreatePSDViaAGCRequest">cancelCreatePSDViaAGCRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelLayerRenditionRequest:">cancelLayerRenditionRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelPullPSDCompositeRequest">cancelPullPSDCompositeRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelPushPSDCompositeRequest">cancelPushPSDCompositeRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeCreatePSDViaAGCRequestPriority:">changeCreatePSDViaAGCRequestPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeLayerRenditionRequestPriority:withNewPriority:">changeLayerRenditionRequestPriority:withNewPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changePSDCompositePullRequestPriority:">changePSDCompositePullRequestPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changePushPSDCompositeRequestPriority:">changePushPSDCompositeRequestPriority:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:">getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:">getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:">pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobeAssetPSDFile Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobeAssetPSDFile Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/AdobeAssetFile.html">AdobeAssetFile</a> : <a href="../Classes/AdobeAsset.html">AdobeAsset</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobeAssetPSDFile.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AdobeAssetPSDFile represents a Photoshop Document (PSD file).  It provides methods for reading
+PSD previews and composites from PSD files, creating PSD files from composites, and getting
+layer renditions from PSD files.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:">+&nbsp;createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:">+&nbsp;create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelPullPSDCompositeRequest">&ndash;&nbsp;cancelPullPSDCompositeRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changePSDCompositePullRequestPriority:">&ndash;&nbsp;changePSDCompositePullRequestPriority:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelPushPSDCompositeRequest">&ndash;&nbsp;cancelPushPSDCompositeRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changePushPSDCompositeRequestPriority:">&ndash;&nbsp;changePushPSDCompositeRequestPriority:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelCreatePSDViaAGCRequest">&ndash;&nbsp;cancelCreatePSDViaAGCRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeCreatePSDViaAGCRequestPriority:">&ndash;&nbsp;changeCreatePSDViaAGCRequestPriority:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:">&ndash;&nbsp;getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelLayerRenditionRequest:">&ndash;&nbsp;cancelLayerRenditionRequest:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeLayerRenditionRequestPriority:withNewPriority:">&ndash;&nbsp;changeLayerRenditionRequestPriority:withNewPriority:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:" title="create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">create:folder:agcManifest:imageComponents:overwrite:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a PSD file by asynchronously pushing an AdobeAGCManifest to Adobe Creative Cloud.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetPSDFile *)create:(NSString *)<em>name</em> folder:(AdobeAssetFolder *)<em>folder</em> agcManifest:(AdobeAGCManifest *)<em>manifest</em> imageComponents:(NSArray *)<em>imageComponents</em> overwrite:(BOOL)<em>overwrite</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobeAssetPSDFile *file ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The output name of the PSD file.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>folder</em></dt>
+			<dd><p>The destination folder the PSD should be written to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>manifest</em></dt>
+			<dd><p>The AGC manifest used to create the PSD file on Adobe Creative Cloud.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>imageComponents</em></dt>
+			<dd><p>An array of AdobeAGCImageComponent objects. Only image/jpg and image/png are supported content types.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>overwrite</em></dt>
+			<dd><p>In the case of a new PSD file, whether it should overwrite an already existing composite.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally, get an updated reference to the created file when complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A place holder pointer to the AdobeAssetPSDFile.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a PSD file by asynchronously pushing an AdobeAGCManifest to Adobe Creative Cloud.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:" title="createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">createWithPSDComposite:overwriteExisting:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a PSD file by asynchronously pushing a PSD composite structure to Adobe Creative
+Cloud. This operation performs a pushPSDComposite operation on
+the returned AdobeAssetPSDFile instance, which can then be used to either change the request
+priority or to cancel it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AdobeAssetPSDFile *)createWithPSDComposite:(AdobePSDComposite *)<em>psdComposite</em> overwriteExisting:(BOOL)<em>overwrite</em> onProgress:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobeAssetPSDFile *file ))<em>completionBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>psdComposite</em></dt>
+			<dd><p>The PSD composite used to create the PSD file on Adobe Creative Cloud.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>overwrite</em></dt>
+			<dd><p>In the case of a new PSD composite whether it should overwrite an already existing
+composite. Set this to YES if a previous push has failed with an AdobeDCXErrorCompositeAlreadyExists</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Optionally, get an updated reference to the created file when complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A place holder pointer to the AdobeAssetPSDFile.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a PSD file by asynchronously pushing a PSD composite structure to Adobe Creative
+Cloud. This operation performs a pushPSDComposite operation on
+the returned AdobeAssetPSDFile instance, which can then be used to either change the request
+priority or to cancel it.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelCreatePSDViaAGCRequest" title="cancelCreatePSDViaAGCRequest"></a>
+	<h3 class="subsubtitle method-title">cancelCreatePSDViaAGCRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the create request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelCreatePSDViaAGCRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the create request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelLayerRenditionRequest:" title="cancelLayerRenditionRequest:"></a>
+	<h3 class="subsubtitle method-title">cancelLayerRenditionRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the layer rendition request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelLayerRenditionRequest:(id)<em>requestToken</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>requestToken</em></dt>
+			<dd><p>The token of the request to cancel.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the layer rendition request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelPullPSDCompositeRequest" title="cancelPullPSDCompositeRequest"></a>
+	<h3 class="subsubtitle method-title">cancelPullPSDCompositeRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the rendition request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelPullPSDCompositeRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the rendition request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelPushPSDCompositeRequest" title="cancelPushPSDCompositeRequest"></a>
+	<h3 class="subsubtitle method-title">cancelPushPSDCompositeRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel the push request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelPushPSDCompositeRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel the push request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeCreatePSDViaAGCRequestPriority:" title="changeCreatePSDViaAGCRequestPriority:"></a>
+	<h3 class="subsubtitle method-title">changeCreatePSDViaAGCRequestPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the create request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeCreatePSDViaAGCRequestPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the create request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the create request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeLayerRenditionRequestPriority:withNewPriority:" title="changeLayerRenditionRequestPriority:withNewPriority:"></a>
+	<h3 class="subsubtitle method-title">changeLayerRenditionRequestPriority:withNewPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the layer rendition request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeLayerRenditionRequestPriority:(id)<em>requestToken</em> withNewPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>requestToken</em></dt>
+			<dd><p>Token ID of the request to cancel.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the layer rendition request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changePSDCompositePullRequestPriority:" title="changePSDCompositePullRequestPriority:"></a>
+	<h3 class="subsubtitle method-title">changePSDCompositePullRequestPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the rendition request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changePSDCompositePullRequestPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the rendition request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changePushPSDCompositeRequestPriority:" title="changePushPSDCompositeRequestPriority:"></a>
+	<h3 class="subsubtitle method-title">changePushPSDCompositeRequestPriority:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change the priority of the push request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changePushPSDCompositeRequestPriority:(NSOperationQueuePriority)<em>priority</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the push request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change the priority of the push request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadPreviewWithAppliedLayerCompID:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets a read-only description of the PSD file from Adobe Creative Cloud.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeAssetAsyncRequest *)downloadPreviewWithAppliedLayerCompID:(NSNumber *)<em>layerCompID</em> progressBlock:(void ( ^ ) ( double ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobePSDPreview *psdPreview ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerCompID</em></dt>
+			<dd><p>Optionally, the id of a layer comp to apply before generating the preview. If nil
+no layer comp will be explicitly applied. TODO &ndash; NOT YET IMPLEMENTED</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the download progress of the composite representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Optionally, get a reference to a PSD composite object for the composite representation when download is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobeAssetAsyncRequest.html">AdobeAssetAsyncRequest</a> which can be used to control the cancellation of the request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets a read-only description of the PSD file from Adobe Creative Cloud.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadRenditionForLayerID:layerCompID:renditionType:dimensions:requestPriority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a rendition of a layer in the PSD asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeAssetAsyncRequest *)downloadRenditionForLayerID:(NSNumber *)<em>layerID</em> layerCompID:(NSNumber *)<em>layerCompID</em> renditionType:(AdobeAssetFileRenditionType)<em>renditionType</em> dimensions:(CGSize)<em>dimensions</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double ))<em>progressBlock</em> successBlock:(void ( ^ ) ( NSData *data , BOOL fromCache ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerID</em></dt>
+			<dd><p>The ID of the layer for which a rendition should be generated. Pass nil to render the entire PSD.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerCompID</em></dt>
+			<dd><p>The ID of the layerComp which should be applied. Pass nil to apply the default layerComp.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>renditionType</em></dt>
+			<dd><p>The type of rendition to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dimensions</em></dt>
+			<dd><p>The dimensions of the rendition in &lsquo;points&rsquo;.  The value gets adjusted to
+pixels depending on the screen resolution.  The largest of the dimensions' width and
+height sets the bounds for the rendition size (width and height).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Get the rendition data, and notified if returned from local cache.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error for a request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An @c <a href="../Classes/AdobeAssetAsyncRequest.html">AdobeAssetAsyncRequest</a> which can be used to control the cancellation of the request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get a rendition of a layer in the PSD asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:" title="getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">getPreviewWithAppliedLayerCompId:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Gets a read-only description of the PSD file from Adobe Creative Cloud.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getPreviewWithAppliedLayerCompId:(NSNumber *)<em>layerCompId</em> onProgress:(void ( ^ ) ( double ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePSDPreview *psdPreview ))<em>completionBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerCompId</em></dt>
+			<dd><p>Optionally, the id of a layer comp to apply before generating the preview. If nil
+no layer comp will be explicitly applied. TODO &ndash; NOT YET IMPLEMENTED</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the download progress of the composite representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Optionally, get a reference to a PSD composite object for the composite representation when download is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Gets a read-only description of the PSD file from Adobe Creative Cloud.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:" title="getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">getRenditionForLayer:withLayerComp:withType:withSize:withPriority:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED
+Get a rendition of a layer in the PSD asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getRenditionForLayer:(NSNumber *)<em>layerID</em> withLayerComp:(NSNumber *)<em>layerCompID</em> withType:(AdobeAssetFileRenditionType)<em>type</em> withSize:(CGSize)<em>dimensions</em> withPriority:(NSOperationQueuePriority)<em>priority</em> onProgress:(void ( ^ ) ( double ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( NSData *, BOOL ))<em>completionBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerID</em></dt>
+			<dd><p>The ID of the layer for which a rendition should be generated. Pass nil to render the entire PSD.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerCompID</em></dt>
+			<dd><p>The ID of the layerComp which should be applied. Pass nil to apply the default layerComp.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of rendition to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dimensions</em></dt>
+			<dd><p>The dimensions of the rendition in &lsquo;points&rsquo;.  The value gets adjusted to
+pixels depending on the screen resolution.  The largest of the dimensions' width and
+height sets the bounds for the rendition size (width and height).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Get the rendition data, and notified if returned from local cache.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error for a request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The token for the request that can be used to cancel the request or change its priority.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DEPRECATED
+Get a rendition of a layer in the PSD asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:" title="pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:"></a>
+	<h3 class="subsubtitle method-title">pullPSDCompositeAt:onProgress:onCompletion:onCancellation:onError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a PSD composite object for this Creative Cloud file and pull down its composite
+representation asynchronously from the cloud. The returned PSD composite object
+can then be used to inspect or modify the PSD file via its composite representation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)pullPSDCompositeAt:(NSString *)<em>path</em> onProgress:(void ( ^ ) ( double ))<em>progressBlock</em> onCompletion:(void ( ^ ) ( AdobePSDComposite *psdComposite ))<em>completionBlock</em> onCancellation:(void ( ^ ) ( void ))<em>cancellationBlock</em> onError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path where the local composite is stored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally, track the download progress of the composite representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Optionally, get a reference to a PSD composite object for the composite representation when download is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally, be notified of a cancellation on download.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally, be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a PSD composite object for this Creative Cloud file and pull down its composite
+representation asynchronously from the cloud. The returned PSD composite object
+can then be used to inspect or modify the PSD file via its composite representation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeAssetPSDFile.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

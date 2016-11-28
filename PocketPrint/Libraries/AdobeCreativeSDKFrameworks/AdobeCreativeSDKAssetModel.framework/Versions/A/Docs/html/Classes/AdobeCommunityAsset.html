@@ -1,0 +1,2340 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdobeCommunityAsset Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AdobeCreativeSDKAssetModel.framework </a></h1>
+				<a id="developerHome" href="../index.html">Adobe Systems Incorporated</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdobeCommunityAsset Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/assetID">&nbsp;&nbsp;&nbsp;&nbsp;assetID</option>
+	
+	<option value="//api/name/category">&nbsp;&nbsp;&nbsp;&nbsp;category</option>
+	
+	<option value="//api/name/communityID">&nbsp;&nbsp;&nbsp;&nbsp;communityID</option>
+	
+	<option value="//api/name/creator">&nbsp;&nbsp;&nbsp;&nbsp;creator</option>
+	
+	<option value="//api/name/dateCreated">&nbsp;&nbsp;&nbsp;&nbsp;dateCreated</option>
+	
+	<option value="//api/name/dateFeatured">&nbsp;&nbsp;&nbsp;&nbsp;dateFeatured</option>
+	
+	<option value="//api/name/datePublished">&nbsp;&nbsp;&nbsp;&nbsp;datePublished</option>
+	
+	<option value="//api/name/dimensions">&nbsp;&nbsp;&nbsp;&nbsp;dimensions</option>
+	
+	<option value="//api/name/fileSize">&nbsp;&nbsp;&nbsp;&nbsp;fileSize</option>
+	
+	<option value="//api/name/label">&nbsp;&nbsp;&nbsp;&nbsp;label</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/nativeMimeType">&nbsp;&nbsp;&nbsp;&nbsp;nativeMimeType</option>
+	
+	<option value="//api/name/supportedMimeTypes">&nbsp;&nbsp;&nbsp;&nbsp;supportedMimeTypes</option>
+	
+	<option value="//api/name/tags">&nbsp;&nbsp;&nbsp;&nbsp;tags</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addCommentToAsset:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- addCommentToAsset:priority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/addLikeToAssetWithPriority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- addLikeToAssetWithPriority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/commentsForAssetOnPage:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- commentsForAssetOnPage:priority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/download:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- download:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</option>
+	
+	<option value="//api/name/likesForAssetOnPage:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- likesForAssetOnPage:priority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/recommendedAssetsOnPage:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- recommendedAssetsOnPage:priority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/refreshMetadataWithPriority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- refreshMetadataWithPriority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/removeCommentFromAsset:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- removeCommentFromAsset:priority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/removeLikeFromAssetWithPriority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- removeLikeFromAssetWithPriority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/reportAbuseOnAsset:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- reportAbuseOnAsset:priority:successBlock:errorBlock:</option>
+	
+	<option value="//api/name/similarAssetsOnPage:priority:successBlock:errorBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- similarAssetsOnPage:priority:successBlock:errorBlock:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/assetID">assetID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/category">category</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/communityID">communityID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/creator">creator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateCreated">dateCreated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFeatured">dateFeatured</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datePublished">datePublished</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dimensions">dimensions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileSize">fileSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/label">label</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nativeMimeType">nativeMimeType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedMimeTypes">supportedMimeTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tags">tags</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:">assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCommentToAsset:priority:successBlock:errorBlock:">addCommentToAsset:priority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addLikeToAssetWithPriority:successBlock:errorBlock:">addLikeToAssetWithPriority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/commentsForAssetOnPage:priority:successBlock:errorBlock:">commentsForAssetOnPage:priority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:">copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:">copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/download:progressBlock:successBlock:cancellationBlock:errorBlock:">download:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/likesForAssetOnPage:priority:successBlock:errorBlock:">likesForAssetOnPage:priority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recommendedAssetsOnPage:priority:successBlock:errorBlock:">recommendedAssetsOnPage:priority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refreshMetadataWithPriority:successBlock:errorBlock:">refreshMetadataWithPriority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCommentFromAsset:priority:successBlock:errorBlock:">removeCommentFromAsset:priority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeLikeFromAssetWithPriority:successBlock:errorBlock:">removeLikeFromAssetWithPriority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reportAbuseOnAsset:priority:successBlock:errorBlock:">reportAbuseOnAsset:priority:successBlock:errorBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/similarAssetsOnPage:priority:successBlock:errorBlock:">similarAssetsOnPage:priority:successBlock:errorBlock:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdobeCommunityAsset Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdobeCommunityAsset Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCoding<br />NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdobeCommunityAsset.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AdobeCommunityAsset represents an asset in the Creative Cloud Community. It provides accessors that
+allow the client to obtain information about the asset, download the asset, download thumbnails
+and previews of the asset, and browse for &lsquo;similar&rsquo; assets given an asset.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/assetID">&nbsp;&nbsp;assetID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/communityID">&nbsp;&nbsp;communityID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/category">&nbsp;&nbsp;category</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/creator">&nbsp;&nbsp;creator</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateCreated">&nbsp;&nbsp;dateCreated</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datePublished">&nbsp;&nbsp;datePublished</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFeatured">&nbsp;&nbsp;dateFeatured</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dimensions">&nbsp;&nbsp;dimensions</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileSize">&nbsp;&nbsp;fileSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/label">&nbsp;&nbsp;label</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nativeMimeType">&nbsp;&nbsp;nativeMimeType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedMimeTypes">&nbsp;&nbsp;supportedMimeTypes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tags">&nbsp;&nbsp;tags</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:">+&nbsp;assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refreshMetadataWithPriority:successBlock:errorBlock:">&ndash;&nbsp;refreshMetadataWithPriority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recommendedAssetsOnPage:priority:successBlock:errorBlock:">&ndash;&nbsp;recommendedAssetsOnPage:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/similarAssetsOnPage:priority:successBlock:errorBlock:">&ndash;&nbsp;similarAssetsOnPage:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:">&ndash;&nbsp;copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:">&ndash;&nbsp;copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/download:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;download:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">&ndash;&nbsp;downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/likesForAssetOnPage:priority:successBlock:errorBlock:">&ndash;&nbsp;likesForAssetOnPage:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addLikeToAssetWithPriority:successBlock:errorBlock:">&ndash;&nbsp;addLikeToAssetWithPriority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeLikeFromAssetWithPriority:successBlock:errorBlock:">&ndash;&nbsp;removeLikeFromAssetWithPriority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/commentsForAssetOnPage:priority:successBlock:errorBlock:">&ndash;&nbsp;commentsForAssetOnPage:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCommentToAsset:priority:successBlock:errorBlock:">&ndash;&nbsp;addCommentToAsset:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCommentFromAsset:priority:successBlock:errorBlock:">&ndash;&nbsp;removeCommentFromAsset:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reportAbuseOnAsset:priority:successBlock:errorBlock:">&ndash;&nbsp;reportAbuseOnAsset:priority:successBlock:errorBlock:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/assetID" title="assetID"></a>
+	<h3 class="subsubtitle method-title">assetID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The asset ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *assetID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The asset ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/category" title="category"></a>
+	<h3 class="subsubtitle method-title">category</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The category where the asset may be found.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) AdobeCommunityCategory *category</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The category where the asset may be found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/communityID" title="communityID"></a>
+	<h3 class="subsubtitle method-title">communityID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The community ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *communityID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The community ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/creator" title="creator"></a>
+	<h3 class="subsubtitle method-title">creator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creator of the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) AdobeCommunityUser *creator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creator of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateCreated" title="dateCreated"></a>
+	<h3 class="subsubtitle method-title">dateCreated</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Date the asset was created.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDate *dateCreated</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Date the asset was created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFeatured" title="dateFeatured"></a>
+	<h3 class="subsubtitle method-title">dateFeatured</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The date the asset was featured.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDate *dateFeatured</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The date the asset was featured.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datePublished" title="datePublished"></a>
+	<h3 class="subsubtitle method-title">datePublished</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Date the asset was published.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDate *datePublished</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Date the asset was published.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dimensions" title="dimensions"></a>
+	<h3 class="subsubtitle method-title">dimensions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dimensions of the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) CGSize dimensions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dimensions of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileSize" title="fileSize"></a>
+	<h3 class="subsubtitle method-title">fileSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>File size of the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) long fileSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>File size of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/label" title="label"></a>
+	<h3 class="subsubtitle method-title">label</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Label of the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *label</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Label of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Name of the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Name of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nativeMimeType" title="nativeMimeType"></a>
+	<h3 class="subsubtitle method-title">nativeMimeType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>MIME type of the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *nativeMimeType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>MIME type of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportedMimeTypes" title="supportedMimeTypes"></a>
+	<h3 class="subsubtitle method-title">supportedMimeTypes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Additional MIME types that may be used with the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSArray *supportedMimeTypes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Additional MIME types that may be used with the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tags" title="tags"></a>
+	<h3 class="subsubtitle method-title">tags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array of tags related to the asset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSArray *tags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array of tags related to the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:" title="assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">assetsForCommunityID:page:priority:query:sortType:categories:subCategories:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetch Community Assets based on the specified parameters asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)assetsForCommunityID:(NSString *)<em>communityID</em> page:(NSString *)<em>pageHref</em> priority:(NSOperationQueuePriority)<em>priority</em> query:(NSString *)<em>queryString</em> sortType:(AdobeCommunityAssetSortType)<em>sortType</em> categories:(NSArray *)<em>categories</em> subCategories:(NSArray *)<em>subCategories</em> successBlock:(void ( ^ ) ( NSArray *assets , NSString *nextPageHref ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>communityID</em></dt>
+			<dd><p>The ID of the community.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageHref</em></dt>
+			<dd><p>The HREF for the next page of assets or @c nil to fetch the first page.
+The success block will indicate the next page&rsquo;s HREF value that can
+be specified for this argument to fetch that page.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the network request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queryString</em></dt>
+			<dd><p>A string query to further filter asset based on their names and <a href="#//api/name/tags">tags</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sortType</em></dt>
+			<dd><p>Defines how the results should be sorted.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>categories</em></dt>
+			<dd><p>Filter the assets to the specified categories. Specify @c nil to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subCategories</em></dt>
+			<dd><p>Filter the returned assets to the specified subcategories. The
+specified sub<a href="#//api/name/category">category</a> must match it&rsquo;s super<a href="#//api/name/category">category</a> that is specified
+for the @c categores argument. Specify @c to omit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when all the request assets have been fetched. An
+array of @c AdobeCommunityAsset objects and an NSString HREF value for the
+next page of assets will be passed to that block. If there are no more
+page available, the HREF value will be @c nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Bock to execute if an error occurs. Specify @c NULL to omit.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetch Community Assets based on the specified parameters asynchronously.</p><div class="note"><p><strong>Note:</strong> If the logged-in user is not entitled to access the community, the @c onError block will be
+called with an appropriate error message.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addCommentToAsset:priority:successBlock:errorBlock:" title="addCommentToAsset:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">addCommentToAsset:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add comment to asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addCommentToAsset:(NSString *)<em>comment</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>The comment to add to the asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of recommended AdobeCommunityAssets.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add comment to asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addLikeToAssetWithPriority:successBlock:errorBlock:" title="addLikeToAssetWithPriority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">addLikeToAssetWithPriority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add like to asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addLikeToAssetWithPriority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of recommended AdobeCommunityAssets.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add like to asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/commentsForAssetOnPage:priority:successBlock:errorBlock:" title="commentsForAssetOnPage:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">commentsForAssetOnPage:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get comments on the asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)commentsForAssetOnPage:(NSString *)<em>pageHref</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( NSArray *comments , NSString *nextPageHref ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageHref</em></dt>
+			<dd><p>The HREF for the next page of assets or @c nil to fetch the first page.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of comment metadata on the asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get comments on the asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:" title="copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">copyAssetToCreativeCloudPath:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Copy the asset to the logged-in user&rsquo;s account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)copyAssetToCreativeCloudPath:(NSString *)<em>path</em> purchaseIfNeeded:(BOOL)<em>purchase</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( NSDictionary *))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>A valid path in the Adobe Creative Cloud.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>purchase</em></dt>
+			<dd><p>Purchase the asset, if needed, before the copy.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block that is called when the asset has been copied.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Called when an error occurs.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An asynchronous request object that can be used to monitor the progress of the request
+and optionally cancel/interrupt it.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Copy the asset to the logged-in user&rsquo;s account.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:" title="copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">copyAssetToDesignLibrary:purchaseIfNeeded:requestPriority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Copy the asset to the logged-in user&rsquo;s account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)copyAssetToDesignLibrary:(NSString *)<em>designLibID</em> purchaseIfNeeded:(BOOL)<em>purchase</em> requestPriority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( NSDictionary *))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>designLibID</em></dt>
+			<dd><p>The Adobe Design Library ID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>purchase</em></dt>
+			<dd><p>Purchase the asset, if needed, before the copy.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>Priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block that is called when the asset has been copied.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Called when an error occurs.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An asynchronous request object that can be used to monitor the progress of the request
+and optionally cancel/interrupt it.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Copy the asset to the logged-in user&rsquo;s account.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/download:progressBlock:successBlock:cancellationBlock:errorBlock:" title="download:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">download:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the data of the file asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeCommunityAsyncRequest *)download:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( NSData *data ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Get the rendition data, and notified if returned from local cache.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the data of the file asynchronously.</p>
+
+<p>The downloaded bits for the asset will be stored in memory as they arrive from the network. If
+the asset being downloaded is large, this method could use a significant amount of memory, which
+could potentially cause your application to be terminated. It is recommended to only use this
+method for downloading small assets. For downloading assets of any arbitrary size, consider using
+@c <a href="#//api/name/downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</a> which stores
+the downloaded bits in a temporary file on disk during download.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:">- downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadRenditionWithDimension:size:type:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the rendition of the asset as NSData asynchronously and scale along an edge.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeCommunityAsyncRequest *)downloadRenditionWithDimension:(AdobeCommunityAssetImageDimension)<em>dimension</em> size:(NSUInteger)<em>size</em> type:(AdobeCommunityAssetImageType)<em>type</em> priority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( NSData *imageData , BOOL fromCache ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dimension</em></dt>
+			<dd><p>Width or height to scale to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>Max length of the edge we scale to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>Rendition file type.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally track the upload progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Get the rendition data, and notified if returned from local cache.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally be notified of a cancellation on upload.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the rendition of the asset as NSData asynchronously and scale along an edge.</p>
+
+<p>The maximum size value is 1024. Any values larger are clipped to 1024.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:" title="downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">downloadToPath:priority:progressBlock:successBlock:cancellationBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Download the asset to the specified @c filePath asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AdobeCommunityAsyncRequest *)downloadToPath:(NSString *)<em>filePath</em> priority:(NSOperationQueuePriority)<em>priority</em> progressBlock:(void ( ^ ) ( double fractionCompleted ))<em>progressBlock</em> successBlock:(void ( ^ ) ( AdobeCommunityAsset *asset ))<em>successBlock</em> cancellationBlock:(void ( ^ ) ( void ))<em>cancellationBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>File system path where the downloaded bits will be placed once the
+download process has completed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The initial priority of the request. This can be changed using the
+returned object from the this method.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Optionally used to track the progress of the download task. Specify
+@c NULL if you don&rsquo;t want to track the download progress.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>The block to execute after the file has been successfully downloaded.
+The file system path to the downloaded file will be returned.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancellationBlock</em></dt>
+			<dd><p>Optionally used to be notified of cancellation of the request.
+Specify @c NULL to omit the block.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of any errors. Specify @c NULL to omit the
+error block.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An instance of the @c <a href="../Classes/AdobeCommunityAsyncRequest.html">AdobeCommunityAsyncRequest</a> used to control the request. The request
+priority can be changed or the request itself can be cancelled.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Download the asset to the specified @c filePath asynchronously.</p>
+
+<p>This method is the preferred way for downloading Market Assets since the downloaded bits are
+stored in a temporary file on disk instead of memory. Once the download operation has finished,
+the downloaded bits will be available at the specified file system path.</p><div class="note"><p><strong>Note:</strong> The downloaded bits are only accessible @em after the file has been fully downloaded. To
+observer the progress of the download process, use the @c onProgress block.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/likesForAssetOnPage:priority:successBlock:errorBlock:" title="likesForAssetOnPage:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">likesForAssetOnPage:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get likes on the asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)likesForAssetOnPage:(NSString *)<em>pageHref</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( AdobeCommunityUsers *userLikes , NSString *nextPageHref ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageHref</em></dt>
+			<dd><p>The HREF for the next page of assets or @c nil to fetch the first page.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of AdobeCommunityUsers who like the asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get likes on the asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recommendedAssetsOnPage:priority:successBlock:errorBlock:" title="recommendedAssetsOnPage:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">recommendedAssetsOnPage:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get recommended assets asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)recommendedAssetsOnPage:(NSString *)<em>pageHref</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( AdobeCommunityAssets *, NSString *nextPageHref ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageHref</em></dt>
+			<dd><p>The HREF for the next page of assets or @c nil to fetch the first page.
+The success block will indicate the next page&rsquo;s HREF value that can
+be specified for this argument to fetch that page.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when all the request assets have been fetched. An
+array of @c AdobeCommunityAsset objects and an NSString HREF value for the
+next page of assets will be passed to that block. If there are no more
+page available, the HREF value will be @c nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get recommended assets asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refreshMetadataWithPriority:successBlock:errorBlock:" title="refreshMetadataWithPriority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">refreshMetadataWithPriority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Refresh the asset metadata asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)refreshMetadataWithPriority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( AdobeCommunityAsset *))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>The refreshed asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Refresh the asset metadata asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeCommentFromAsset:priority:successBlock:errorBlock:" title="removeCommentFromAsset:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">removeCommentFromAsset:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove comment from asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeCommentFromAsset:(NSString *)<em>commentID</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>The commentID to remove from the asset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of recommended AdobeCommunityAssets.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove comment from asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeLikeFromAssetWithPriority:successBlock:errorBlock:" title="removeLikeFromAssetWithPriority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">removeLikeFromAssetWithPriority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove like from asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeLikeFromAssetWithPriority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of recommended AdobeCommunityAssets.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove like from asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reportAbuseOnAsset:priority:successBlock:errorBlock:" title="reportAbuseOnAsset:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">reportAbuseOnAsset:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Report abuse on asset asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reportAbuseOnAsset:(AdobeCommunityAssetAbuseType)<em>abuseType</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( void ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>abuseType</em></dt>
+			<dd><p>The abuse type.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>An array of recommended AdobeCommunityAssets.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Report abuse on asset asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/similarAssetsOnPage:priority:successBlock:errorBlock:" title="similarAssetsOnPage:priority:successBlock:errorBlock:"></a>
+	<h3 class="subsubtitle method-title">similarAssetsOnPage:priority:successBlock:errorBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get similar assets asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)similarAssetsOnPage:(NSString *)<em>pageHref</em> priority:(NSOperationQueuePriority)<em>priority</em> successBlock:(void ( ^ ) ( AdobeCommunityAssets *, NSString *nextPageHref ))<em>successBlock</em> errorBlock:(void ( ^ ) ( NSError *))<em>errorBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageHref</em></dt>
+			<dd><p>The HREF for the next page of assets or @c nil to fetch the first page.
+The success block will indicate the next page&rsquo;s HREF value that can
+be specified for this argument to fetch that page.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>priority</em></dt>
+			<dd><p>The priority of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successBlock</em></dt>
+			<dd><p>Block to execute when all the request assets have been fetched. An
+array of @c AdobeCommunityAsset objects and an NSString HREF value for the
+next page of assets will be passed to that block. If there are no more
+page available, the HREF value will be @c nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorBlock</em></dt>
+			<dd><p>Optionally be notified of an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get similar assets asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdobeCommunityAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adobe Systems Incorporated. All rights reserved. (Last updated: 2016-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
