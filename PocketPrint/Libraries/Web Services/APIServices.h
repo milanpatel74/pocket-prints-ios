@@ -72,6 +72,7 @@
                                  andPromotionCode:(NSString*) aPromotionArrCode
                                      andPhone:(NSString*) aPhone
                                    andAddress:(NSString*) aAddress
+                               andCompanyName:(NSString*) aCompanyName
                                     andSuburb:(NSString*) aSuburb
                                      andState:(NSString*) aState
                                   andPostCode:(NSString*) aPostCode

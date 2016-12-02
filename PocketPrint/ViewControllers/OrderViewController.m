@@ -385,7 +385,7 @@ int ITEMS_PER_ROW;
         shipFee = [shipFee stringByReplacingOccurrencesOfString:@"$" withString:@""];
     
         // create order
-        sql = [NSString stringWithFormat:@"INSERT INTO order_list (address,voucher_id,coupon_id,email,name,paypal_transaction_token,stripe_transaction_token,phone,postcode,products,shipping_cost,state,surburb,total,voucher_email) VALUES ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@')",
+        sql = [NSString stringWithFormat:@"INSERT INTO order_list (address,voucher_id,coupon_id,email,name,paypal_transaction_token,stripe_transaction_token,phone,postcode,products,shipping_cost,state,surburb,total,voucher_email,company_name) VALUES ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@', '%@')",
                [dictAddr objectForKey:@"street_addr"],
                promotionString,
                @"no coupon",
@@ -400,7 +400,8 @@ int ITEMS_PER_ROW;
                [dictAddr objectForKey:@"state"],
                [dictAddr objectForKey:@"suburb"],
                _totalCost,
-               @"voucher email"];
+               @"voucher email",
+               [dictAddr objectForKey:@"company_name"]];
         [sqlMan doInsertQuery:sql];
         
         // get order id

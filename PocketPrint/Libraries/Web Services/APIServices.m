@@ -389,6 +389,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(APIServices)
                              andPromotionCode:(NSString*) aPromotionArrCode
                                      andPhone:(NSString*) aPhone
                                    andAddress:(NSString*) aAddress
+                               andCompanyName:(NSString*) aCompanyName
                                     andSuburb:(NSString*) aSuburb
                                      andState:(NSString*) aState
                                   andPostCode:(NSString*) aPostCode
@@ -408,6 +409,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(APIServices)
                                  stripeToken,@"stripe_transaction_token",
                                  aPhone,@"phone",
                                  aPostCode,@"postcode",
+                                 aCompanyName, @"company_name",
                                  shippingCost,@"shipping_cost",
                                  aState,@"state",
                                  aSuburb,@"suburb",

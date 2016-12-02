@@ -257,6 +257,7 @@ static Uploader *singleton;
                                                                    andPromotionCode:[dictOrder objectForKey:@"voucher_id"]
                                                                       andPhone:[dictOrder objectForKey:@"phone"]
                                                                     andAddress:[dictOrder objectForKey:@"address"]
+                                                                andCompanyName:[dictOrder objectForKey:@"company_name"]
                                                                      andSuburb:[dictOrder objectForKey:@"surburb"]
                                                                       andState:[dictOrder objectForKey:@"state"]
                                                                    andPostCode:[dictOrder objectForKey:@"postcode"]
