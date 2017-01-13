@@ -10,7 +10,7 @@
 #import "PKCard.h"
 
 
-#define kStripeKey          STRIPE_API_TEST
+#define kStripeKey          STRIPE_API_LIVE
 #define CARD_KEY            @"CARD_KEY"
 
 @interface StripeViewController ()

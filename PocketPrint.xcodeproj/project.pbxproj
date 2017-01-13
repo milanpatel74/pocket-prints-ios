@@ -3285,7 +3285,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appiphany.pocketprints;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.pocketprints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c001f268-b3e7-4460-8a0a-9431c3363b42";
 				SDKROOT = iphoneos;
@@ -3334,7 +3334,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appiphany.pocketprints;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.pocketprints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c001f268-b3e7-4460-8a0a-9431c3363b42";
 				SDKROOT = iphoneos;
