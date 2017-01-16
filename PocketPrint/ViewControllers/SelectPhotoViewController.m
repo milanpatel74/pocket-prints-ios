@@ -41,7 +41,14 @@ float PHOTO_GAP;
 #define TAG_PHOTO      9999
 
 int ITEMS_PER_ROW;
+NSString* productType = @"";
 
+NSMutableArray *clonedPhotos;
+
+int firstPhoto = -1;
+int secondPhoto = -1;
+
+bool isSwapped = NO;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -201,24 +208,6 @@ int ITEMS_PER_ROW;
     imgViewPhotoShadow= [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT)];
     imgViewPhotoShadow.image = imgBG;
     
- /*   // initialize number
-    arrNumber = [NSMutableArray new];
-    for (int i=0; i<100; i++) {
-        NSString    *s;
-//        if (i<10) {
-//            s = [NSString  stringWithFormat:@"0%d",i];
-//        }
-//        else
-            s = [NSString stringWithFormat:@"%d",i];
-        [arrNumber addObject:s];
-    }
-    
-    // initilize picker 65
-    pickerNumber = [[UIPickerView alloc] initWithFrame:CGRectMake(65, -64, 30, 162)];
-    pickerNumber.delegate = self;
-    pickerNumber.dataSource = self;
-    pickerNumber.showsSelectionIndicator = NO;
-*/
     switch (_albumType) {
         case ALBUM_CAMERA:
             [self loadPhotoFromPhotoAlbum];
@@ -252,22 +241,30 @@ int ITEMS_PER_ROW;
     [self.view addSubview:numberSelector];
     isShowNumberSelector = NO;
 
-    CGRect frame = self.tabBarController.tabBar.frame;
-//    frame.origin.y = 519 -((IS_4INCHES)?0:88);
-//    self.tabBarController.tabBar.frame = frame;
-    
-//    if (frame.origin.y > 519 -((IS_4INCHES)?0:88)) {
-//        // expand
-//        CGRect frame = tblView.frame;
-//        frame.size.height +=44;
-//        tblView.frame  =frame;
-//    }
-
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resetQuantity:) name:NotificationResetQuantity object:nil];
     
-//    [self setupNavigationElements];
     [self setupSharedPOPInstagramNetworkingClient];
     [tblView setTag:1];
+    
+    if (_isOrderPreview)
+    {
+        Product *aProduct = [[_arrPhotoGroups objectAtIndex:0] objectForKey:@"product"];
+        productType = aProduct.type;
+        
+        if ([productType isEqualToString:@"Poster"])
+        {
+            UIAlertView *swapMessage = [[UIAlertView alloc] initWithTitle:nil message:@"Tap any photo to adjust rotation \nTap two photos to swap their positions." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Go to FAQ",@"OK", nil];
+            [swapMessage show];
+        }
+        
+        NSMutableDictionary *dictContainer = [_arrPhotoGroups objectAtIndex:0];
+        
+        // Photos before swapping
+        NSMutableArray  *arrPhotos = [dictContainer objectForKey:@"photos"];
+        
+        // Backup for restoring later
+        clonedPhotos = [arrPhotos copy];
+    }
 }
 
 -(void) viewDidLayoutSubviews {
@@ -610,32 +607,16 @@ int ITEMS_PER_ROW;
         }
         // clear current photoview
         if (currPhotoBtn.buttonTag == BUTTON_HEADER) {
-            //currLbAlbumCount.text = [NSString stringWithFormat:@"%d",aNumber];
             currLbAlbumCount.hidden = NO;
             currLbAlbumCount.textColor = [UIColor whiteColor];
-            //        [currDict setObject:[NSNumber numberWithInt:aNumber] forKey:@"count"];
-            //        [ tblView reloadData];
-            
-            // now we set all
-            //NSMutableDictionary *dictContainer = [currPhotoBtn.object objectForKey:@"container"];
-            //[dictContainer setObject:[NSNumber numberWithInt:aNumber] forKey:@"count"];
-            //NSMutableArray  *arr = [dictContainer objectForKey:@"photos"];
-//            for (NSMutableDictionary *dict in arr) {
-//                [dict setObject:[NSNumber numberWithInt:aNumber] forKey:@"count"];
-//                //refresh
-//                
-//            }
             [tblView reloadData];
         }
         else {
-            
-            //currLbCount.text = [NSString stringWithFormat:@"%d",aNumber];
             //set
             [imgViewPhotoShadow removeFromSuperview];
             imgViewPhotoShadow.alpha = 0;
             currLbCount.hidden = NO;
             currLbCount.textColor = [UIColor whiteColor];
-            //[currDict setObject:[NSNumber numberWithInt:aNumber] forKey:@"count"];
             [ tblView reloadData];
         }
         // reset
@@ -655,12 +636,6 @@ int ITEMS_PER_ROW;
     [_arrPhotoGroups addObjectsFromArray:_arrPhotos];
     tblView.alpha = 0;
     [tblView reloadData];
-    // move
-
-//    CGRect oldRect = [tblView rectForRowAtIndexPath:[NSIndexPath indexPathForRow:_sectionToMove inSection:0]];
-//    
-//    //scroll
-//    [tblView setContentOffset:oldRect.origin];
 }
 
 -(void) fadeInTableView {
@@ -678,20 +653,7 @@ int ITEMS_PER_ROW;
             if (group && [[group valueForProperty:ALAssetsGroupPropertyName] isEqualToString:_albumName]) {
                 [group setAssetsFilter:[ALAssetsFilter allPhotos]];
                 [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop){
-                //[group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop){
                     if (asset){
-                        //                    NSNumber *width = [[[asset defaultRepresentation] metadata] objectForKey:@"PixelWidth"]; //find the key with "PixelWidth" name
-                        //                    NSString *widthString = [NSString stringWithFormat:@"%@", width]; //take the value of the key
-                        
-                        //NSString *assetAlbumName = [group valueForProperty:ALAssetsGroupPropertyName]; //it return to me an ALErrorInvalidProperty
-                        //DLog(@"found %d phot in %@",index,assetAlbumName);
-                        
-//                        NSMutableDictionary    *groupDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-//                                                             //[dict objectForKey:@"source"],@"url",
-//                                                             [[UIImage alloc] initWithCGImage:asset.thumbnail],@"image",
-//                                                             assetAlbumName,@"name",
-//                                                             assetAlbumName,@"id", nil];
-                        
                         // firstly , get the image
                         //                    DLog(@"location = %@",);
                         //                    DLog(@"Date = %@",);
@@ -752,18 +714,6 @@ int ITEMS_PER_ROW;
                             //            [dateFormatter setDateFormat:@"yyyy-MM-dd"];
                             //            NSDate  *date = [dateFormatter dateFromString:strDate];
                             [dateFormatter setDateFormat:@"MMMM d yyyy"];
-//                            int count = 0;
-//                            
-//                            if (_refData) {
-//                                if (![[_refData objectForKey:@"count_applied"] boolValue]) {
-//                                    //set now
-//                                    count = [[_refData objectForKey:@"count"] intValue];
-//                                    // setback
-//                                    
-//                                }
-//                                
-//
-//                            }
                             
                             dictContainer = [NSMutableDictionary dictionaryWithObjectsAndKeys:strDate,@"date",[NSMutableArray new],@"photos",[dateFormatter stringFromDate:date],@"fullDate", locationStr,@"location",[NSNumber numberWithInt:count],@"count",[NSNumber numberWithBool:frameApplied],@"framed",nil];
                             
@@ -782,14 +732,9 @@ int ITEMS_PER_ROW;
                                     locationStr = [NSString stringWithFormat:@"%@, %@",[placemark.addressDictionary objectForKey:@"SubLocality"],[placemark.addressDictionary objectForKey:@"State"]];
                                     //DLog(@"");
                                 }
-                                    //DLog(@"Location = =>%@<=",locationStr);
-//                                    DLog(@"Erro %@",error);
-//                                    DLog(@"========");
-                                //DLog(@"Locatio = %@",location);
                                 
                                 if (error) {
                                     // check out
-                                    //[self testPlaceMark:placemarks location:location andError:error];
                                     locationStr = @"No Location";
                                 }
                                 [dictContainer setObject:locationStr forKey:@"location"];
@@ -799,15 +744,9 @@ int ITEMS_PER_ROW;
 
                         CGSize imageSize  = asset.defaultRepresentation.dimensions;
                         
-//                        NSURL *fileURL = [NSURL fileURLWithPath:asset.defaultRepresentation.filename];
-//                        DLog(@"file = %@",asset.defaultRepresentation.filename);
-//                        imageSize = [self sizeOfImageAtURL:fileURL];
-                        
                         // get array
                         NSMutableArray  *tmpPhotos = [dictContainer objectForKey:@"photos"];
                         // check for reference data
-                        //UIImage *imgTmp = [[UIImage alloc] initWithCGImage:asset.defaultRepresentation.fullResolutionImage];
-                        //DLog(@"thumnail size = %@",NSStringFromCGSize(imageSize));
                         __block NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                                              [NSNumber numberWithInt:count],@"count",
                                                              @"",@"id",
@@ -834,8 +773,6 @@ int ITEMS_PER_ROW;
                 RUN_ON_MAIN_QUEUE(^{
                     // DLog(@"======");
                     // reload
-                    //[arrPhotoGroups removeAllObjects];
-                    //[arrPhotoGroups addObjectsFromArray:arrPhotoAlbums];
                     if (_refData) {
                         [_refData setObject:[NSNumber numberWithBool:YES] forKey:@"count_applied"];
                         [_refData setObject:[NSNumber numberWithBool:YES] forKey:@"frame_applied"];
@@ -896,8 +833,6 @@ int ITEMS_PER_ROW;
         // check existed
         if (!isExisted) {
             // create new and add to array
-//            [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-//            NSDate  *date = [dateFormatter dateFromString:strDate];
             [dateFormatter setDateFormat:@"MMMM d yyyy"];
             
             dictContainer = [NSMutableDictionary dictionaryWithObjectsAndKeys:strDate,@"date",[NSMutableArray new],@"photos",[dateFormatter stringFromDate:date],@"fullDate", nil];
@@ -917,13 +852,8 @@ int ITEMS_PER_ROW;
                 
             }
             
-            //if (![[_refData objectForKey:@"frame"] boolValue]) {
-                //set now
             if (![[_refData objectForKey:@"frame_applied"] boolValue])
                 frameApplied = [[_refData objectForKey:@"frame"] boolValue];
-                // setback
-                
-            //}
         }
         
         NSURL    *fullImgUrl = [NSURL URLWithString:[[[tmpDict objectForKey:@"images"] objectForKey:@"standard_resolution"] objectForKey:@"url"]];
@@ -1052,11 +982,6 @@ int ITEMS_PER_ROW;
 -(void) loadFacebookAlbum {
     // in case there is facebook album id
     
-    
-    
-    
-    
-    
     [[FacebookServices sharedFacebookServices] getPhotosOfAlbumWithAlbumId:_fbAlbumId onFail:^(NSError *error) {
         DLog(@"Load albums photo fail %@",error.debugDescription);
     } onDone:^(id obj) {
@@ -1091,14 +1016,6 @@ int ITEMS_PER_ROW;
                 if (![[_refData objectForKey:@"count_applied"] boolValue]) {
                     //set now
                     count = [[_refData objectForKey:@"count"] intValue];
-                    // setback
-                    //if (![[_refData objectForKey:@"frame"] boolValue]) {
-                        //set now
-                    
-                    
-                        // setback
-                        
-                    //}
                 }
                 
                 if (![[_refData objectForKey:@"frame_applied"] boolValue])
@@ -1113,8 +1030,6 @@ int ITEMS_PER_ROW;
                 NSDate  *date = [dateFormatter dateFromString:strDate];
                 [dateFormatter setDateFormat:@"MMMM d yyyy"];
                 
-
-//                dictContainer = [NSMutableDictionary dictionaryWithObjectsAndKeys:strDate,@"date",[NSMutableArray new],@"photos",[dateFormatter stringFromDate:date],@"fullDate",[NSNumber numberWithInt:count],@"count",[NSNumber numberWithBool:frameApplied],@"framed", nil];
                  dictContainer = [NSMutableDictionary dictionaryWithObjectsAndKeys:[NSMutableArray new],@"photos",[NSNumber numberWithInt:count],@"count",[NSNumber numberWithBool:frameApplied],@"framed", nil];
                 [_arrPhotoGroups addObject:dictContainer];
             }
@@ -1155,14 +1070,6 @@ int ITEMS_PER_ROW;
     }
     else
     {
-        //        POPMediaItem *itm = [taggedMedia objectAtIndex:indexPath.row];
-        //    NSDictionary    *dict = [_arrPhotoGroups objectAtIndex:indexPath.row];
-        //    NSMutableArray  *arrPhotos = [dict objectForKey:@"photos"];
-        // now we calculate row
-        
-//        NSInteger countInlineRows = (1 + ITEMS_PER_ROW-1) / ITEMS_PER_ROW;
-//        
-//        return countInlineRows*(PHOTO_GAP + PHOTO_HEIGHT) + HEADER_HEIGHT + HEADER_GAP;
         return 173.0;
     }
    
@@ -1173,15 +1080,7 @@ int ITEMS_PER_ROW;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    if (tableView.tag == 1)
-//    {
-         [self showNumberSelector:NO];
-//    }
-//    else
-//    {
-//        
-//    }
-   
+    [self showNumberSelector:NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -1207,8 +1106,6 @@ int ITEMS_PER_ROW;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    //cell.frame = CGRectMake(0, 0, tblView.frame.size.width, CELL_HEIGHT);
-    
     UIView  *headerView;
     UIView  *photoContainerView;
     // remove all contents
@@ -1216,10 +1113,7 @@ int ITEMS_PER_ROW;
     {
         for (UIView *aView in cell.contentView.subviews) {
             aView.hidden = YES;
-            //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [aView removeFromSuperview];
-            //});
-            
         }
         
         // add header now
@@ -1245,24 +1139,12 @@ int ITEMS_PER_ROW;
         }
         
         
-//        if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0)
-//        {
-            //older than iOS 8 code here
-            if ([lbLocation.text rangeOfString:@"No Location"].location != NSNotFound)
-            {
-                lbLocation.text = @"";
-            }
-//        }
-//        else
-//        {
-//             //iOS 8 specific code here
-//            if ([lbLocation.text containsString:@"No Location"])
-//            {
-//                lbLocation.text = @"";
-//            }
-//            
-//            
-//        }
+        //older than iOS 8 code here
+        if ([lbLocation.text rangeOfString:@"No Location"].location != NSNotFound)
+        {
+            lbLocation.text = @"";
+        }
+
         [headerView addSubview:lbLocation];
         
         
@@ -1275,7 +1157,6 @@ int ITEMS_PER_ROW;
         btnAlbumCircle.buttonTag = BUTTON_HEADER;
         
         [headerView addSubview:btnAlbumCircle];
-        
         
         
         // add counter
@@ -1291,10 +1172,7 @@ int ITEMS_PER_ROW;
         btnAlbumCircle.object = [NSMutableDictionary dictionaryWithObjectsAndKeys:lbCountHeader,@"label",dictContainer,@"container", nil];
         
         int counter = [[dictContainer objectForKey:@"count"] intValue];
-        //    for (int i = 0; i< arrPhotos.count; i++) {
-        //        NSMutableDictionary *dictTmp = [arrPhotos objectAtIndex:i];
-        //        counter+= [[dictTmp objectForKey:@"count"] intValue];
-        //    }
+        
         // se back
         lbCountHeader.text = (counter == 0)?@"":[NSString stringWithFormat:@"%d",counter];
         //-> end header
@@ -1326,6 +1204,11 @@ int ITEMS_PER_ROW;
             imgView.tag = TAG_PHOTO;
             // set container
             imgView.data = photoDict;
+            
+            /*UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected)];
+            singleTap.numberOfTapsRequired = 1;
+            [imgView setUserInteractionEnabled:YES];
+            [imgView addGestureRecognizer:singleTap];*/
             
             
             // get image from cropped image URL first then from small thumbnail
@@ -1376,17 +1259,6 @@ int ITEMS_PER_ROW;
                                                             });
                                                         }];
                     
-                    //            // downlaod high resolution photo
-                    //            [[Downloader sharedDownloader] downloadWithCacheURL:[photoDict objectForKey:@"url_high"]
-                    //                                                     allowThumb:NO
-                    //                                             andCompletionBlock:^(NSData *data) {
-                    //                                                 UIImage *img = [UIImage imageWithData:data];
-                    //                                                 imgView.image = img;
-                    //                                                 [photoDict setObject:img forKey:@"image_high"];
-                    //                                             }
-                    //                                                andFailureBlock:^(NSError *error) {
-                    //                                                    DLog(@"Download error %@",error.debugDescription);
-                    //                                                }];
                 }
                 else
                 {
@@ -1400,66 +1272,6 @@ int ITEMS_PER_ROW;
             }
             
             
-            /*if ([[photoDict objectForKey:@"image"] isKindOfClass:[NSNull class]]) {
-                imgView.image = [UIImage imageNamed:@"default_img_small.png"];
-                [imgView showSpiner:YES];
-                // download now
-                [[Downloader sharedDownloader] downloadWithCacheURL:[photoDict objectForKey:@"url"]
-                                                         allowThumb:NO
-                                                 andCompletionBlock:^(NSData *data) {
-                                                     UIImage *img = [UIImage imageWithData:data];
-                                                     
-                                                     if (!img) {
-                                                         DLog(@"==>%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-                                                         // remove cache now
-                                                         [[Downloader sharedDownloader] removeCacheForURL:[photoDict objectForKey:@"url"]];
-                                                     }
-                                                     else {
-                                                         [photoDict setObject:img forKey:@"image"];
-                                                         if (_albumType!=ALBUM_PHOTO) {
-                                                             [photoDict setObject:NSStringFromCGSize(img.size) forKey:@"size"];
-                                                         }
-                                                         
-                                                     }
-                                                     
-                                                     RUN_ON_MAIN_QUEUE(^{
-                                                         [imgView showSpiner:NO];
-                                                         [UIView transitionWithView:imgView
-                                                                           duration:0.7f
-                                                                            options:UIViewAnimationOptionTransitionCrossDissolve
-                                                                         animations:^{
-                                                                             imgView.image = img;
-                                                                         } completion:nil];
-                                                     });
-                                                 }
-                                                    andFailureBlock:^(NSError *error) {
-                                                        DLog(@"Download error %@",error.debugDescription);
-                                                        RUN_ON_MAIN_QUEUE(^{
-                                                            [imgView showSpiner:NO];
-                                                        });
-                                                    }];
-                
-                //            // downlaod high resolution photo
-                //            [[Downloader sharedDownloader] downloadWithCacheURL:[photoDict objectForKey:@"url_high"]
-                //                                                     allowThumb:NO
-                //                                             andCompletionBlock:^(NSData *data) {
-                //                                                 UIImage *img = [UIImage imageWithData:data];
-                //                                                 imgView.image = img;
-                //                                                 [photoDict setObject:img forKey:@"image_high"];
-                //                                             }
-                //                                                andFailureBlock:^(NSError *error) {
-                //                                                    DLog(@"Download error %@",error.debugDescription);
-                //                                                }];
-            }
-            else
-                imgView.image = [photoDict objectForKey:@"image"];*/
-            
-            
-            
-            //imgView.image=[self.taggedMediaItems[indexPath.row]thumbnailImage];
-            
-            
-            
             [aView addSubview:imgView];
             
             
@@ -1469,9 +1281,33 @@ int ITEMS_PER_ROW;
             [btnPhoto addTarget:self action:@selector(touchPhoto:) forControlEvents:UIControlEventTouchUpInside];
             //btnPhoto.object = lbCount;
             btnPhoto.data = photoDict;
+            btnPhoto.photoIndex = i;
             btnPhoto.dataContainer = dictContainer ;
             [aView addSubview:btnPhoto];
             //btnPhoto.backgroundColor = [UIColor redColor];
+            
+            // set border color
+            /*if (firstPhoto == i)
+            {
+                [btnPhoto.layer setBorderWidth:2.0f];
+                [btnPhoto.layer setBorderColor:[[UIColor redColor] CGColor]];
+            }
+            else
+            {
+                [btnPhoto.layer setBorderWidth:0.0f];
+                [btnPhoto.layer setBorderColor:[[UIColor clearColor] CGColor]];
+            }
+            
+            if (secondPhoto == i)
+            {
+                [btnPhoto.layer setBorderWidth:2.0f];
+                [btnPhoto.layer setBorderColor:[[UIColor redColor] CGColor]];
+            }
+            else
+            {
+                [btnPhoto.layer setBorderWidth:0.0f];
+                [btnPhoto.layer setBorderColor:[[UIColor clearColor] CGColor]];
+            }*/
             
             // circle
             UIImage *photoCircleImg = [UIImage imageNamed:@"small_circle_number.png"];
@@ -1502,47 +1338,7 @@ int ITEMS_PER_ROW;
                 btnSquare.indexPath = indexPath;
                 btnSquare.indexColumn = i;
                 btnSquare.photoDict = photoDict;
-                
-//                if ((indexPath.row == self.cropIndexPath.row) && (i == self.indexColumn)) {
-//                    btnSquare.hidden = NO;
-//                    self.currentSelectedThumb = btnPhoto;
-//                }
             }
-            
-            
-            
-            
-            // photo frame
-            //        NSString    *photoFrameName = @"";
-            //        if ([[photoDict objectForKey:@"framed"] boolValue]) {
-            //            photoFrameName = @"small_frame_hover.png";
-            //            //[imgView activateBorder:YES];
-            //
-            //            CGRect imgFrame = imgView.frame;
-            //            UIImageView *imgViewBorder   = [[UIImageView alloc] initWithFrame:CGRectMake(imgFrame.origin.x-1, imgFrame.origin.y-1, 99, 99)];
-            //            imgViewBorder.image = [UIImage imageNamed:@"border_w_shadow.png"];
-            //            [aView addSubview:imgViewBorder];
-            //        }
-            //        else {
-            //            photoFrameName = @"small_frame.png";
-            //            // no need to activate;
-            //            //[imgView activateBorder:NO];
-            //        }
-            //
-            //        UIImage *photoFrameImg = [UIImage imageNamed:photoFrameName];
-            //        UIButtonWithData    *btnFrame = [UIButtonWithData buttonWithType:UIButtonTypeCustom];
-            //        btnFrame.frame = CGRectMake(3, 2, photoFrameImg.size.width, photoFrameImg.size.height);
-            //        [btnFrame setImage:photoFrameImg forState:UIControlStateNormal];
-            //        [btnFrame addTarget:self action:@selector(touchPhotoFrame:) forControlEvents:UIControlEventTouchUpInside];
-            //        btnFrame.data = photoDict;
-            //        [aView addSubview:btnFrame];
-            
-            //        UIButtonWithData    *btnThumb = [UIButtonWithData buttonWithType:UIButtonTypeCustom];
-            //        btnThumb.frame = CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT);
-            //        btnThumb.backgroundColor = [UIColor clearColor];
-            //        [btnThumb addTarget:self action:@selector(touchPhotoThumb:) forControlEvents:UIControlEventTouchUpInside];
-            //        btnThumb.data = photoDict;
-            //        [aView addSubview:btnThumb];
             
             // config button
             if ((i % ITEMS_PER_ROW == 0) || (i % ITEMS_PER_ROW == 1)) {
@@ -1620,11 +1416,7 @@ int ITEMS_PER_ROW;
         btnAlbumCircle.object = [NSMutableDictionary dictionaryWithObjectsAndKeys:lbCountHeader,@"label",hashDict,@"container", nil];
         
         int counter = [[hashDict objectForKey:@"count"] intValue];
-//        int counter = 1;
-        //    for (int i = 0; i< arrPhotos.count; i++) {
-        //        NSMutableDictionary *dictTmp = [arrPhotos objectAtIndex:i];
-        //        counter+= [[dictTmp objectForKey:@"count"] intValue];
-        //    }
+
         // se back
         lbCountHeader.text = (counter == 0)?@"":[NSString stringWithFormat:@"%d",counter];
         //-> end header
@@ -1703,47 +1495,7 @@ int ITEMS_PER_ROW;
                 btnSquare.indexPath = indexPath;
                 btnSquare.indexColumn = 0;
                 btnSquare.photoDict = hashDict;
-                
-//                if ((indexPath.row == self.cropIndexPath.row) && (0 == self.indexColumn)) {
-//                    btnSquare.hidden = NO;
-//                    self.currentSelectedThumb = btnPhoto;
-//                }
-                
             }
-        
-        
-        
-            // photo frame
-            //        NSString    *photoFrameName = @"";
-            //        if ([[photoDict objectForKey:@"framed"] boolValue]) {
-            //            photoFrameName = @"small_frame_hover.png";
-            //            //[imgView activateBorder:YES];
-            //
-            //            CGRect imgFrame = imgView.frame;
-            //            UIImageView *imgViewBorder   = [[UIImageView alloc] initWithFrame:CGRectMake(imgFrame.origin.x-1, imgFrame.origin.y-1, 99, 99)];
-            //            imgViewBorder.image = [UIImage imageNamed:@"border_w_shadow.png"];
-            //            [aView addSubview:imgViewBorder];
-            //        }
-            //        else {
-            //            photoFrameName = @"small_frame.png";
-            //            // no need to activate;
-            //            //[imgView activateBorder:NO];
-            //        }
-            //
-            //        UIImage *photoFrameImg = [UIImage imageNamed:photoFrameName];
-            //        UIButtonWithData    *btnFrame = [UIButtonWithData buttonWithType:UIButtonTypeCustom];
-            //        btnFrame.frame = CGRectMake(3, 2, photoFrameImg.size.width, photoFrameImg.size.height);
-            //        [btnFrame setImage:photoFrameImg forState:UIControlStateNormal];
-            //        [btnFrame addTarget:self action:@selector(touchPhotoFrame:) forControlEvents:UIControlEventTouchUpInside];
-            //        btnFrame.data = photoDict;
-            //        [aView addSubview:btnFrame];
-            
-            //        UIButtonWithData    *btnThumb = [UIButtonWithData buttonWithType:UIButtonTypeCustom];
-            //        btnThumb.frame = CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT);
-            //        btnThumb.backgroundColor = [UIColor clearColor];
-            //        [btnThumb addTarget:self action:@selector(touchPhotoThumb:) forControlEvents:UIControlEventTouchUpInside];
-            //        btnThumb.data = photoDict;
-            //        [aView addSubview:btnThumb];
             
             // config button
             if ((indexPath.row % ITEMS_PER_ROW == 0) || (indexPath.row % ITEMS_PER_ROW == 1)) {
@@ -1784,25 +1536,9 @@ int ITEMS_PER_ROW;
     return cell;
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-//    UIView  *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tblView.frame.size.width, 68)];
-//    containerView.backgroundColor = self.view.backgroundColor;
-//    
-//    UIView  *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 18, tblView.frame.size.width, 50)];
-//    headerView.backgroundColor = [UIColor whiteColor];
-//    
-//    [containerView addSubview:headerView];
-//    
-//    return containerView;
-//}
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-//    return 68;
-//}
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return arrPhotoGroups.count;
-//}
+-(void)tapDetected{
+    NSLog(@"single Tap on imageview");
+}
 
 
 #pragma mark utilities
@@ -1913,112 +1649,136 @@ int ITEMS_PER_ROW;
 
 #pragma mark actions
 -(void) touchPhoto:(UIButtonWithData*)btn {
-    
-    isUpdated = YES;
-    cropCoach = YES;
-    [self setupActivityIndicator];
-
-    tmpDict = (NSMutableDictionary*)btn.data;
-
-    int photoCount = [[tmpDict objectForKey:@"count"] intValue];
-
-    
-    //[aView addSubview:pickerNumber];
-    UILabel *lbTmp = (UILabel*)btn.object;
-    
-
-    if (photoCount == 0) {
-        lbTmp.text = @"1";
-        lbTmp.hidden = NO;
-        lbTmp.textColor = UIColorFromRGB(0xeb310b);
-        [tmpDict setObject:[NSNumber numberWithInt:1] forKey:@"count"];
-    }
-    else {
-//        lbTmp.text = @"0";
-//        lbTmp.hidden = YES;
-//        [tmpDict setObject:[NSNumber numberWithInt:0] forKey:@"count"];
-    }
-   
-    [self showNumberSelector:NO];
-    
-    [self toAddHashtagData];
-    // TEMPORARY DISABLE
-   [self showNumberSelector:NO];
-    UIView  *viewContainer = [btn superview];
-    UIImage *imgPhoto = nil;
-    NSMutableDictionary *dict = nil;
-    for (UIView *aView in viewContainer.subviews) {
-        if (aView.tag == TAG_PHOTO) {
-            UIImageViewWithData *imgView= (UIImageViewWithData*)aView;
-            imgPhoto = imgView.image;
-            dict = imgView.data;
-            break;
-        }
-    }
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    SqlManager  *sqlMan = [SqlManager defaultShare];
-    NSLog(@"%@",[defaults objectForKey:PRODUCTID]);
-    NSString *sql = [NSString stringWithFormat:@"SELECT * FROM upload_image WHERE original_imgpath = '%@' and product_id='%@'",[dict objectForKey:@"url_high"],[defaults objectForKey:PRODUCTID]];
-    NSMutableArray *tmpArr = [sqlMan doQueryAndGetArray:sql];
-    
-    PhotoPreviewViewController  *photoController = [[PhotoPreviewViewController alloc] initWithNibName:@"PhotoPreviewViewController" bundle:[NSBundle mainBundle]];
-    photoController.protocolDatas =(id)self;
-    
-    // Show cropping icon on thumbnail
-    self.currentSelectedThumb = btn;
-    self.indexColumn = btn.indexColumn;
-    self.cropIndexPath = btn.indexPath;
-    
-//    if ([btn isEqual: self.currentSelectedThumb]) {
-//        self.currentSelectedThumb.croppingIcon.hidden = YES;
-//        self.currentSelectedThumb = nil;
-//        self.cropIndexPath = nil;
-//        self.indexColumn = -1;
-//        
-//    } else {
-//        
-//        if (self.currentSelectedThumb) {
-//            self.currentSelectedThumb.croppingIcon.hidden = YES;
-//            //self.currentSelectedThumb.backgroundColor = [UIColor redColor];
-//            self.currentSelectedThumb = nil;
-//            self.cropIndexPath = nil;
-//            self.indexColumn = -1;
-//            
-//        }
-//        
-//        self.currentSelectedThumb = btn;
-//        self.indexColumn = btn.indexColumn;
-//        self.cropIndexPath = btn.indexPath;
-//        
-//        btn.croppingIcon.hidden = NO;
-//        
-//    }
-    
-    
-    self.photoDict = dict;
-    photoController.photoDict = dict;
-    photoController.dataArray = tmpArr;
-    if (_albumType == ALBUM_INSTAGRAM )
+    if (_isOrderPreview && [productType isEqualToString:@"Poster"])
     {
-        if (tblView.tag == 1)
+        NSLog(@"Photo index: %d", btn.photoIndex);
+        
+        if (firstPhoto == -1 && secondPhoto == -1) // None selected
         {
-            photoController.type = @"instagram";
+            firstPhoto = btn.photoIndex;
+            [btn.layer setBorderWidth:2.0f];
+            [btn.layer setBorderColor:[[UIColor orangeColor] CGColor]];
         }
-        else
+        else if (firstPhoto > -1 && btn.photoIndex == firstPhoto) // Remove selection
         {
-            photoController.type = @"hashtag";
+            firstPhoto = -1;
+            [btn.layer setBorderWidth:0.0f];
+            [btn.layer setBorderColor:[[UIColor clearColor] CGColor]];
+        }
+        else if (firstPhoto > -1) // First photo selected
+        {
+            secondPhoto = btn.photoIndex;
+            [btn.layer setBorderWidth:2.0f];
+            [btn.layer setBorderColor:[[UIColor orangeColor] CGColor]];
+        }
+        
+        //let swap
+        if (firstPhoto > -1 && secondPhoto > -1)
+        {
+            NSMutableDictionary *dictContainer = [_arrPhotoGroups objectAtIndex:0];
+            
+            // Photos before swapping
+            NSMutableArray  *photos = [dictContainer objectForKey:@"photos"];
+            
+            // Swap objects
+            [photos exchangeObjectAtIndex:firstPhoto withObjectAtIndex:secondPhoto];
+            
+            [tblView reloadData];
+            
+            // reset
+            firstPhoto = -1;
+            secondPhoto = -1;
+            
+            // mark as swapped
+            isSwapped = YES;
+            
+            // Add apply button
+            if (self.navigationItem.rightBarButtonItem == nil)
+            {
+                self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Apply" style:UIBarButtonItemStylePlain target:self action:@selector(touchApply)];
+                self.navigationItem.rightBarButtonItem.tintColor = [UIColor redColor];
+            }
         }
     }
     else
     {
-        photoController.type = @"others";
-    }
-    //[self.navigationController pushViewController:photoController animated:YES];
+        isUpdated = YES;
+        cropCoach = YES;
+    
+        [self setupActivityIndicator];
 
-    [self updateCartInfo];
-    [self.HUD hide:YES];
+        tmpDict = (NSMutableDictionary*)btn.data;
+
+        int photoCount = [[tmpDict objectForKey:@"count"] intValue];
+
+        //[aView addSubview:pickerNumber];
+        UILabel *lbTmp = (UILabel*)btn.object;
+    
+
+        if (photoCount == 0) {
+            lbTmp.text = @"1";
+            lbTmp.hidden = NO;
+            lbTmp.textColor = UIColorFromRGB(0xeb310b);
+            [tmpDict setObject:[NSNumber numberWithInt:1] forKey:@"count"];
+        }
+    
+        [self showNumberSelector:NO];
+    
+        [self toAddHashtagData];
+    
+        // TEMPORARY DISABLE
+        [self showNumberSelector:NO];
+        UIView  *viewContainer = [btn superview];
+        UIImage *imgPhoto = nil;
+        NSMutableDictionary *dict = nil;
+        for (UIView *aView in viewContainer.subviews) {
+            if (aView.tag == TAG_PHOTO) {
+                UIImageViewWithData *imgView= (UIImageViewWithData*)aView;
+                imgPhoto = imgView.image;
+                dict = imgView.data;
+                break;
+            }
+        }
+    
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+        SqlManager  *sqlMan = [SqlManager defaultShare];
+        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM upload_image WHERE original_imgpath = '%@' and product_id='%@'",[dict    objectForKey:@"url_high"],[defaults objectForKey:PRODUCTID]];
+        NSMutableArray *tmpArr = [sqlMan doQueryAndGetArray:sql];
+    
+        PhotoPreviewViewController  *photoController = [[PhotoPreviewViewController alloc] initWithNibName:@"PhotoPreviewViewController" bundle:[NSBundle mainBundle]];
+        photoController.protocolDatas =(id)self;
+    
+        // Show cropping icon on thumbnail
+        self.currentSelectedThumb = btn;
+        self.indexColumn = btn.indexColumn;
+        self.cropIndexPath = btn.indexPath;
+    
+    
+        self.photoDict = dict;
+        photoController.photoDict = dict;
+        photoController.dataArray = tmpArr;
+        if (_albumType == ALBUM_INSTAGRAM )
+        {
+            if (tblView.tag == 1)
+            {
+                photoController.type = @"instagram";
+            }
+            else
+            {
+                photoController.type = @"hashtag";
+            }
+        }
+        else
+        {
+            photoController.type = @"others";
+        }
+        //[self.navigationController pushViewController:photoController animated:YES];
+
+        [self updateCartInfo];
+        [self.HUD hide:YES];
+        
+    }
 
 }
 
@@ -2278,6 +2038,21 @@ int ITEMS_PER_ROW;
 //}
 
 -(void) touchBack {
+    // check swapping state
+    if (_isOrderPreview && isSwapped)
+    {
+        // Revert changing
+        NSMutableDictionary *dictContainer = [_arrPhotos objectAtIndex:0];
+        
+        // Photos before swapping
+        NSMutableArray  *photos = [dictContainer objectForKey:@"photos"];
+        [photos removeAllObjects];
+        [photos addObjectsFromArray: clonedPhotos];
+        
+        isSwapped = NO;
+    }
+    
+    
     if (isUpdated && _isOrderPreview) {
         [_delegate dataUpdated];
     }
@@ -2550,4 +2325,44 @@ int ITEMS_PER_ROW;
     }
 }
 
+#pragma mark alert view delegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        [self showTabBar];
+        
+        // go to FAQ
+        [appDelegate goToTab:2];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.75 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            MoreViewController *moreController = [MoreViewController getShared];
+            [moreController touchFAQ];
+        });
+    }
+    else if (buttonIndex == 1)
+    {
+            
+    }
+}
+
+- (void)showTabBar {
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect frame = self.tabBarController.tabBar.frame;
+        frame.origin.y = [UIScreen mainScreen].bounds.size.height - 44 - 6;//519 -((IS_4INCHES)?0:88);
+        self.tabBarController.tabBar.frame = frame;
+    } completion:^(BOOL finished) {
+        DLog(@"frmae = %@",NSStringFromCGRect(self.tabBarController.tabBar.frame));
+    }];
+}
+
+- (void)touchApply {
+    NSMutableDictionary *dictContainer = [_arrPhotoGroups objectAtIndex:0];
+    
+    // Photos before swapping
+    NSMutableArray  *arrPhotos = [dictContainer objectForKey:@"photos"];
+    
+    // Make new copy
+    clonedPhotos = [arrPhotos copy];
+    
+    // Hide apply button
+    self.navigationItem.rightBarButtonItem = nil;
+}
 @end

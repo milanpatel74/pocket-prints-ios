@@ -57,8 +57,8 @@ static NSString* const CreativeSDKClientSecret = @"8aaa7e3b-b63a-4535-9863-e7a9e
 //#define SERVER_URL  @"http://pp.appiphany.com.au/api"
 //Latest Modified Sep10th
 #define PushURL @"http://push.pocketprints.com.au/devices.json"
-//#define SERVER_URL  @"http://api.pocketprints.com.au/api"
-#define SERVER_URL  @"http://172.16.2.19:3000/api"
+#define SERVER_URL  @"http://api.pocketprints.com.au/api"
+//#define SERVER_URL  @"http://172.16.2.19:3000/api"
 
 #define API_TOKEN               @"token.json"
 #define API_PRDUCTS             @"products.json"

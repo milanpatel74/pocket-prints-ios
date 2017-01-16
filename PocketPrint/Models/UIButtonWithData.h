@@ -27,5 +27,6 @@ typedef  enum {
 
 @property   (nonatomic, assign) NSInteger indexColumn;
 @property   (nonatomic,strong) NSDictionary *photoDict;
+@property   (nonatomic) int photoIndex;
 
 @end
